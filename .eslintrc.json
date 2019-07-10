@@ -1,0 +1,54 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "arrow-body-style": [2, "as-needed"],
+    "function-paren-newline": [2, "consistent"],
+    "no-continue": [0, "never"],
+    "no-debugger": "warn",
+    "semi": [2, "never"],
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "import/no-unresolved": [2, { "ignore": [".*\\?.*"] }],
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": [0, "never"],
+    "prefer-destructuring": [0, "never"],
+    "react/destructuring-assignment": [0, "never"],
+    "react/forbid-prop-types": [0, "never"],
+    "react/no-array-index-key": [0, "never"],
+    "react/no-danger": [0, "never"],
+    "react/jsx-no-undef": [2, {
+      "allowGlobals": true
+    }],
+    "react/jsx-pascal-case": [2],
+    "jsx-a11y/label-has-for": [0],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "controlComponents": ["Text"]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "quotes": [
+      2,
+      "single"
+    ]
+  }
+}
