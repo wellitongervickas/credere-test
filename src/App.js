@@ -3,7 +3,9 @@ import Slider from './components/Slider'
 
 const App = () => (
   <>
-    <Slider />
+    <Slider>
+      <Slider.Item />
+    </Slider>
   </>
 )
 
