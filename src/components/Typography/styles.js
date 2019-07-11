@@ -7,13 +7,14 @@ export const SubHeading = styled.h3``
 export const Paragraph = styled.p``
 
 export const typographyElement = (tag) => {
-  if (tag === 'heading') {
-    return Heading
-  }
+  switch (tag) {
+    case 'heading':
+      return Heading
 
-  if (tag === 'sub-heading') {
-    return SubHeading
-  }
+    case 'sub=heading':
+      return SubHeading
 
-  return Paragraph
+    default:
+      return Paragraph
+  }
 }
