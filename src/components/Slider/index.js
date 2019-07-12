@@ -1,28 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Item from './Item'
-import Button from '../Button'
-import { SliderWrapper, SliderList, SliderButton } from './styles'
-import SliderContext, { SliderContextProvider } from './context'
-
-const SliderAction = () => {
-  const { activatedSlider, setActivatedSlider, maxSlider } = useContext(SliderContext)
-  const handleSetNewSlider = () => {
-    if (activatedSlider < maxSlider) {
-      setActivatedSlider(activatedSlider + 1)
-    } else {
-      setActivatedSlider(0)
-    }
-  }
-
-  return (
-    <SliderButton data-max={maxSlider}>
-      <Button onClick={handleSetNewSlider}>
-        Próximo
-      </Button>
-    </SliderButton>
-  )
-}
+import { SliderWrapper, SliderList } from './styles'
+import { SliderContextProvider } from './context'
+import SliderAction from './Action'
 
 const Slider = ({ children }) => {
   const sliderCount = Array.isArray(children) ? (children.length - 1) : 1

@@ -13,16 +13,14 @@ const Item = ({
 
   return (
     <SliderItem
+      style={{ backgroundImage: `url(${image})` }}
+      data-index={index}
+      data-template={template}
       className={classnames(
         activatedSlider === index ? 'visible' : 'hidden',
         'transition-all',
       )}
-      data-index={index}
-      data-template={template}
     >
-      <div>
-        <img width="100" src={image} alt={title} />
-      </div>
       <div>
         <Typography tag="heading">
           {title}
@@ -34,7 +32,7 @@ const Item = ({
         </Typography>
       </div>
       <div>
-        <Typography>
+        <Typography tag="paragraph">
           {description}
         </Typography>
       </div>

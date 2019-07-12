@@ -14,9 +14,13 @@ export const SliderWrapper = styled.div`
   overflow: hidden;
 `
 
-export const SliderList = styled.div``
+export const SliderList = styled.div`
+  position: relative;
+`
 
 export const SliderItem = styled.div`
+  top: 0;
+  position: absolute;
   ${sliderDimensions}
 `
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ButtonElement } from './styles'
+import Typography from '../Typography'
 
 const Button = ({ children, onClick }) => (
   <ButtonElement
@@ -8,7 +9,7 @@ const Button = ({ children, onClick }) => (
     type="button"
     onClick={onClick}
   >
-    {children}
+    <Typography>{children}</Typography>
   </ButtonElement>
 )
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-  Heading, Paragraph, SubHeading,
+  Heading, Paragraph, SubHeading, Span,
 } from './styles'
 
 const Typography = ({ tag, children }) => {
@@ -12,20 +12,24 @@ const Typography = ({ tag, children }) => {
     case 'sub-heading':
       return <SubHeading>{children}</SubHeading>
 
-    default:
+    case 'paragraph':
       return <Paragraph>{children}</Paragraph>
+
+    default:
+      return <Span>{children}</Span>
   }
 }
 
 Typography.propTypes = {
   children: PropTypes.node.isRequired,
-  tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph']),
+  tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph', 'span']),
 }
 
 Typography.defaultProps = {
-  tag: 'paragraph',
+  tag: 'span',
 }
 
+Typography.Span = Span
 Typography.Heading = Heading
 Typography.SubHeading = SubHeading
 Typography.Paragraph = Paragraph

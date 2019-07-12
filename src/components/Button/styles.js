@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ButtonElement = styled.button`
+  cursor: pointer;
   background-color: #f60d02;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
   border: 0;
