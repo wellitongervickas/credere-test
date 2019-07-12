@@ -1,18 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-  typographyElement, Heading, Paragraph, SubHeading,
+  Heading, Paragraph, SubHeading,
 } from './styles'
 
 const Typography = ({ tag, children }) => {
-  const Element = typographyElement(tag)
+  switch (tag) {
+    case 'heading':
+      return <Heading>{children}</Heading>
 
-  return <Element>{children}</Element>
+    case 'sub-heading':
+      return <SubHeading>{children}</SubHeading>
+
+    default:
+      return <Paragraph>{children}</Paragraph>
+  }
 }
 
 Typography.propTypes = {
   children: PropTypes.node.isRequired,
-  tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph']).isRequired,
+  tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph']),
+}
+
+Typography.defaultProps = {
+  tag: 'paragraph',
 }
 
 Typography.Heading = Heading

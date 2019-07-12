@@ -1,37 +1,47 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import Item from './Item'
 import Button from '../Button'
 import { SliderWrapper, SliderList, SliderButton } from './styles'
+import SliderContext, { SliderContextProvider } from './context'
 
-const Slider = ({
-  duration, effect, autoPlay, slides,
-}) => (
-  <SliderWrapper data-auto={autoPlay} data-effect={effect} data-duration={duration}>
-    <SliderList className="full-content">
-      {slides.map((props, index) => (
-        <Item key={index} index={index} {...props} />
-      ))}
-    </SliderList>
-    <SliderButton>
-      <Button>
+const SliderAction = () => {
+  const { activatedSlider, setActivatedSlider, maxSlider } = useContext(SliderContext)
+  const handleSetNewSlider = () => {
+    if (activatedSlider < maxSlider) {
+      setActivatedSlider(activatedSlider + 1)
+    } else {
+      setActivatedSlider(0)
+    }
+  }
+
+  return (
+    <SliderButton data-max={maxSlider}>
+      <Button onClick={handleSetNewSlider}>
         Próximo
       </Button>
     </SliderButton>
-  </SliderWrapper>
-)
+  )
+}
+
+const Slider = ({ children }) => {
+  const sliderCount = Array.isArray(children) ? (children.length - 1) : 1
+
+  return (
+    <SliderContextProvider count={sliderCount}>
+      <SliderWrapper>
+        <SliderList className="full-content">
+          {children}
+        </SliderList>
+        <SliderAction />
+      </SliderWrapper>
+    </SliderContextProvider>
+  )
+}
 
 Slider.propTypes = {
-  slides: PropTypes.array.isRequired,
-  duration: PropTypes.number,
-  effect: PropTypes.oneOf(['fade-in', 'slide-in-left']),
-  autoPlay: PropTypes.bool,
+  children: PropTypes.node.isRequired,
 }
-
-Slider.defaultProps = {
-  duration: 5000,
-  effect: 'fade-in',
-  autoPlay: false,
-}
+Slider.Item = Item
 
 export default Slider

@@ -4,6 +4,7 @@ import { ButtonElement } from './styles'
 
 const Button = ({ children, onClick }) => (
   <ButtonElement
+    className="transition-all"
     type="button"
     onClick={onClick}
   >
