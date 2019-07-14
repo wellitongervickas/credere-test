@@ -8,6 +8,13 @@ const Typography = ({
   tag, children, color, emphasys,
 }) => {
   switch (tag) {
+    case 'span':
+      return (
+        <Span style={{ color }} emphasys={emphasys}>
+          {children}
+        </Span>
+      )
+
     case 'heading':
       return (
         <Heading style={{ color }} emphasys={emphasys}>

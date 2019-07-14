@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography Component should render Typography Heading with props 1`] = `
+<h2
+  className="sc-bdVaJa fxNquc"
+  style={
+    Object {
+      "color": "#333",
+    }
+  }
+>
+  Test Heading
+</h2>
+`;
+
+exports[`Typography Component should render Typography Span with props 1`] = `
+<span
+  className="sc-bxivhb bUZGRr"
+  style={
+    Object {
+      "color": "#ccc",
+    }
+  }
+>
+  Test
+</span>
+`;
+
+exports[`Typography Component should render Typography paragraph with props 1`] = `
+<p
+  className="sc-htpNat gXpAer"
+  style={
+    Object {
+      "color": "#ccc",
+    }
+  }
+>
+  Test Paragraph
+</p>
+`;
+
+exports[`Typography Component should render Typography sub-heading with props 1`] = `
+<h3
+  className="sc-bwzfXH bTnWYt"
+  style={
+    Object {
+      "color": "#ccc",
+    }
+  }
+>
+  Test Sub Heading
+</h3>
+`;
+
+exports[`Typography Component should render compound typography components 1`] = `
+Array [
+  <span
+    className="sc-bxivhb bUZGRr"
+  >
+    Span
+  </span>,
+  <p
+    className="sc-htpNat bQxBKP"
+  >
+    SubHeading
+  </p>,
+  <h3
+    className="sc-bwzfXH leCRvb"
+  >
+    SubHeading
+  </h3>,
+  <h2
+    className="sc-bdVaJa gfhBfe"
+  >
+    Heading
+  </h2>,
+]
+`;
