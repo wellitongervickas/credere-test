@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import Item from './Item'
 import { SliderWrapper, SliderList } from './styles'
@@ -6,12 +6,15 @@ import { SliderContextProvider } from './context'
 import SliderAction from './Action'
 
 const Slider = ({ children }) => {
-  const sliderCount = Array.isArray(children) ? (children.length - 1) : 1
+  const sliderCount = useMemo(() => (Array.isArray(children)
+    ? (children.length - 1)
+    : 1),
+  [children])
 
   return (
     <SliderContextProvider count={sliderCount}>
-      <SliderWrapper>
-        <SliderList className="full-content">
+      <SliderWrapper className="relative">
+        <SliderList className="full-content relative">
           {children}
         </SliderList>
         <SliderAction />
@@ -23,6 +26,7 @@ const Slider = ({ children }) => {
 Slider.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
 Slider.Item = Item
 
 export default Slider

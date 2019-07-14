@@ -11,3 +11,22 @@
 .grid {
   display: grid;
 }
+
+.flex-column-center {
+  @extend .flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-algin-end {
+  @extend .flex;
+  align-items: flex-end;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}

@@ -1,20 +1,21 @@
-import React, { useContext } from 'react'
+import React, { useContext, useCallback } from 'react'
 import Button from '../Button'
 import { SliderButton } from './styles'
 import SliderContext from './context'
 
 const SliderAction = () => {
   const { activatedSlider, setActivatedSlider, maxSlider } = useContext(SliderContext)
-  const handleSetNewSlider = () => {
+
+  const handleSetNewSlider = useCallback(() => {
     if (activatedSlider < maxSlider) {
       setActivatedSlider(activatedSlider + 1)
     } else {
       setActivatedSlider(0)
     }
-  }
+  }, [setActivatedSlider, maxSlider, activatedSlider])
 
   return (
-    <SliderButton data-max={maxSlider}>
+    <SliderButton className="absolute" data-max={maxSlider}>
       <Button onClick={handleSetNewSlider}>
         Próximo
       </Button>

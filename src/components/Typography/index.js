@@ -4,29 +4,51 @@ import {
   Heading, Paragraph, SubHeading, Span,
 } from './styles'
 
-const Typography = ({ tag, children }) => {
+const Typography = ({
+  tag, children, color, emphasys,
+}) => {
   switch (tag) {
     case 'heading':
-      return <Heading>{children}</Heading>
+      return (
+        <Heading style={{ color }} emphasys={emphasys}>
+          {children}
+        </Heading>
+      )
 
     case 'sub-heading':
-      return <SubHeading>{children}</SubHeading>
+      return (
+        <SubHeading style={{ color }} emphasys={emphasys}>
+          {children}
+        </SubHeading>
+      )
 
     case 'paragraph':
-      return <Paragraph>{children}</Paragraph>
+      return (
+        <Paragraph style={{ color }} emphasys={emphasys}>
+          {children}
+        </Paragraph>
+      )
 
     default:
-      return <Span>{children}</Span>
+      return (
+        <Span style={{ color }} emphasys={emphasys}>
+          {children}
+        </Span>
+      )
   }
 }
 
 Typography.propTypes = {
   children: PropTypes.node.isRequired,
   tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph', 'span']),
+  color: PropTypes.string,
+  emphasys: PropTypes.bool,
 }
 
 Typography.defaultProps = {
+  emphasys: false,
   tag: 'span',
+  color: '#FFFFFF',
 }
 
 Typography.Span = Span

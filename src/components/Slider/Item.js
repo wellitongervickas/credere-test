@@ -2,56 +2,34 @@ import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { SliderItem } from './styles'
-import Typography from '../Typography'
 import SliderContext from './context'
+import Template from './Template'
 
-const Item = ({
-  index, template, image, title,
-  subTitle, description,
-}) => {
+const Item = ({ ...props }) => {
   const { activatedSlider } = useContext(SliderContext)
 
   return (
     <SliderItem
-      style={{ backgroundImage: `url(${image})` }}
-      data-index={index}
-      data-template={template}
+      data-index={props.index}
+      data-template={props.template}
       className={classnames(
-        activatedSlider === index ? 'visible' : 'hidden',
+        activatedSlider === props.index ? 'visible' : 'hidden',
         'transition-all',
+        'absolute',
       )}
     >
-      <div>
-        <Typography tag="heading">
-          {title}
-        </Typography>
-      </div>
-      <div>
-        <Typography tag="sub-heading">
-          {subTitle}
-        </Typography>
-      </div>
-      <div>
-        <Typography tag="paragraph">
-          {description}
-        </Typography>
-      </div>
+      <Template {...props} />
     </SliderItem>
   )
 }
 
 Item.propTypes = {
   index: PropTypes.any.isRequired,
-  template: PropTypes.oneOf(['default', 'template_2', 'template_3', 'template_4']),
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  template: PropTypes.oneOf(['default', 'template_1', 'template_2', 'template_3']),
 }
 
 Item.defaultProps = {
   template: 'default',
-  subTitle: null,
 }
 
 export default Item

@@ -2,30 +2,29 @@
   "slides": [
     {
       "image": "https://img.ibxk.com.br/2019/07/10/10153244993210.jpg",
-      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "title": "Lorem ipsum dolor sit amet",
       "subTitle": "Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?",
       "description": "Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non"
     },
     {
-      "template": "default",
+      "template": "template_1",
       "image": "https://img.ibxk.com.br/2019/07/10/10091423089001.jpg",
-      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "subTitle": "Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?",
+      "title": "Lorem ipsum dolor",
+      "subTitle": "Sed non dui sed purus hendrerit aliquet a nec magna. ",
       "description": "Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non"
     },
     {
-      "template": "default",
+      "template": "template_2",
       "image": "https://img.ibxk.com.br/2019/07/10/10145408149192.jpg",
-      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "title": "Lorem ipsum dolor sit amet",
       "subTitle": "Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?",
       "description": "Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non"
     },
     {
-      "template": "default",
+      "template": "template_3",
       "image": "https://img.ibxk.com.br/2019/06/17/17152604467364.jpg",
-      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "subTitle": "Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?",
-      "description": "Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non"
+      "title": "Lorem ipsum dolor sit amet",
+      "subTitle": "Sed non dui sed purus hendrerit aliquet a nec magna"
     }
   ]
 }

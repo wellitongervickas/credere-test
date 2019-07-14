@@ -9,9 +9,7 @@ const App = () => {
     <>
       <div className="container">
         <Slider>
-          {slides.map((props, index) => (
-            <Slider.Item key={index} {...props} index={index} />
-          ))}
+          {slides.map((props, index) => <Slider.Item key={index} {...props} index={index} />)}
         </Slider>
       </div>
     </>
