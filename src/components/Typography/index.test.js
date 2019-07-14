@@ -17,9 +17,24 @@ describe('Typography Component', () => {
   })
 
   it('should render Typography Span with props', () => {
+    const props = {
+      text: 'Test Span',
+      color: '#333',
+      type: 'span',
+    }
     const element = renderer.create(
-      <Typography color="#ccc" tag="span" emphasys>Test</Typography>,
+      <Typography color={props.color} tag="span" emphasys>{props.text}</Typography>,
     ).toJSON()
+
+    expect(element).toMatchObject({
+      type: props.type,
+      children: [props.text],
+      props: {
+        style: {
+          color: props.color,
+        },
+      },
+    })
 
     expect(element).toMatchSnapshot()
   })

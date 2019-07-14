@@ -18,11 +18,11 @@ exports[`Typography Component should render Typography Span with props 1`] = `
   className="sc-bxivhb bUZGRr"
   style={
     Object {
-      "color": "#ccc",
+      "color": "#333",
     }
   }
 >
-  Test
+  Test Span
 </span>
 `;
 
