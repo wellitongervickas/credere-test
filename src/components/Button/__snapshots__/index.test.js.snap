@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component should render button component 1`] = `
+<button
+  className="transition-all sc-bdVaJa eMbgWz"
+  onClick={[Function]}
+  type="button"
+>
+  <span
+    className="sc-ifAKCX cFlEyZ"
+    style={
+      Object {
+        "color": "#FFFFFF",
+      }
+    }
+  >
+    Default Button
+  </span>
+</button>
+`;
