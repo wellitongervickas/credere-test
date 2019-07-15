@@ -2,7 +2,7 @@
 
 exports[`Typography Component should render Typography Heading with props 1`] = `
 <h2
-  className="sc-bdVaJa fxNquc"
+  className="sc-bdVaJa fpQCmI"
   style={
     Object {
       "color": "#333",
@@ -28,7 +28,7 @@ exports[`Typography Component should render Typography Span with props 1`] = `
 
 exports[`Typography Component should render Typography paragraph with props 1`] = `
 <p
-  className="sc-htpNat gXpAer"
+  className="sc-htpNat cmjWi"
   style={
     Object {
       "color": "#ccc",
@@ -41,7 +41,7 @@ exports[`Typography Component should render Typography paragraph with props 1`] 
 
 exports[`Typography Component should render Typography sub-heading with props 1`] = `
 <h3
-  className="sc-bwzfXH bTnWYt"
+  className="sc-bwzfXH bJNhon"
   style={
     Object {
       "color": "#ccc",
@@ -60,17 +60,17 @@ Array [
     Span
   </span>,
   <p
-    className="sc-htpNat bQxBKP"
+    className="sc-htpNat cSPdLd"
   >
     SubHeading
   </p>,
   <h3
-    className="sc-bwzfXH leCRvb"
+    className="sc-bwzfXH jmxchW"
   >
     SubHeading
   </h3>,
   <h2
-    className="sc-bdVaJa gfhBfe"
+    className="sc-bdVaJa bqTftu"
   >
     Heading
   </h2>,

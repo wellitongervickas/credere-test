@@ -5,7 +5,7 @@ import { SliderWrapper, SliderList } from './styles'
 import { SliderContextProvider } from './context'
 import SliderAction from './Action'
 
-const Slider = ({ children }) => {
+const Slider = ({ children, autoPlay, duration }) => {
   const sliderCount = useMemo(() => (Array.isArray(children)
     ? (children.length - 1)
     : 1),
@@ -18,7 +18,7 @@ const Slider = ({ children }) => {
           <SliderList className="full-content relative">
             {children}
           </SliderList>
-          <SliderAction />
+          <SliderAction autoPlay={autoPlay} duration={duration} />
         </SliderWrapper>
       </SliderContextProvider>
     )
@@ -29,10 +29,14 @@ const Slider = ({ children }) => {
 
 Slider.propTypes = {
   children: PropTypes.node,
+  autoPlay: PropTypes.bool,
+  duration: PropTypes.number,
 }
 
 Slider.defaultProps = {
   children: null,
+  autoPlay: false,
+  duration: 5000,
 }
 
 Slider.Item = Item

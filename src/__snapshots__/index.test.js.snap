@@ -1,125 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should render App 1`] = `
-<div
-  className="container"
->
+Array [
   <div
-    className="relative sc-bdVaJa gcqAfL"
+    className="container"
   >
+    <h3
+      className="sc-dnqmqq bJaIPW"
+    >
+      Slider Default
+    </h3>
     <div
-      className="full-content relative sc-bwzfXH uTxCW"
+      className="relative sc-bdVaJa dblxU"
     >
       <div
-        className="visible transition-all absolute sc-htpNat ikaaUW"
-        data-index={0}
-        data-template="default"
+        className="full-content relative sc-bwzfXH uTxCW"
       >
         <div
-          className="grid full-content sc-gqjmRU hyXXoK"
+          className="visible transition-all absolute sc-htpNat BXjkt"
+          data-index={0}
+          data-template="default"
         >
           <div
-            className="flex-column-center relative"
-            style={
-              Object {
-                "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10153244993210.jpg)",
-              }
-            }
+            className="grid full-content sc-gqjmRU kIqdMS"
           >
             <div
-              className="full-content absolute sc-EHOje fZgOQP"
-            />
-            <div
-              className="relative sc-bZQynM cCpwOA"
-            >
-              <h2
-                className="sc-htoDjs LJriY"
-                style={
-                  Object {
-                    "color": "#FFFFFF",
-                  }
-                }
-              >
-                Lorem ipsum dolor sit amet
-              </h2>
-              <h3
-                className="sc-dnqmqq fIJtHb"
-                style={
-                  Object {
-                    "color": "#FFFFFF",
-                  }
-                }
-              >
-                Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?
-              </h3>
-            </div>
-          </div>
-          <div
-            className="flex-column-center sc-gzVnrw yCoZJ"
-          >
-            <p
-              className="sc-iwsKbI hTjAfb"
+              className="flex-column-center relative"
               style={
                 Object {
-                  "color": "#333333",
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10153244993210.jpg)",
                 }
               }
             >
-              Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="hidden transition-all absolute sc-htpNat ikaaUW"
-        data-index={1}
-        data-template="template_1"
-      >
-        <div
-          className="full-content grid sc-jTzLTM hfhqii"
-        >
-          <div
-            className="flex-algin-end full-content relative"
-            style={
-              Object {
-                "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10091423089001.jpg)",
-              }
-            }
-          >
-            <div
-              className="full-content absolute sc-EHOje fZgOQP"
-            />
-          </div>
-          <div>
-            <div
-              className="sc-fjdhpX hyGgCv"
-            >
-              <h2
-                className="sc-htoDjs LJriY"
-                style={
-                  Object {
-                    "color": "#333333",
-                  }
-                }
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+              <div
+                className="relative sc-bZQynM sMRAj"
               >
-                Lorem ipsum dolor
-              </h2>
-              <h3
-                className="sc-dnqmqq fIJtHb"
-                style={
-                  Object {
-                    "color": "#999999",
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
                   }
-                }
-              >
-                Sed non dui sed purus hendrerit aliquet a nec magna. 
-              </h3>
+                >
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?
+                </h3>
+              </div>
             </div>
             <div
-              className="flex-column-center sc-gzVnrw yCoZJ"
+              className="flex-column-center sc-gzVnrw dkdosU"
             >
               <p
-                className="sc-iwsKbI hTjAfb"
+                className="sc-iwsKbI ibDZNz"
                 style={
                   Object {
                     "color": "#333333",
@@ -131,121 +76,435 @@ exports[`App should render App 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="hidden transition-all absolute sc-htpNat ikaaUW"
-        data-index={2}
-        data-template="template_2"
-      >
         <div
-          className="full-content"
+          className="hidden transition-all absolute sc-htpNat BXjkt"
+          data-index={1}
+          data-template="template_1"
         >
           <div
-            className="flex-algin-end full-content relative"
-            style={
-              Object {
-                "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10145408149192.jpg)",
-              }
-            }
+            className="full-content grid sc-jTzLTM hfhqii"
           >
             <div
-              className="full-content absolute sc-EHOje fZgOQP"
-            />
-            <div
-              className="relative sc-bZQynM cCpwOA"
+              className="flex-algin-end full-content relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10091423089001.jpg)",
+                }
+              }
             >
-              <h2
-                className="sc-htoDjs LJriY"
-                style={
-                  Object {
-                    "color": "#FFFFFF",
-                  }
-                }
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+            </div>
+            <div>
+              <div
+                className="sc-fjdhpX dJvaXu"
               >
-                Lorem ipsum dolor sit amet
-              </h2>
-              <h3
-                className="sc-dnqmqq fIJtHb"
-                style={
-                  Object {
-                    "color": "#FFFFFF",
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#333333",
+                    }
                   }
-                }
+                >
+                  Lorem ipsum dolor
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#999999",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna. 
+                </h3>
+              </div>
+              <div
+                className="flex-column-center sc-gzVnrw dkdosU"
               >
-                Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?
-              </h3>
+                <p
+                  className="sc-iwsKbI ibDZNz"
+                  style={
+                    Object {
+                      "color": "#333333",
+                    }
+                  }
+                >
+                  Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="hidden transition-all absolute sc-htpNat BXjkt"
+          data-index={2}
+          data-template="template_2"
+        >
+          <div
+            className="full-content sc-jzJRlG bhbMmg"
+          >
+            <div
+              className="flex-algin-end full-content relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10145408149192.jpg)",
+                }
+              }
+            >
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+              <div
+                className="relative sc-bZQynM sMRAj"
+              >
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="hidden transition-all absolute sc-htpNat BXjkt"
+          data-index={3}
+          data-template="template_3"
+        >
+          <div
+            className="full-content sc-VigVT gNgpkb"
+          >
+            <div
+              className="flex-column-center full-content relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/06/17/17152604467364.jpg)",
+                }
+              }
+            >
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+              <div
+                className="relative sc-bZQynM sMRAj"
+              >
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna
+                </h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="hidden transition-all absolute sc-htpNat ikaaUW"
-        data-index={3}
-        data-template="template_3"
+        className="absolute sc-bxivhb dEKikf"
+        data-max={0}
       >
-        <div
-          className="full-content sc-VigVT gNgpkb"
+        <button
+          className="transition-all sc-cSHVUG bRWBVW"
+          onClick={[Function]}
+          type="button"
         >
-          <div
-            className="flex-column-center full-content relative"
+          <span
+            className="sc-gZMcBi giNnHm"
             style={
               Object {
-                "backgroundImage": "url(https://img.ibxk.com.br/2019/06/17/17152604467364.jpg)",
+                "color": "#FFFFFF",
               }
             }
           >
-            <div
-              className="full-content absolute sc-EHOje fZgOQP"
-            />
-            <div
-              className="relative sc-bZQynM cCpwOA"
-            >
-              <h2
-                className="sc-htoDjs LJriY"
-                style={
-                  Object {
-                    "color": "#FFFFFF",
-                  }
-                }
-              >
-                Lorem ipsum dolor sit amet
-              </h2>
-              <h3
-                className="sc-dnqmqq fIJtHb"
-                style={
-                  Object {
-                    "color": "#FFFFFF",
-                  }
-                }
-              >
-                Sed non dui sed purus hendrerit aliquet a nec magna
-              </h3>
-            </div>
-          </div>
-        </div>
+            Próximo
+          </span>
+        </button>
       </div>
     </div>
-    <div
-      className="absolute sc-bxivhb dEKikf"
-      data-max={0}
+  </div>,
+  <div
+    className="container"
+  >
+    <h3
+      className="sc-dnqmqq bJaIPW"
     >
-      <button
-        className="transition-all sc-jzJRlG cPDcwP"
-        onClick={[Function]}
-        type="button"
+      Slider Auto Play (5s)
+    </h3>
+    <div
+      className="relative sc-bdVaJa dblxU"
+    >
+      <div
+        className="full-content relative sc-bwzfXH uTxCW"
       >
-        <span
-          className="sc-gZMcBi giNnHm"
-          style={
-            Object {
-              "color": "#FFFFFF",
-            }
-          }
+        <div
+          className="visible transition-all absolute sc-htpNat BXjkt"
+          data-index={0}
+          data-template="default"
         >
-          Próximo
-        </span>
-      </button>
+          <div
+            className="grid full-content sc-gqjmRU kIqdMS"
+          >
+            <div
+              className="flex-column-center relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10153244993210.jpg)",
+                }
+              }
+            >
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+              <div
+                className="relative sc-bZQynM sMRAj"
+              >
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?
+                </h3>
+              </div>
+            </div>
+            <div
+              className="flex-column-center sc-gzVnrw dkdosU"
+            >
+              <p
+                className="sc-iwsKbI ibDZNz"
+                style={
+                  Object {
+                    "color": "#333333",
+                  }
+                }
+              >
+                Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="hidden transition-all absolute sc-htpNat BXjkt"
+          data-index={1}
+          data-template="template_1"
+        >
+          <div
+            className="full-content grid sc-jTzLTM hfhqii"
+          >
+            <div
+              className="flex-algin-end full-content relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10091423089001.jpg)",
+                }
+              }
+            >
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+            </div>
+            <div>
+              <div
+                className="sc-fjdhpX dJvaXu"
+              >
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#333333",
+                    }
+                  }
+                >
+                  Lorem ipsum dolor
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#999999",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna. 
+                </h3>
+              </div>
+              <div
+                className="flex-column-center sc-gzVnrw dkdosU"
+              >
+                <p
+                  className="sc-iwsKbI ibDZNz"
+                  style={
+                    Object {
+                      "color": "#333333",
+                    }
+                  }
+                >
+                  Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="hidden transition-all absolute sc-htpNat BXjkt"
+          data-index={2}
+          data-template="template_2"
+        >
+          <div
+            className="full-content sc-jzJRlG bhbMmg"
+          >
+            <div
+              className="flex-algin-end full-content relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/07/10/10145408149192.jpg)",
+                }
+              }
+            >
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+              <div
+                className="relative sc-bZQynM sMRAj"
+              >
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna. Nulla et nisl eget nulla imperdiet mattis?
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="hidden transition-all absolute sc-htpNat BXjkt"
+          data-index={3}
+          data-template="template_3"
+        >
+          <div
+            className="full-content sc-VigVT gNgpkb"
+          >
+            <div
+              className="flex-column-center full-content relative"
+              style={
+                Object {
+                  "backgroundImage": "url(https://img.ibxk.com.br/2019/06/17/17152604467364.jpg)",
+                }
+              }
+            >
+              <div
+                className="full-content absolute sc-EHOje fZgOQP"
+              />
+              <div
+                className="relative sc-bZQynM sMRAj"
+              >
+                <h2
+                  className="sc-htoDjs kexmgL"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Lorem ipsum dolor sit amet
+                </h2>
+                <h3
+                  className="sc-dnqmqq bJaIPW"
+                  style={
+                    Object {
+                      "color": "#FFFFFF",
+                    }
+                  }
+                >
+                  Sed non dui sed purus hendrerit aliquet a nec magna
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute sc-bxivhb dEKikf"
+        data-max={0}
+      >
+        <button
+          className="transition-all sc-cSHVUG bRWBVW"
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="sc-gZMcBi giNnHm"
+            style={
+              Object {
+                "color": "#FFFFFF",
+              }
+            }
+          >
+            Próximo
+          </span>
+        </button>
+      </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

@@ -1,6 +1,10 @@
 import { cropText } from './string'
 
 describe('String Utils', () => {
+  it('should function to be defined', () => {
+    expect(cropText()).toBeDefined()
+  })
+
   it('should crop text without default props', () => {
     const string = cropText()
 

@@ -1,6 +1,10 @@
 @import './reset';
 @import './utils';
 
+html, body, #root {
+  width: 100%;
+}
+
 body {
   background-color: #dddddd;
   font-family: 'Open Sans', sans-serif;
