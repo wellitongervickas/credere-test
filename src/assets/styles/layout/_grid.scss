@@ -1,0 +1,32 @@
+.container {
+  width: 1140px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-column-center {
+  @extend .flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-algin-end {
+  @extend .flex;
+  align-items: flex-end;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
