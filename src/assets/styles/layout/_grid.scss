@@ -15,11 +15,7 @@ $device-mobile-xs: 576px;
     width: 992px;
   }
 
-  @media (min-width: $device-mobile-xs) and (max-width: $device-mobile-lg) {
-    width: 720px;
-  }
-
-  @media screen and (max-width: $device-mobile-xs) {
+  @media screen and (max-width: $device-mobile-lg) {
     width: 100vw;
     margin: 0;
     padding: 0;

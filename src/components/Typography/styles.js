@@ -11,7 +11,6 @@ export const Heading = styled.h2`
     ${setFontSizing(22)}
   }
 `
-
 export const SubHeading = styled.h3`
   ${props => isEmphasys(props.emphasys) || 'font-weight: 400'};
   ${setFontSizing(22)}
@@ -20,13 +19,12 @@ export const SubHeading = styled.h3`
     ${setFontSizing(18)}
   }
 `
-
 export const Paragraph = styled.p`
   ${props => isEmphasys(props.emphasys)};
   ${setFontSizing(18)}
 
   @media screen and (max-width: ${mobileSm}) {
-    ${setFontSizing(16)}
+    ${setFontSizing(14)}
   }
 `
 

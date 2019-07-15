@@ -5,7 +5,8 @@ import Title from '../commons/Title'
 import SubTitle from '../commons/SubTitle'
 import Description from '../commons/Description'
 import {
-  DefaultTemplate, ThirdTemplate, FirstTemplate, FirstTemplateHeading,
+  DefaultTemplate, ThirdTemplate, FirstTemplate,
+  FirstTemplateHeading, SecondTemplate,
 } from './styles'
 
 const First = ({
@@ -28,12 +29,12 @@ const Second = ({
   // eslint-disable-next-line react/prop-types
   image, title, subTitle,
 }) => (
-  <div className="full-content">
+  <SecondTemplate className="full-content">
     <Image className="flex-algin-end full-content" src={image}>
       <Title text={title} />
       <SubTitle text={subTitle} />
     </Image>
-  </div>
+  </SecondTemplate>
 )
 
 

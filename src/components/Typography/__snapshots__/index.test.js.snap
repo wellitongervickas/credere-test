@@ -28,7 +28,7 @@ exports[`Typography Component should render Typography Span with props 1`] = `
 
 exports[`Typography Component should render Typography paragraph with props 1`] = `
 <p
-  className="sc-htpNat Wgmxu"
+  className="sc-htpNat cmjWi"
   style={
     Object {
       "color": "#ccc",
@@ -60,7 +60,7 @@ Array [
     Span
   </span>,
   <p
-    className="sc-htpNat fcasDw"
+    className="sc-htpNat cSPdLd"
   >
     SubHeading
   </p>,

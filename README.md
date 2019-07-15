@@ -1,6 +1,7 @@
 ## Credere Front-end Test
 
 ### Quick Start
+
 * git clone git@bitbucket.org:gervickas/credere-frontend-test.git
 * cd credere-frontend-test
 * yarn 
@@ -9,6 +10,14 @@
 
 ### Slider
 
+#### Slider item
+| Properties | Type | Default | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| autoPlay | bool | false | Auto change next slider |
+| duration | number | 5000 | Time to next slider when use autoPlay  |
+
+
+#### Slider item
 | Properties | Type | Default | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | image | string | is required | Image of Slider  |
@@ -36,7 +45,7 @@ const App = () => {
   return (
     <>
       <div className="container">
-        <Slider>
+        <Slider autoPlay={true} duration={5000}>
           {slides.map((props, index) => <Slider.Item key={index} {...props} index={index} />)}
         </Slider>
       </div>
@@ -51,11 +60,13 @@ export default App
 ![template_2](https://raw.githubusercontent.com/meucredere/frontend-test/master/images/news/layout-2.jpg)
 
 ### Test
+
 * yarn test
 * yarn test:watch 
 * yarn test:coverage
 
 
 ### Utils
+
 * yarn lint
 * yarn lint:fix

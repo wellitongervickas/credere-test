@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mobileSm } from '../../globalStyles'
+import { mobileLg } from '../../globalStyles'
 
 const sliderDesktopDimensions = {
   width: '800px',
@@ -18,7 +18,7 @@ export const SliderWrapper = styled.div`
   overflow: hidden;
   ${sliderDesktopDimensions}
 
-  @media screen and (max-width: ${mobileSm}) {
+  @media screen and (max-width: ${mobileLg}) {
     ${sliderMobileDimensions}
   }
 `
@@ -29,7 +29,7 @@ export const SliderItem = styled.div`
   top: 0;
   ${sliderDesktopDimensions}
 
-  @media screen and (max-width: ${mobileSm}) {
+  @media screen and (max-width: ${mobileLg}) {
     ${sliderMobileDimensions}
   }
 `
@@ -45,7 +45,7 @@ export const DefaultTemplate = styled.div`
   & > div {
     padding: 40px;
 
-    @media screen and (max-width: ${mobileSm}) {
+    @media screen and (max-width: ${mobileLg}) {
       padding: 5px;
     }
   }

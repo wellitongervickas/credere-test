@@ -6,7 +6,7 @@ exports[`Slider Component Snapshots should render button action 1`] = `
   data-max={0}
 >
   <button
-    className="transition-all sc-jzJRlG cPDcwP"
+    className="transition-all sc-cSHVUG bRWBVW"
     onClick={[Function]}
     type="button"
   >
@@ -26,10 +26,10 @@ exports[`Slider Component Snapshots should render button action 1`] = `
 
 exports[`Slider Component Snapshots should render common description 1`] = `
 <div
-  className="flex-column-center sc-gzVnrw jMapBp"
+  className="flex-column-center sc-gzVnrw dkdosU"
 >
   <p
-    className="sc-iwsKbI fYFseW"
+    className="sc-iwsKbI ibDZNz"
     style={
       Object {
         "color": "#333",
@@ -67,7 +67,7 @@ Array [
       className="full-content absolute sc-EHOje fZgOQP"
     />
     <div
-      className="relative sc-bZQynM jxfZKX"
+      className="relative sc-bZQynM sMRAj"
     >
       Children
     </div>
@@ -103,18 +103,18 @@ exports[`Slider Component Snapshots should render common title 1`] = `
 
 exports[`Slider Component Snapshots should render slider component 1`] = `
 <div
-  className="relative sc-bdVaJa fnenFC"
+  className="relative sc-bdVaJa dblxU"
 >
   <div
     className="full-content relative sc-bwzfXH uTxCW"
   >
     <div
-      className="hidden transition-all absolute sc-htpNat eLnFNE"
+      className="hidden transition-all absolute sc-htpNat BXjkt"
       data-index={1}
       data-template="default"
     >
       <div
-        className="grid full-content sc-gqjmRU cdhnWo"
+        className="grid full-content sc-gqjmRU kIqdMS"
       >
         <div
           className="flex-column-center relative"
@@ -128,7 +128,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
             className="full-content absolute sc-EHOje fZgOQP"
           />
           <div
-            className="relative sc-bZQynM jxfZKX"
+            className="relative sc-bZQynM sMRAj"
           >
             <h2
               className="sc-htoDjs kexmgL"
@@ -153,10 +153,10 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
           </div>
         </div>
         <div
-          className="flex-column-center sc-gzVnrw jMapBp"
+          className="flex-column-center sc-gzVnrw dkdosU"
         >
           <p
-            className="sc-iwsKbI fYFseW"
+            className="sc-iwsKbI ibDZNz"
             style={
               Object {
                 "color": "#333333",
@@ -169,7 +169,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
       </div>
     </div>
     <div
-      className="hidden transition-all absolute sc-htpNat eLnFNE"
+      className="hidden transition-all absolute sc-htpNat BXjkt"
       data-index={2}
       data-template="template_1"
     >
@@ -190,7 +190,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
         </div>
         <div>
           <div
-            className="sc-fjdhpX kJHqhZ"
+            className="sc-fjdhpX dJvaXu"
           >
             <h2
               className="sc-htoDjs kexmgL"
@@ -214,10 +214,10 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
             </h3>
           </div>
           <div
-            className="flex-column-center sc-gzVnrw jMapBp"
+            className="flex-column-center sc-gzVnrw dkdosU"
           >
             <p
-              className="sc-iwsKbI fYFseW"
+              className="sc-iwsKbI ibDZNz"
               style={
                 Object {
                   "color": "#333333",
@@ -231,12 +231,12 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
       </div>
     </div>
     <div
-      className="hidden transition-all absolute sc-htpNat eLnFNE"
+      className="hidden transition-all absolute sc-htpNat BXjkt"
       data-index={3}
       data-template="template_2"
     >
       <div
-        className="full-content"
+        className="full-content sc-jzJRlG bhbMmg"
       >
         <div
           className="flex-algin-end full-content relative"
@@ -250,7 +250,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
             className="full-content absolute sc-EHOje fZgOQP"
           />
           <div
-            className="relative sc-bZQynM jxfZKX"
+            className="relative sc-bZQynM sMRAj"
           >
             <h2
               className="sc-htoDjs kexmgL"
@@ -277,7 +277,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
       </div>
     </div>
     <div
-      className="hidden transition-all absolute sc-htpNat eLnFNE"
+      className="hidden transition-all absolute sc-htpNat BXjkt"
       data-index={4}
       data-template="template_3"
     >
@@ -296,7 +296,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
             className="full-content absolute sc-EHOje fZgOQP"
           />
           <div
-            className="relative sc-bZQynM jxfZKX"
+            className="relative sc-bZQynM sMRAj"
           >
             <h2
               className="sc-htoDjs kexmgL"
@@ -328,7 +328,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
     data-max={0}
   >
     <button
-      className="transition-all sc-jzJRlG cPDcwP"
+      className="transition-all sc-cSHVUG bRWBVW"
       onClick={[Function]}
       type="button"
     >
@@ -351,12 +351,12 @@ exports[`Slider Component Snapshots should render slider component without child
 
 exports[`Slider Component Snapshots should render slider item 1`] = `
 <div
-  className="hidden transition-all absolute sc-htpNat eLnFNE"
+  className="hidden transition-all absolute sc-htpNat BXjkt"
   data-index={1}
   data-template="default"
 >
   <div
-    className="grid full-content sc-gqjmRU cdhnWo"
+    className="grid full-content sc-gqjmRU kIqdMS"
   >
     <div
       className="flex-column-center relative"
@@ -370,7 +370,7 @@ exports[`Slider Component Snapshots should render slider item 1`] = `
         className="full-content absolute sc-EHOje fZgOQP"
       />
       <div
-        className="relative sc-bZQynM jxfZKX"
+        className="relative sc-bZQynM sMRAj"
       >
         <h2
           className="sc-htoDjs kexmgL"
@@ -395,10 +395,10 @@ exports[`Slider Component Snapshots should render slider item 1`] = `
       </div>
     </div>
     <div
-      className="flex-column-center sc-gzVnrw jMapBp"
+      className="flex-column-center sc-gzVnrw dkdosU"
     >
       <p
-        className="sc-iwsKbI fYFseW"
+        className="sc-iwsKbI ibDZNz"
         style={
           Object {
             "color": "#333333",
@@ -415,7 +415,7 @@ exports[`Slider Component Snapshots should render slider item 1`] = `
 exports[`Slider Component Snapshots should render template list options 1`] = `
 Array [
   <div
-    className="grid full-content sc-gqjmRU cdhnWo"
+    className="grid full-content sc-gqjmRU kIqdMS"
   >
     <div
       className="flex-column-center relative"
@@ -429,7 +429,7 @@ Array [
         className="full-content absolute sc-EHOje fZgOQP"
       />
       <div
-        className="relative sc-bZQynM jxfZKX"
+        className="relative sc-bZQynM sMRAj"
       >
         <h2
           className="sc-htoDjs kexmgL"
@@ -454,10 +454,10 @@ Array [
       </div>
     </div>
     <div
-      className="flex-column-center sc-gzVnrw jMapBp"
+      className="flex-column-center sc-gzVnrw dkdosU"
     >
       <p
-        className="sc-iwsKbI fYFseW"
+        className="sc-iwsKbI ibDZNz"
         style={
           Object {
             "color": "#333333",
@@ -469,7 +469,7 @@ Array [
     </div>
   </div>,
   <div
-    className="grid full-content sc-gqjmRU cdhnWo"
+    className="grid full-content sc-gqjmRU kIqdMS"
   >
     <div
       className="flex-column-center relative"
@@ -483,7 +483,7 @@ Array [
         className="full-content absolute sc-EHOje fZgOQP"
       />
       <div
-        className="relative sc-bZQynM jxfZKX"
+        className="relative sc-bZQynM sMRAj"
       >
         <h2
           className="sc-htoDjs kexmgL"
@@ -508,10 +508,10 @@ Array [
       </div>
     </div>
     <div
-      className="flex-column-center sc-gzVnrw jMapBp"
+      className="flex-column-center sc-gzVnrw dkdosU"
     >
       <p
-        className="sc-iwsKbI fYFseW"
+        className="sc-iwsKbI ibDZNz"
         style={
           Object {
             "color": "#333333",
@@ -539,7 +539,7 @@ Array [
     </div>
     <div>
       <div
-        className="sc-fjdhpX kJHqhZ"
+        className="sc-fjdhpX dJvaXu"
       >
         <h2
           className="sc-htoDjs kexmgL"
@@ -563,10 +563,10 @@ Array [
         </h3>
       </div>
       <div
-        className="flex-column-center sc-gzVnrw jMapBp"
+        className="flex-column-center sc-gzVnrw dkdosU"
       >
         <p
-          className="sc-iwsKbI fYFseW"
+          className="sc-iwsKbI ibDZNz"
           style={
             Object {
               "color": "#333333",
@@ -579,7 +579,7 @@ Array [
     </div>
   </div>,
   <div
-    className="full-content"
+    className="full-content sc-jzJRlG bhbMmg"
   >
     <div
       className="flex-algin-end full-content relative"
@@ -593,7 +593,7 @@ Array [
         className="full-content absolute sc-EHOje fZgOQP"
       />
       <div
-        className="relative sc-bZQynM jxfZKX"
+        className="relative sc-bZQynM sMRAj"
       >
         <h2
           className="sc-htoDjs kexmgL"
@@ -633,7 +633,7 @@ Array [
         className="full-content absolute sc-EHOje fZgOQP"
       />
       <div
-        className="relative sc-bZQynM jxfZKX"
+        className="relative sc-bZQynM sMRAj"
       >
         <h2
           className="sc-htoDjs kexmgL"

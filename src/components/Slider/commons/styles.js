@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mobileSm } from '../../../globalStyles'
+import { mobileLg } from '../../../globalStyles'
 
 export const ImageShadow = styled.div`
   background-color: rgba(0,0,0, 0.7);
@@ -11,14 +11,14 @@ export const ImageContent = styled.div`
   z-index: 4;
   padding: 40px;
 
-  @media screen and (max-width: ${mobileSm}) {
+  @media screen and (max-width: ${mobileLg}) {
     padding: 10px;
   }
 `
 export const DescriptionWrapper = styled.div`
   padding: 40px;
 
-  @media screen and (max-width: ${mobileSm}) {
+  @media screen and (max-width: ${mobileLg}) {
     padding: 10px;
   }
 `
