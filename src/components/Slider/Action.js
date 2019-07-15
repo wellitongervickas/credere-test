@@ -1,9 +1,12 @@
-import React, { useContext, useCallback, useMemo } from 'react'
+import React, {
+  useContext, useCallback, useEffect,
+} from 'react'
 import PropTypes from 'prop-types'
 import Button from '../Button'
 import { SliderButton } from './styles'
 import SliderContext from './context'
 
+const fn = () => {}
 
 const SliderAction = ({ autoPlay, duration }) => {
   const { activatedSlider, setActivatedSlider, maxSlider } = useContext(SliderContext)
@@ -16,14 +19,16 @@ const SliderAction = ({ autoPlay, duration }) => {
     }
   }, [setActivatedSlider, maxSlider, activatedSlider])
 
-  useMemo(() => {
+  useEffect(() => {
     if (autoPlay) {
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         handleSetNewSlider()
       }, duration)
+      return () => clearTimeout(timer)
     }
-  }, [handleSetNewSlider, autoPlay, duration])
 
+    return fn
+  }, [handleSetNewSlider, autoPlay, duration])
 
   return (
     <SliderButton className="absolute" data-max={maxSlider}>
