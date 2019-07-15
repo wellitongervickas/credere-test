@@ -47,14 +47,14 @@ const Typography = ({
 
 Typography.propTypes = {
   children: PropTypes.node.isRequired,
-  tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph', 'span']),
+  tag: PropTypes.oneOf(['heading', 'sub-heading', 'paragraph', 'span', '']),
   color: PropTypes.string,
   emphasys: PropTypes.bool,
 }
 
 Typography.defaultProps = {
   emphasys: false,
-  tag: 'span',
+  tag: '',
   color: '#FFFFFF',
 }
 

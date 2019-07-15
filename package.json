@@ -18,16 +18,10 @@
     "lint:fix": "eslint ./src --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:coverage": "react-scripts test --coverage",
-    "test:build": "react-scripts test --no-watch",
+    "test": "react-scripts test --watchAll=false",
+    "test:watch": "react-scripts test --watchAll",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!<rootDir>/node_modules/"
-    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,8 +40,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run lint"
+      "pre-push": "yarn lint && yarn test"
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/node_modules/"
+    ]
   },
   "devDependencies": {
     "enzyme": "^3.10.0",

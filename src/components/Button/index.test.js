@@ -22,4 +22,12 @@ describe('Button Component', () => {
     element.simulate('click')
     expect(mockCallBack.mock.calls.length).toEqual(1)
   })
+
+  it('should do button action without props', () => {
+    const element = mount(<Button>Do!</Button>).find('button')
+    const mockCallBack = jest.fn(() => element.simulate('click'))
+    mockCallBack()
+
+    expect(mockCallBack.mock.calls.length).toEqual(1)
+  })
 })

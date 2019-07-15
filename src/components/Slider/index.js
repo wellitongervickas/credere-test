@@ -11,20 +11,28 @@ const Slider = ({ children }) => {
     : 1),
   [children])
 
-  return (
-    <SliderContextProvider count={sliderCount}>
-      <SliderWrapper className="relative">
-        <SliderList className="full-content relative">
-          {children}
-        </SliderList>
-        <SliderAction />
-      </SliderWrapper>
-    </SliderContextProvider>
-  )
+  if (children) {
+    return (
+      <SliderContextProvider count={sliderCount}>
+        <SliderWrapper className="relative">
+          <SliderList className="full-content relative">
+            {children}
+          </SliderList>
+          <SliderAction />
+        </SliderWrapper>
+      </SliderContextProvider>
+    )
+  }
+
+  return null
 }
 
 Slider.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+}
+
+Slider.defaultProps = {
+  children: null,
 }
 
 Slider.Item = Item

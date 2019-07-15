@@ -82,7 +82,7 @@ const Template = ({ ...props }) => {
 }
 
 Template.propTypes = {
-  template: PropTypes.string.isRequired,
+  template: PropTypes.string,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
@@ -90,6 +90,7 @@ Template.propTypes = {
 }
 
 Template.defaultProps = {
+  template: '',
   subTitle: null,
   description: null,
 }
