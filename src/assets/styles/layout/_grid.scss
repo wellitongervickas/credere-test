@@ -1,7 +1,29 @@
+$device-desktop-lg: 1140px;
+$device-desktop-md: 960px;
+$device-mobile-lg: 768px;
+$device-mobile-xs: 576px;
+
 .container {
-  width: 1140px;
   padding: 16px;
   margin: 0 auto;
+
+  @media (min-width: $device-desktop-lg) {
+    width: 1200px;
+  }
+
+  @media (min-width: $device-mobile-lg) and (max-width: $device-desktop-md) {
+    width: 992px;
+  }
+
+  @media (min-width: $device-mobile-xs) and (max-width: $device-mobile-lg) {
+    width: 720px;
+  }
+
+  @media screen and (max-width: $device-mobile-xs) {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .flex {

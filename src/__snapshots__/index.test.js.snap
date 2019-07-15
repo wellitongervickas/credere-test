@@ -5,18 +5,18 @@ exports[`App should render App 1`] = `
   className="container"
 >
   <div
-    className="relative sc-bdVaJa gcqAfL"
+    className="relative sc-bdVaJa fnenFC"
   >
     <div
       className="full-content relative sc-bwzfXH uTxCW"
     >
       <div
-        className="visible transition-all absolute sc-htpNat ikaaUW"
+        className="visible transition-all absolute sc-htpNat eLnFNE"
         data-index={0}
         data-template="default"
       >
         <div
-          className="grid full-content sc-gqjmRU hyXXoK"
+          className="grid full-content sc-gqjmRU cdhnWo"
         >
           <div
             className="flex-column-center relative"
@@ -30,10 +30,10 @@ exports[`App should render App 1`] = `
               className="full-content absolute sc-EHOje fZgOQP"
             />
             <div
-              className="relative sc-bZQynM cCpwOA"
+              className="relative sc-bZQynM jxfZKX"
             >
               <h2
-                className="sc-htoDjs LJriY"
+                className="sc-htoDjs kexmgL"
                 style={
                   Object {
                     "color": "#FFFFFF",
@@ -43,7 +43,7 @@ exports[`App should render App 1`] = `
                 Lorem ipsum dolor sit amet
               </h2>
               <h3
-                className="sc-dnqmqq fIJtHb"
+                className="sc-dnqmqq bJaIPW"
                 style={
                   Object {
                     "color": "#FFFFFF",
@@ -55,10 +55,10 @@ exports[`App should render App 1`] = `
             </div>
           </div>
           <div
-            className="flex-column-center sc-gzVnrw yCoZJ"
+            className="flex-column-center sc-gzVnrw jMapBp"
           >
             <p
-              className="sc-iwsKbI hTjAfb"
+              className="sc-iwsKbI fYFseW"
               style={
                 Object {
                   "color": "#333333",
@@ -71,7 +71,7 @@ exports[`App should render App 1`] = `
         </div>
       </div>
       <div
-        className="hidden transition-all absolute sc-htpNat ikaaUW"
+        className="hidden transition-all absolute sc-htpNat eLnFNE"
         data-index={1}
         data-template="template_1"
       >
@@ -92,10 +92,10 @@ exports[`App should render App 1`] = `
           </div>
           <div>
             <div
-              className="sc-fjdhpX hyGgCv"
+              className="sc-fjdhpX kJHqhZ"
             >
               <h2
-                className="sc-htoDjs LJriY"
+                className="sc-htoDjs kexmgL"
                 style={
                   Object {
                     "color": "#333333",
@@ -105,7 +105,7 @@ exports[`App should render App 1`] = `
                 Lorem ipsum dolor
               </h2>
               <h3
-                className="sc-dnqmqq fIJtHb"
+                className="sc-dnqmqq bJaIPW"
                 style={
                   Object {
                     "color": "#999999",
@@ -116,10 +116,10 @@ exports[`App should render App 1`] = `
               </h3>
             </div>
             <div
-              className="flex-column-center sc-gzVnrw yCoZJ"
+              className="flex-column-center sc-gzVnrw jMapBp"
             >
               <p
-                className="sc-iwsKbI hTjAfb"
+                className="sc-iwsKbI fYFseW"
                 style={
                   Object {
                     "color": "#333333",
@@ -133,7 +133,7 @@ exports[`App should render App 1`] = `
         </div>
       </div>
       <div
-        className="hidden transition-all absolute sc-htpNat ikaaUW"
+        className="hidden transition-all absolute sc-htpNat eLnFNE"
         data-index={2}
         data-template="template_2"
       >
@@ -152,10 +152,10 @@ exports[`App should render App 1`] = `
               className="full-content absolute sc-EHOje fZgOQP"
             />
             <div
-              className="relative sc-bZQynM cCpwOA"
+              className="relative sc-bZQynM jxfZKX"
             >
               <h2
-                className="sc-htoDjs LJriY"
+                className="sc-htoDjs kexmgL"
                 style={
                   Object {
                     "color": "#FFFFFF",
@@ -165,7 +165,7 @@ exports[`App should render App 1`] = `
                 Lorem ipsum dolor sit amet
               </h2>
               <h3
-                className="sc-dnqmqq fIJtHb"
+                className="sc-dnqmqq bJaIPW"
                 style={
                   Object {
                     "color": "#FFFFFF",
@@ -179,7 +179,7 @@ exports[`App should render App 1`] = `
         </div>
       </div>
       <div
-        className="hidden transition-all absolute sc-htpNat ikaaUW"
+        className="hidden transition-all absolute sc-htpNat eLnFNE"
         data-index={3}
         data-template="template_3"
       >
@@ -198,10 +198,10 @@ exports[`App should render App 1`] = `
               className="full-content absolute sc-EHOje fZgOQP"
             />
             <div
-              className="relative sc-bZQynM cCpwOA"
+              className="relative sc-bZQynM jxfZKX"
             >
               <h2
-                className="sc-htoDjs LJriY"
+                className="sc-htoDjs kexmgL"
                 style={
                   Object {
                     "color": "#FFFFFF",
@@ -211,7 +211,7 @@ exports[`App should render App 1`] = `
                 Lorem ipsum dolor sit amet
               </h2>
               <h3
-                className="sc-dnqmqq fIJtHb"
+                className="sc-dnqmqq bJaIPW"
                 style={
                   Object {
                     "color": "#FFFFFF",

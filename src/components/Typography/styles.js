@@ -1,24 +1,33 @@
 import styled from 'styled-components'
-
-const isEmphasys = props => (props.emphasys ? 'font-weight: 800' : null)
+import { setFontSizing, isEmphasys } from '../../utils/font'
+import { mobileSm } from '../../globalStyles'
 
 export const Heading = styled.h2`
-  ${props => isEmphasys(props)};
-  font-size: 32px;
+  ${props => isEmphasys(props.emphasys)};
   text-transform: uppercase;
-  line-height: 42px;
+  ${setFontSizing(32)}
+
+  @media screen and (max-width: ${mobileSm}) {
+    ${setFontSizing(22)}
+  }
 `
 
 export const SubHeading = styled.h3`
-  ${props => isEmphasys(props)};
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 32px;
+  ${props => isEmphasys(props.emphasys) || 'font-weight: 400'};
+  ${setFontSizing(22)}
+
+  @media screen and (max-width: ${mobileSm}) {
+    ${setFontSizing(18)}
+  }
 `
 
 export const Paragraph = styled.p`
-  ${props => isEmphasys(props)};
-  font-size: 18px;
+  ${props => isEmphasys(props.emphasys)};
+  ${setFontSizing(18)}
+
+  @media screen and (max-width: ${mobileSm}) {
+    ${setFontSizing(16)}
+  }
 `
 
 export const Span = styled.span``

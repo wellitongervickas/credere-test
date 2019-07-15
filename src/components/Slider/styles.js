@@ -1,23 +1,37 @@
 import styled from 'styled-components'
+import { mobileSm } from '../../globalStyles'
 
-const sliderDimensions = {
+const sliderDesktopDimensions = {
   width: '800px',
   height: '400px',
 }
 
+const sliderMobileDimensions = {
+  width: '100vw',
+  height: '400px',
+}
+
 export const SliderWrapper = styled.div`
-  ${sliderDimensions}
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 3px 5px rgba(0,0,0,0.1);
   overflow: hidden;
+  ${sliderDesktopDimensions}
+
+  @media screen and (max-width: ${mobileSm}) {
+    ${sliderMobileDimensions}
+  }
 `
 
 export const SliderList = styled.div``
 
 export const SliderItem = styled.div`
   top: 0;
-  ${sliderDimensions}
+  ${sliderDesktopDimensions}
+
+  @media screen and (max-width: ${mobileSm}) {
+    ${sliderMobileDimensions}
+  }
 `
 
 export const SliderButton = styled.div`
@@ -30,6 +44,10 @@ export const DefaultTemplate = styled.div`
 
   & > div {
     padding: 40px;
+
+    @media screen and (max-width: ${mobileSm}) {
+      padding: 5px;
+    }
   }
 
   & > div:nth-child(1) {
