@@ -1,6 +1,8 @@
 ## Credere Front-end Test
 
 ### Quick Start
+* git clone git@bitbucket.org:gervickas/credere-frontend-test.git
+* cd credere-frontend-test
 * yarn 
 * yarn start
 * yarn build
@@ -45,6 +47,8 @@ const App = () => {
 export default App
 
 ```
+
+![template_2](https://raw.githubusercontent.com/meucredere/frontend-test/master/images/news/layout-2.jpg)
 
 ### Test
 * yarn test
