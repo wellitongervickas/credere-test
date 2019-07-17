@@ -15,31 +15,21 @@ const Input = ({
 }) => {
   const ref = useRef(null)
   const [error, setError] = useState(null)
-  const { updateErrors, removeErrors, updateFields } = useContext(formContext)
+  const { updateFields } = useContext(formContext)
 
   useEffect(() => {
-    const { validationMessage, value } = ref.current
-    updateFields({ key: field, value })
-
     if (!ref.current.checkValidity()) {
-      updateErrors({ key: field, text: validationMessage })
+      const { validationMessage, value } = ref.current
+      updateFields({ key: field, value, error: validationMessage })
     }
-  }, [ref, field, updateErrors, updateFields])
+  }, [ref, field, updateFields])
 
   const handleChange = useCallback(() => {
     ref.current = validator(validation, ref.current)
     const { validationMessage, value } = ref.current
-
     setError(validationMessage)
-    updateFields({ key: field, value })
-    updateErrors({ key: field, text: validationMessage })
-
-    if (!ref.current.checkValidity()) {
-      updateErrors([{ key: field, text: validationMessage }])
-    } else {
-      removeErrors(field)
-    }
-  }, [validation, ref, field, updateErrors, removeErrors, updateFields])
+    updateFields({ key: field, value, error: validationMessage })
+  }, [validation, ref, field, updateFields])
 
   return (
     <InputContainer>

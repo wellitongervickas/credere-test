@@ -2,37 +2,19 @@ import React, {
   createContext, useState, useCallback,
 } from 'react'
 import PropTypes from 'prop-types'
+import { existsOnList } from '../../utils/array'
 
 const FormContext = createContext({
   fields: [],
-  errors: [],
   updateFields: () => {},
-  updateErrors: () => {},
-  removeErrors: () => {},
 })
 
 const FormContextProvider = ({ children }) => {
-  const [errors, setErrors] = useState([])
   const [fields, setFields] = useState([])
-
-  const removeErrors = useCallback((field) => {
-    setErrors(errors.filter(item => item.key !== field))
-  }, [setErrors, errors])
-
-  const updateErrors = useCallback((item) => {
-    setErrors((errs) => {
-      const exists = errs.find(error => error.key === item.key)
-      if (!exists) {
-        return [...errs, item]
-      }
-
-      return errs
-    })
-  }, [])
 
   const updateFields = useCallback((item) => {
     setFields((list) => {
-      const exist = list.find(el => el.key === item.key)
+      const exist = existsOnList(item, 'key', list)
 
       if (!exist) {
         return [...list, item]
@@ -43,6 +25,7 @@ const FormContextProvider = ({ children }) => {
           return {
             ...el,
             value: item.value,
+            error: item.error,
           }
         }
 
@@ -51,13 +34,11 @@ const FormContextProvider = ({ children }) => {
     })
   }, [])
 
+  console.log(fields)
   return (
     <FormContext.Provider value={{
       fields,
       updateFields,
-      errors,
-      updateErrors,
-      removeErrors,
     }}
     >
       {children}

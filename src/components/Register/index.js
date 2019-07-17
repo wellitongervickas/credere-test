@@ -1,23 +1,23 @@
-import React, { useRef } from 'react'
+import React, { useRef, useContext } from 'react'
 import Typography from '../Typography'
-import { FormContextProvider } from './context'
+import formContext, { FormContextProvider } from './context'
 import Button from '../Form/Button'
 import Input from './Input'
 import * as validations from './validations'
 
-const onSubmit = (e) => {
+const onSubmit = (e, fields = []) => {
   e.preventDefault()
   if (e.target.checkValidity()) {
     // eslint-disable-next-line no-console
-    console.log('submit with')
+    console.log('submit with:', fields)
   }
 }
 
 const Form = () => {
   const ref = useRef(null)
-
+  const { fields } = useContext(formContext)
   return (
-    <form ref={ref} onSubmit={onSubmit} noValidate>
+    <form ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
       <div>
         <Typography.SubHeading>Cliente</Typography.SubHeading>
         <div>
