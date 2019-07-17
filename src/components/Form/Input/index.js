@@ -3,7 +3,7 @@ import React, {
 } from 'react'
 import PropTypes from 'prop-types'
 import Typography from '../../Typography'
-import { validator, getFieldError } from './helper'
+import { validator, getFieldError } from './helpers'
 import formContext from '../context'
 import {
   InputContainer, InputLabel, InputField, InputError,
@@ -11,7 +11,7 @@ import {
 
 const Input = ({
   validation, field, label,
-  className, ...props
+  className, onChange, ...props
 }) => {
   const ref = useRef(null)
   const { fields, updateFields } = useContext(formContext)
@@ -27,7 +27,8 @@ const Input = ({
     ref.current = validator(validation, ref.current)
     const { validationMessage, value } = ref.current
     updateFields({ key: field, value, error: validationMessage })
-  }, [validation, ref, field, updateFields])
+    onChange(value)
+  }, [validation, ref, field, updateFields, onChange])
 
   return (
     <InputContainer>
@@ -57,9 +58,11 @@ Input.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
   validation: PropTypes.func,
+  onChange: PropTypes.func,
 }
 
 Input.defaultProps = {
+  onChange: () => {},
   validation: () => true,
   required: false,
   label: null,

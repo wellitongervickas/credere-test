@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component should render input component 1`] = `
+Array [
+  <div
+    className="sc-ifAKCX jmfedv"
+  >
+    <input
+      className="sc-bZQynM iAYWKO"
+      id="input"
+      name="input"
+      onChange={[Function]}
+      required={false}
+    />
+    <div
+      className="sc-gzVnrw bfjzjW"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      />
+    </div>
+  </div>,
+  <div
+    className="sc-ifAKCX jmfedv"
+  >
+    <label
+      className="sc-EHOje kyfnqM"
+      htmlFor="input"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      >
+        My Input
+      </span>
+      
+    </label>
+    <input
+      className="sc-bZQynM iAYWKO"
+      id="input"
+      name="input"
+      onChange={[Function]}
+      required={false}
+    />
+    <div
+      className="sc-gzVnrw bfjzjW"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      />
+    </div>
+  </div>,
+  <div
+    className="sc-ifAKCX jmfedv"
+  >
+    <label
+      className="sc-EHOje kyfnqM"
+      htmlFor="input"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      >
+        My Input
+      </span>
+       *
+    </label>
+    <input
+      className="sc-bZQynM iAYWKO"
+      id="input"
+      name="input"
+      onChange={[Function]}
+      required={true}
+    />
+    <div
+      className="sc-gzVnrw bfjzjW"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      />
+    </div>
+  </div>,
+  <div
+    className="sc-ifAKCX jmfedv"
+  >
+    <label
+      className="my-class sc-EHOje kyfnqM"
+      htmlFor="input"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      >
+        My Input
+      </span>
+       *
+    </label>
+    <input
+      className="sc-bZQynM iAYWKO"
+      id="input"
+      name="input"
+      onChange={[Function]}
+      required={true}
+    />
+    <div
+      className="sc-gzVnrw bfjzjW"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      />
+    </div>
+  </div>,
+]
+`;

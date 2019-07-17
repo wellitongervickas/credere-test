@@ -15,3 +15,5 @@ export const getFieldError = (fields = [], field) => {
   const fieldEl = fields.find(el => el.key === field)
   return fieldEl ? fieldEl.error : null
 }
+
+export const maxToday = () => new Date().toISOString().split('T')[0]

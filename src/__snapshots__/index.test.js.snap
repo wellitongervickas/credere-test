@@ -50,6 +50,64 @@ Array [
               />
             </div>
           </div>
+          <div
+            className="sc-kAzzGY izUUKG"
+          >
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="birthday"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              >
+                Data de nascimento
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf gTsLIl"
+              id="birthday"
+              name="birthday"
+              onChange={[Function]}
+              required={true}
+            />
+            <div
+              className="sc-kGXeez dNDVLu"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              />
+            </div>
+          </div>
+          <div
+            className="sc-kAzzGY izUUKG"
+          >
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="driver_license"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              >
+                Carteira de motorista
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf gTsLIl"
+              id="driver_license"
+              name="driver_license"
+              onChange={[Function]}
+              required={true}
+            />
+            <div
+              className="sc-kGXeez dNDVLu"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <button

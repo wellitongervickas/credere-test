@@ -1,18 +1,10 @@
-import { requiredFiled } from './validations'
+import React from 'react'
+import renderer from 'react-test-renderer'
+import Register from '.'
 
 describe('Register Component', () => {
-  it('should be validation requiredField is defined', () => {
-    const expected = requiredFiled()
-    expect(expected).toBeDefined()
-  })
-
-  it('should return a empty error description', () => {
-    const expected = requiredFiled('my value')
-    expect(expected).toBe('')
-  })
-
-  it('should return a error description', () => {
-    const expected = requiredFiled('')
-    expect(expected).toBe('Campo obrigatório')
+  it('should render register component', () => {
+    const element = renderer.create(<Register />).toJSON()
+    expect(element).toMatchSnapshot()
   })
 })
