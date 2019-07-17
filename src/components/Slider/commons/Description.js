@@ -2,12 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Typography from '../../Typography'
 import { DescriptionWrapper } from './styles'
-import { cropText } from '../../../utils/string'
 
 const Description = ({ text, color }) => (text ? (
   <DescriptionWrapper className="flex-column-center">
     <Typography tag="paragraph" color={color}>
-      {cropText(text, 180)}
+      {text}
     </Typography>
   </DescriptionWrapper>
 ) : null)
