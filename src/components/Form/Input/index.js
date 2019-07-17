@@ -1,9 +1,9 @@
 import React, {
-  useRef, useCallback, useState, useContext, useEffect,
+  useRef, useCallback, useContext, useEffect,
 } from 'react'
 import PropTypes from 'prop-types'
 import Typography from '../../Typography'
-import validator from './validator'
+import { validator, getFieldError } from './helpers'
 import formContext from '../context'
 import {
   InputContainer, InputLabel, InputField, InputError,
@@ -11,25 +11,24 @@ import {
 
 const Input = ({
   validation, field, label,
-  className, ...props
+  className, onChange, ...props
 }) => {
   const ref = useRef(null)
-  const [error, setError] = useState(null)
-  const { updateFields } = useContext(formContext)
+  const { fields, updateFields } = useContext(formContext)
 
   useEffect(() => {
     if (!ref.current.checkValidity()) {
-      const { validationMessage, value } = ref.current
-      updateFields({ key: field, value, error: validationMessage })
+      const { value } = ref.current
+      updateFields({ key: field, value, error: null })
     }
   }, [ref, field, updateFields])
 
   const handleChange = useCallback(() => {
     ref.current = validator(validation, ref.current)
     const { validationMessage, value } = ref.current
-    setError(validationMessage)
     updateFields({ key: field, value, error: validationMessage })
-  }, [validation, ref, field, updateFields])
+    onChange(value)
+  }, [validation, ref, field, updateFields, onChange])
 
   return (
     <InputContainer>
@@ -47,7 +46,7 @@ const Input = ({
         {...props}
       />
       <InputError>
-        <Typography.Span>{error}</Typography.Span>
+        <Typography.Span>{getFieldError(fields, field)}</Typography.Span>
       </InputError>
     </InputContainer>
   )
@@ -59,9 +58,11 @@ Input.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
   validation: PropTypes.func,
+  onChange: PropTypes.func,
 }
 
 Input.defaultProps = {
+  onChange: () => {},
   validation: () => true,
   required: false,
   label: null,

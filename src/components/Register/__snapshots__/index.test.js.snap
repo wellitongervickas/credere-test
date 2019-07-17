@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register Component should render register component 1`] = `
+<form
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div>
+    <h3
+      className="sc-bwzfXH jmxchW"
+    >
+      Cliente
+    </h3>
+    <div>
+      <div
+        className="sc-EHOje hcPLoZ"
+      >
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="name"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          >
+            Nome
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw cjhEFk"
+          id="name"
+          name="name"
+          onChange={[Function]}
+          required={true}
+        />
+        <div
+          className="sc-htoDjs imbtxc"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          />
+        </div>
+      </div>
+      <div
+        className="sc-EHOje hcPLoZ"
+      >
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="birthday"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          >
+            Data de nascimento
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw cjhEFk"
+          id="birthday"
+          name="birthday"
+          onChange={[Function]}
+          required={true}
+        />
+        <div
+          className="sc-htoDjs imbtxc"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          />
+        </div>
+      </div>
+      <div
+        className="sc-EHOje hcPLoZ"
+      >
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="driver_license"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          >
+            Carteira de motorista
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw cjhEFk"
+          id="driver_license"
+          name="driver_license"
+          onChange={[Function]}
+          required={true}
+        />
+        <div
+          className="sc-htoDjs imbtxc"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="transition-all sc-ifAKCX ewQORS"
+    onClick={[Function]}
+    type="submit"
+  >
+    <span
+      className="sc-bxivhb bUZGRr"
+      style={
+        Object {
+          "color": "#FFFFFF",
+        }
+      }
+    >
+      Register
+    </span>
+  </button>
+</form>
+`;
