@@ -1,4 +1,4 @@
-const validator = (fn, el) => {
+export const validator = (fn, el) => {
   const validation = fn(el.value)
   el.setCustomValidity(validation)
 
@@ -11,4 +11,7 @@ const validator = (fn, el) => {
   return el
 }
 
-export default validator
+export const getFieldError = (fields = [], field) => {
+  const fieldEl = fields.find(el => el.key === field)
+  return fieldEl ? fieldEl.error : null
+}

@@ -1,8 +1,9 @@
 import React, { useRef, useContext } from 'react'
 import Typography from '../Typography'
-import formContext, { FormContextProvider } from './context'
+import formContext from '../Form/context'
 import Button from '../Form/Button'
-import Input from './Input'
+import Input from '../Form/Input'
+import FormComponent from '../Form'
 import * as validations from './validations'
 
 const onSubmit = (e, fields = []) => {
@@ -16,6 +17,7 @@ const onSubmit = (e, fields = []) => {
 const Form = () => {
   const ref = useRef(null)
   const { fields } = useContext(formContext)
+
   return (
     <form ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
       <div>
@@ -30,9 +32,9 @@ const Form = () => {
 }
 
 const Register = () => (
-  <FormContextProvider>
+  <FormComponent>
     <Form />
-  </FormContextProvider>
+  </FormComponent>
 )
 
 export default Register
