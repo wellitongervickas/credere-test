@@ -34,7 +34,6 @@ const FormContextProvider = ({ children }) => {
     })
   }, [])
 
-  console.log(fields)
   return (
     <FormContext.Provider value={{
       fields,
