@@ -10,7 +10,7 @@
 
 ### Slider
 
-#### Slider item
+#### Slider
 | Properties | Type | Default | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | autoPlay | bool | false | Auto change next slider |
@@ -22,8 +22,8 @@
 | ------------- |:-------------| :-------------|:-------------|
 | image | string | is required | Image of Slider  |
 | title | string | is required | Title of slider  |
-| subTitle | string | optional | Sub title of slider with max 120 characters or will crop text  |
-| description | string | optional | Title of slider with max 180 characters or will crop text |
+| subTitle | string | optional | Sub title of slider   |
+| description | string | optional | Title of slider |
 | template | string | default, template_1, template_2, template_3 | Template of slider with 4 template options |
 
 

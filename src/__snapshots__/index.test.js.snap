@@ -5,19 +5,87 @@ Array [
   <div
     className="container"
   >
-    <h3
-      className="sc-dnqmqq bJaIPW"
+    <h2
+      className="sc-htoDjs gsDwee"
+    >
+      Form
+    </h2>
+    <form
+      noValidate={true}
+      onSubmit={[Function]}
+    >
+      <div>
+        <h3
+          className="sc-dnqmqq bJaIPW"
+        >
+          Cliente
+        </h3>
+        <div>
+          <div
+            className="sc-kAzzGY izUUKG"
+          >
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="name"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              >
+                Nome
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf gTsLIl"
+              id="name"
+              name="name"
+              onChange={[Function]}
+              required={true}
+            />
+            <div
+              className="sc-kGXeez dNDVLu"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="transition-all sc-cSHVUG bRWBVW"
+        onClick={[Function]}
+        type="submit"
+      >
+        <span
+          className="sc-gZMcBi giNnHm"
+          style={
+            Object {
+              "color": "#FFFFFF",
+            }
+          }
+        >
+          Register
+        </span>
+      </button>
+    </form>
+  </div>,
+  <div
+    className="container"
+  >
+    <h2
+      className="sc-htoDjs gsDwee"
     >
       Slider Default
-    </h3>
+    </h2>
     <div
-      className="relative sc-bdVaJa dblxU"
+      className="relative sc-bdVaJa bJmnKC"
     >
       <div
         className="full-content relative sc-bwzfXH uTxCW"
       >
         <div
-          className="visible transition-all absolute sc-htpNat BXjkt"
+          className="visible transition-all absolute sc-htpNat dxOMxF"
           data-index={0}
           data-template="default"
         >
@@ -71,13 +139,13 @@ Array [
                   }
                 }
               >
-                Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+                Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non
               </p>
             </div>
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat BXjkt"
+          className="hidden transition-all absolute sc-htpNat dxOMxF"
           data-index={1}
           data-template="template_1"
         >
@@ -132,14 +200,14 @@ Array [
                     }
                   }
                 >
-                  Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+                  Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat BXjkt"
+          className="hidden transition-all absolute sc-htpNat dxOMxF"
           data-index={2}
           data-template="template_2"
         >
@@ -185,7 +253,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat BXjkt"
+          className="hidden transition-all absolute sc-htpNat dxOMxF"
           data-index={3}
           data-template="template_3"
         >
@@ -257,19 +325,19 @@ Array [
   <div
     className="container"
   >
-    <h3
-      className="sc-dnqmqq bJaIPW"
+    <h2
+      className="sc-htoDjs gsDwee"
     >
       Slider Auto Play (5s)
-    </h3>
+    </h2>
     <div
-      className="relative sc-bdVaJa dblxU"
+      className="relative sc-bdVaJa bJmnKC"
     >
       <div
         className="full-content relative sc-bwzfXH uTxCW"
       >
         <div
-          className="visible transition-all absolute sc-htpNat BXjkt"
+          className="visible transition-all absolute sc-htpNat dxOMxF"
           data-index={0}
           data-template="default"
         >
@@ -323,13 +391,13 @@ Array [
                   }
                 }
               >
-                Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+                Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non
               </p>
             </div>
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat BXjkt"
+          className="hidden transition-all absolute sc-htpNat dxOMxF"
           data-index={1}
           data-template="template_1"
         >
@@ -384,14 +452,14 @@ Array [
                     }
                   }
                 >
-                  Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis...
+                  Aliquam facilisis tempus neque, ac accumsan elit bibendum non. Duis molestie libero porta tortor placerat, vitae cursus diam placerat. Fusce feugiat libero erat, suscipit venenatis purus eleifend non
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat BXjkt"
+          className="hidden transition-all absolute sc-htpNat dxOMxF"
           data-index={2}
           data-template="template_2"
         >
@@ -437,7 +505,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat BXjkt"
+          className="hidden transition-all absolute sc-htpNat dxOMxF"
           data-index={3}
           data-template="template_3"
         >

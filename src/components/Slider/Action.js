@@ -2,7 +2,7 @@ import React, {
   useContext, useCallback, useEffect,
 } from 'react'
 import PropTypes from 'prop-types'
-import Button from '../Button'
+import Button from '../Form/Button'
 import { SliderButton } from './styles'
 import SliderContext from './context'
 
