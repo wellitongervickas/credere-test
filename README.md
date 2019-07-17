@@ -10,7 +10,7 @@
 
 ### Slider
 
-#### Slider item
+#### Slider
 | Properties | Type | Default | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | autoPlay | bool | false | Auto change next slider |
