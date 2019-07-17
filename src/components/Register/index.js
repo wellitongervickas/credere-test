@@ -26,6 +26,7 @@ const Form = () => {
   const [name, setName] = useState('')
   const [birthday, setBirthday] = useState('')
   const [driveLicense, setDriveLicense] = useState('')
+  const [driveLicenseIssue, setDriveLicenseIssue] = useState('')
   const [state, setState] = useState('')
   const [city, setCity] = useState('')
   const [parentName, setParentName] = useState('')
@@ -55,15 +56,26 @@ const Form = () => {
             required
           />
           {!isUnderAge(birthday) && (
-            <Input
-              validation={validations.requiredField}
-              field="driver_license"
-              label="Carteira de motorista"
-              defaultValue={driveLicense}
-              onChange={setDriveLicense}
-              pattern="^[0-9]*"
-              required
-            />
+            <div>
+              <Typography.Span>Carteira de motorista</Typography.Span>
+              <Input
+                validation={validations.requiredField}
+                field="driver_license"
+                defaultValue={driveLicense}
+                onChange={setDriveLicense}
+                pattern="^[0-9]*"
+                required
+              />
+              <Input
+                validation={validations.requiredField}
+                field="driver_license_issue"
+                type="date"
+                max={maxToday()}
+                defaultValue={driveLicenseIssue}
+                onChange={setDriveLicenseIssue}
+                required
+              />
+            </div>
           )}
           <Input
             validation={validations.requiredField}
