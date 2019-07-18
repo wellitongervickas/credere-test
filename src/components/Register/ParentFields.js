@@ -6,7 +6,7 @@ import Typography from '../Typography'
 const ParentFields = () => (
   <div>
     <Typography.SubHeading>Responsável</Typography.SubHeading>
-    <div className="border-sizing">
+    <div>
       <Input
         validation={validations.requiredField}
         field="parent-name"

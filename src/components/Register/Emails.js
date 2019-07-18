@@ -47,7 +47,7 @@ const EmailsField = () => {
       </div>
       <div className="grid emails-form">
         {showField && (
-          <div className="grid border-sizing">
+          <div className="grid">
             <Input
               field="new-email"
               value={field}

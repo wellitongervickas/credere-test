@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Register Component should render partially components of Register 1`] = `ReactWrapper {}`;
+
 exports[`Register Component should render register component 1`] = `
 <form
   className="sc-dnqmqq gzRzpY"
@@ -13,157 +15,101 @@ exports[`Register Component should render register component 1`] = `
       Cliente
     </h3>
     <div
-      className="border-sizing"
+      className="grid user-details "
     >
       <div
-        className="grid user-details "
+        className="border-sizing sc-EHOje hcPLoZ"
       >
-        <div
-          className="sc-EHOje hcPLoZ"
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="name"
         >
-          <label
-            className="sc-bZQynM fGYiaS"
-            htmlFor="name"
+          <span
+            className="sc-bxivhb bUZGRr"
           >
-            <span
-              className="sc-bxivhb bUZGRr"
-            >
-              Nome
-            </span>
-             *
-          </label>
-          <input
-            className="sc-gzVnrw ebJnLg"
-            id="name"
-            name="name"
-            onChange={[Function]}
-            required={true}
-          />
-          <div
-            className="sc-htoDjs imbtxc"
-          >
-            <span
-              className="sc-bxivhb bUZGRr"
-            />
-          </div>
-        </div>
+            Nome
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw ebJnLg"
+          id="name"
+          name="name"
+          onChange={[Function]}
+          required={true}
+        />
         <div
-          className="sc-EHOje hcPLoZ"
+          className="sc-htoDjs imbtxc"
         >
-          <label
-            className="sc-bZQynM fGYiaS"
-            htmlFor="birthday"
-          >
-            <span
-              className="sc-bxivhb bUZGRr"
-            >
-              Data de nascimento
-            </span>
-             *
-          </label>
-          <input
-            className="sc-gzVnrw ebJnLg"
-            id="birthday"
-            max="2019-07-18"
-            name="birthday"
-            onChange={[Function]}
-            required={true}
-            type="date"
+          <span
+            className="sc-bxivhb bUZGRr"
           />
-          <div
-            className="sc-htoDjs imbtxc"
-          >
-            <span
-              className="sc-bxivhb bUZGRr"
-            />
-          </div>
         </div>
       </div>
       <div
-        className="sc-iwsKbI EvjqC"
+        className="border-sizing sc-EHOje hcPLoZ"
       >
-        <span
-          className="sc-bxivhb bUZGRr"
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="birthday"
         >
-          Carteira de motorista
-        </span>
+          <span
+            className="sc-bxivhb bUZGRr"
+          >
+            Data de nascimento
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw ebJnLg"
+          id="birthday"
+          max="2019-07-18"
+          name="birthday"
+          onChange={[Function]}
+          required={true}
+          type="date"
+        />
         <div
-          className="grid drive-license-fields border-sizing"
+          className="sc-htoDjs imbtxc"
         >
-          <div
-            className="sc-EHOje hcPLoZ"
-          >
-            <input
-              className="sc-gzVnrw ebJnLg"
-              id="driver_license"
-              name="driver_license"
-              onChange={[Function]}
-              pattern="^[0-9]*"
-              required={true}
-            />
-            <div
-              className="sc-htoDjs imbtxc"
-            >
-              <span
-                className="sc-bxivhb bUZGRr"
-              />
-            </div>
-          </div>
-          <div
-            className="sc-EHOje hcPLoZ"
-          >
-            <input
-              className="sc-gzVnrw ebJnLg"
-              id="driver_license_issue"
-              max="2019-07-18"
-              name="driver_license_issue"
-              onChange={[Function]}
-              required={true}
-              type="date"
-            />
-            <div
-              className="sc-htoDjs imbtxc"
-            >
-              <span
-                className="sc-bxivhb bUZGRr"
-              />
-            </div>
-          </div>
+          <span
+            className="sc-bxivhb bUZGRr"
+          />
         </div>
       </div>
+    </div>
+    <div
+      className="grid user-address"
+    >
       <div
-        className="grid user-address"
+        className="border-sizing sc-EHOje hcPLoZ"
       >
-        <div
-          className="sc-EHOje hcPLoZ"
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="state"
         >
-          <label
-            className="sc-bZQynM fGYiaS"
-            htmlFor="state"
+          <span
+            className="sc-bxivhb bUZGRr"
           >
-            <span
-              className="sc-bxivhb bUZGRr"
-            >
-              Estado
-            </span>
-             *
-          </label>
-          <input
-            className="sc-gzVnrw ebJnLg"
-            id="state"
-            maxLength="2"
-            name="state"
-            onChange={[Function]}
-            pattern="[A-Za-z]{2}"
-            required={true}
+            Estado
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw ebJnLg"
+          id="state"
+          maxLength="2"
+          name="state"
+          onChange={[Function]}
+          pattern="[A-Za-z]{2}"
+          required={true}
+        />
+        <div
+          className="sc-htoDjs imbtxc"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
           />
-          <div
-            className="sc-htoDjs imbtxc"
-          >
-            <span
-              className="sc-bxivhb bUZGRr"
-            />
-          </div>
         </div>
       </div>
     </div>
@@ -204,6 +150,73 @@ exports[`Register Component should render register component 1`] = `
       >
         Adicionar mais
       </button>
+    </div>
+  </div>
+  <div>
+    <h3
+      className="sc-bwzfXH jmxchW"
+    >
+      Responsável
+    </h3>
+    <div>
+      <div
+        className="border-sizing sc-EHOje hcPLoZ"
+      >
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="parent-name"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          >
+            Nome
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw ebJnLg"
+          id="parent-name"
+          name="parent-name"
+          onChange={[Function]}
+          required={true}
+        />
+        <div
+          className="sc-htoDjs imbtxc"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          />
+        </div>
+      </div>
+      <div
+        className="border-sizing sc-EHOje hcPLoZ"
+      >
+        <label
+          className="sc-bZQynM fGYiaS"
+          htmlFor="parent-phone"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          >
+            Telefone
+          </span>
+           *
+        </label>
+        <input
+          className="sc-gzVnrw ebJnLg"
+          id="parent-phone"
+          name="parent-phone"
+          onChange={[Function]}
+          required={true}
+        />
+        <div
+          className="sc-htoDjs imbtxc"
+        >
+          <span
+            className="sc-bxivhb bUZGRr"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <button

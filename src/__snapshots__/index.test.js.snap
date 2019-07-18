@@ -22,157 +22,101 @@ Array [
           Cliente
         </h3>
         <div
-          className="border-sizing"
+          className="grid user-details "
         >
           <div
-            className="grid user-details "
+            className="border-sizing sc-kAzzGY izUUKG"
           >
-            <div
-              className="sc-kAzzGY izUUKG"
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="name"
             >
-              <label
-                className="sc-chPdSV boxXeJ"
-                htmlFor="name"
+              <span
+                className="sc-gZMcBi giNnHm"
               >
-                <span
-                  className="sc-gZMcBi giNnHm"
-                >
-                  Nome
-                </span>
-                 *
-              </label>
-              <input
-                className="sc-kgoBCf iSFPjC"
-                id="name"
-                name="name"
-                onChange={[Function]}
-                required={true}
-              />
-              <div
-                className="sc-kGXeez dNDVLu"
-              >
-                <span
-                  className="sc-gZMcBi giNnHm"
-                />
-              </div>
-            </div>
+                Nome
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf iSFPjC"
+              id="name"
+              name="name"
+              onChange={[Function]}
+              required={true}
+            />
             <div
-              className="sc-kAzzGY izUUKG"
+              className="sc-kGXeez dNDVLu"
             >
-              <label
-                className="sc-chPdSV boxXeJ"
-                htmlFor="birthday"
-              >
-                <span
-                  className="sc-gZMcBi giNnHm"
-                >
-                  Data de nascimento
-                </span>
-                 *
-              </label>
-              <input
-                className="sc-kgoBCf iSFPjC"
-                id="birthday"
-                max="2019-07-18"
-                name="birthday"
-                onChange={[Function]}
-                required={true}
-                type="date"
+              <span
+                className="sc-gZMcBi giNnHm"
               />
-              <div
-                className="sc-kGXeez dNDVLu"
-              >
-                <span
-                  className="sc-gZMcBi giNnHm"
-                />
-              </div>
             </div>
           </div>
           <div
-            className="sc-dxgOiQ TFlRf"
+            className="border-sizing sc-kAzzGY izUUKG"
           >
-            <span
-              className="sc-gZMcBi giNnHm"
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="birthday"
             >
-              Carteira de motorista
-            </span>
+              <span
+                className="sc-gZMcBi giNnHm"
+              >
+                Data de nascimento
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf iSFPjC"
+              id="birthday"
+              max="2019-07-18"
+              name="birthday"
+              onChange={[Function]}
+              required={true}
+              type="date"
+            />
             <div
-              className="grid drive-license-fields border-sizing"
+              className="sc-kGXeez dNDVLu"
             >
-              <div
-                className="sc-kAzzGY izUUKG"
-              >
-                <input
-                  className="sc-kgoBCf iSFPjC"
-                  id="driver_license"
-                  name="driver_license"
-                  onChange={[Function]}
-                  pattern="^[0-9]*"
-                  required={true}
-                />
-                <div
-                  className="sc-kGXeez dNDVLu"
-                >
-                  <span
-                    className="sc-gZMcBi giNnHm"
-                  />
-                </div>
-              </div>
-              <div
-                className="sc-kAzzGY izUUKG"
-              >
-                <input
-                  className="sc-kgoBCf iSFPjC"
-                  id="driver_license_issue"
-                  max="2019-07-18"
-                  name="driver_license_issue"
-                  onChange={[Function]}
-                  required={true}
-                  type="date"
-                />
-                <div
-                  className="sc-kGXeez dNDVLu"
-                >
-                  <span
-                    className="sc-gZMcBi giNnHm"
-                  />
-                </div>
-              </div>
+              <span
+                className="sc-gZMcBi giNnHm"
+              />
             </div>
           </div>
+        </div>
+        <div
+          className="grid user-address"
+        >
           <div
-            className="grid user-address"
+            className="border-sizing sc-kAzzGY izUUKG"
           >
-            <div
-              className="sc-kAzzGY izUUKG"
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="state"
             >
-              <label
-                className="sc-chPdSV boxXeJ"
-                htmlFor="state"
+              <span
+                className="sc-gZMcBi giNnHm"
               >
-                <span
-                  className="sc-gZMcBi giNnHm"
-                >
-                  Estado
-                </span>
-                 *
-              </label>
-              <input
-                className="sc-kgoBCf iSFPjC"
-                id="state"
-                maxLength="2"
-                name="state"
-                onChange={[Function]}
-                pattern="[A-Za-z]{2}"
-                required={true}
+                Estado
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf iSFPjC"
+              id="state"
+              maxLength="2"
+              name="state"
+              onChange={[Function]}
+              pattern="[A-Za-z]{2}"
+              required={true}
+            />
+            <div
+              className="sc-kGXeez dNDVLu"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
               />
-              <div
-                className="sc-kGXeez dNDVLu"
-              >
-                <span
-                  className="sc-gZMcBi giNnHm"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -213,6 +157,73 @@ Array [
           >
             Adicionar mais
           </button>
+        </div>
+      </div>
+      <div>
+        <h3
+          className="sc-dnqmqq bJaIPW"
+        >
+          Responsável
+        </h3>
+        <div>
+          <div
+            className="border-sizing sc-kAzzGY izUUKG"
+          >
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="parent-name"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              >
+                Nome
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf iSFPjC"
+              id="parent-name"
+              name="parent-name"
+              onChange={[Function]}
+              required={true}
+            />
+            <div
+              className="sc-kGXeez dNDVLu"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              />
+            </div>
+          </div>
+          <div
+            className="border-sizing sc-kAzzGY izUUKG"
+          >
+            <label
+              className="sc-chPdSV boxXeJ"
+              htmlFor="parent-phone"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              >
+                Telefone
+              </span>
+               *
+            </label>
+            <input
+              className="sc-kgoBCf iSFPjC"
+              id="parent-phone"
+              name="parent-phone"
+              onChange={[Function]}
+              required={true}
+            />
+            <div
+              className="sc-kGXeez dNDVLu"
+            >
+              <span
+                className="sc-gZMcBi giNnHm"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <button

@@ -2,16 +2,15 @@ import React, { useRef, useContext, useMemo } from 'react'
 import Typography from '../Typography'
 import formContext from '../Form/context'
 import Button from '../Form/Button'
-import Input from '../Form/Input'
 import FormComponent from '../Form'
-import { maxToday } from '../Form/Input/helpers'
-import { isUnderAge, showCity, getFieldState } from './helpers'
-import * as validations from '../../utils/validations'
+import { isUnderAge, getFieldValue } from './helpers'
 import ParentFields from './ParentFields'
 import DriverLicense from './DriverLicense'
 import EmailsField from './Emails'
-import { RegisterContainer } from './styles'
 import PhonesField from './Phones'
+import DetailsField from './Details'
+import AddressField from './Address'
+import { RegisterContainer } from './styles'
 
 const onSubmit = (e, fields = []) => {
   e.preventDefault()
@@ -23,67 +22,22 @@ const onSubmit = (e, fields = []) => {
   }
 }
 
-
 const Form = () => {
   const ref = useRef(null)
   const { fields } = useContext(formContext)
-  const { birthday, state, driveLicense } = useMemo(() => ({
-    birthday: getFieldState(fields, 'birthday'),
-    state: getFieldState(fields, 'state'),
-    driveLicense: getFieldState(fields, 'driver_license'),
-  }), [fields])
+  const birthday = useMemo(() => getFieldValue(fields, 'birthday'), [fields])
 
   return (
     <RegisterContainer ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
       <div>
         <Typography.SubHeading>Cliente</Typography.SubHeading>
-        <div className="border-sizing">
-          <div className="grid user-details ">
-            <Input
-              validation={validations.requiredField}
-              field="name"
-              label="Nome"
-              required
-            />
-            <Input
-              validation={validations.requiredField}
-              field="birthday"
-              label="Data de nascimento"
-              type="date"
-              max={maxToday()}
-              required
-            />
-          </div>
-
-          {!isUnderAge(birthday) && (
-            <DriverLicense />
-          )}
-
-          <div className="grid user-address">
-            <Input
-              validation={validations.requiredField}
-              field="state"
-              label="Estado"
-              pattern="[A-Za-z]{2}"
-              maxLength="2"
-              required
-            />
-            {showCity(state, driveLicense) && (
-              <Input
-                validation={validations.requiredField}
-                field="city"
-                label="Cidade"
-                pattern="^[A-Za-z]*"
-                minLength="3"
-                required
-              />
-            )}
-          </div>
-        </div>
+        <DetailsField />
+        {!isUnderAge(birthday) && (<DriverLicense />)}
+        <AddressField />
       </div>
       <PhonesField />
       <EmailsField />
-      {isUnderAge(birthday) && <ParentFields />}
+      {isUnderAge(birthday) && (<ParentFields />)}
       <Button type="submit">Register</Button>
     </RegisterContainer>
   )

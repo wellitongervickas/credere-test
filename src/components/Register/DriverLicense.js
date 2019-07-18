@@ -8,7 +8,7 @@ import { DriverLicenseContainer } from './styles'
 const DriverLicense = () => (
   <DriverLicenseContainer>
     <Typography.Span>Carteira de motorista</Typography.Span>
-    <div className="grid drive-license-fields border-sizing">
+    <div className="grid drive-license-fields">
       <Input
         validation={validations.requiredField}
         field="driver_license"
