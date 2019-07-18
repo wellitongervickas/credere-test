@@ -2,19 +2,10 @@
 
 exports[`Button Component should render button component 1`] = `
 <button
-  className="transition-all sc-bdVaJa eMbgWz"
+  className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
   onClick={[Function]}
   type="button"
 >
-  <span
-    className="sc-ifAKCX cFlEyZ"
-    style={
-      Object {
-        "color": "#FFFFFF",
-      }
-    }
-  >
-    Default Button
-  </span>
+  Default Button
 </button>
 `;

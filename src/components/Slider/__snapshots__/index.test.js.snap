@@ -6,20 +6,11 @@ exports[`Slider Component Snapshots should render button action 1`] = `
   data-max={0}
 >
   <button
-    className="transition-all sc-cSHVUG bRWBVW"
+    className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
     onClick={[Function]}
     type="button"
   >
-    <span
-      className="sc-gZMcBi giNnHm"
-      style={
-        Object {
-          "color": "#FFFFFF",
-        }
-      }
-    >
-      Próximo
-    </span>
+    Próximo
   </button>
 </div>
 `;
@@ -328,20 +319,11 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
     data-max={0}
   >
     <button
-      className="transition-all sc-cSHVUG bRWBVW"
+      className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
       onClick={[Function]}
       type="button"
     >
-      <span
-        className="sc-gZMcBi giNnHm"
-        style={
-          Object {
-            "color": "#FFFFFF",
-          }
-        }
-      >
-        Próximo
-      </span>
+      Próximo
     </button>
   </div>
 </div>
