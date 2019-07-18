@@ -1,11 +1,11 @@
-import React, { useRef, useContext, useState } from 'react'
+import React, { useRef, useContext, useMemo } from 'react'
 import Typography from '../Typography'
 import formContext from '../Form/context'
 import Button from '../Form/Button'
 import Input from '../Form/Input'
 import FormComponent from '../Form'
 import { maxToday } from '../Form/Input/helpers'
-import { isUnderAge, showCity } from './helpers'
+import { isUnderAge, showCity, getFieldState } from './helpers'
 import * as validations from '../../utils/validations'
 import ParentFields from './ParentFields'
 import DriverLicense from './DriverLicense'
@@ -23,16 +23,15 @@ const onSubmit = (e, fields = []) => {
   }
 }
 
+
 const Form = () => {
   const ref = useRef(null)
   const { fields } = useContext(formContext)
-
-  // States
-  const [name, setName] = useState('')
-  const [birthday, setBirthday] = useState('')
-  const [driveLicense, setDriveLicense] = useState('')
-  const [state, setState] = useState('')
-  const [city, setCity] = useState('')
+  const { birthday, state, driveLicense } = useMemo(() => ({
+    birthday: getFieldState(fields, 'birthday'),
+    state: getFieldState(fields, 'state'),
+    driveLicense: getFieldState(fields, 'driver_license'),
+  }), [fields])
 
   return (
     <RegisterContainer ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
@@ -44,8 +43,6 @@ const Form = () => {
               validation={validations.requiredField}
               field="name"
               label="Nome"
-              defaultValue={name}
-              onChange={setName}
               required
             />
             <Input
@@ -54,19 +51,19 @@ const Form = () => {
               label="Data de nascimento"
               type="date"
               max={maxToday()}
-              defaultValue={birthday}
-              onChange={setBirthday}
               required
             />
           </div>
-          {!isUnderAge(birthday) && <DriverLicense onSetDriverLicense={setDriveLicense} />}
+
+          {!isUnderAge(birthday) && (
+            <DriverLicense />
+          )}
+
           <div className="grid user-address">
             <Input
               validation={validations.requiredField}
               field="state"
               label="Estado"
-              defaultValue={state}
-              onChange={setState}
               pattern="[A-Za-z]{2}"
               maxLength="2"
               required
@@ -76,8 +73,6 @@ const Form = () => {
                 validation={validations.requiredField}
                 field="city"
                 label="Cidade"
-                defaultValue={city}
-                onChange={setCity}
                 pattern="^[A-Za-z]*"
                 minLength="3"
                 required
