@@ -158,7 +158,7 @@ export default App
 | Properties | Type | Options | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | tag | string | heading, sub-heading, paragraph, span | Set typography type |
-| color | string | all | set typography color |
+| color | string | all regex, rgb and etc... | set typography color |
 | emphasys | boolean | true/false | set typography empashys |
 | children | node | Component/String | set typography children |
 
@@ -206,6 +206,39 @@ const MyForm = () => (
       Im Button LOL with custom props
     </Button>
 
+  </>
+)
+
+export default MyForm
+
+```
+
+### Input
+
+| Properties | Type | Default | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| field | string | required | Set field id and name |
+| label | string | optional | Set field label |
+| className | string | optional | Set field custom class |
+| validation | function | optional | Set field validation |
+| onChange | function | optional | Get field value or do a action when user typing |
+| required | boolean | false | Set field is required or not |
+
+
+```
+import React from 'react'
+import Input from './components/Form/Input'
+
+const MyForm = () => (
+  <>
+    <Input 
+      field="name"
+      label="Type your full name"
+      className="my-custom-class"
+      validation={() => 'Required field'}
+      onChange={(e) => console.log(e)}
+      required
+    />
   </>
 )
 
