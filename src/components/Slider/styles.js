@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mobileLg } from '../../globalStyles'
+import { mobileLg, defaultSpace } from '../../globalStyles'
 
 const sliderDesktopDimensions = {
   width: '800px',
@@ -54,7 +54,7 @@ export const DefaultTemplate = styled.div`
     background-position: center center;
 
     h2 {
-      margin-bottom: 16px;
+      margin-bottom: ${defaultSpace};
     }
   }
 }

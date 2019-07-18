@@ -7,6 +7,11 @@ import FormComponent from '../Form'
 import { maxToday } from '../Form/Input/helpers'
 import { isUnderAge, showCity } from './helpers'
 import * as validations from '../../utils/validations'
+import ParentFields from './ParentFields'
+import DriverLicense from './DriverLicense'
+import EmailsField from './Emails'
+import { RegisterContainer } from './styles'
+import PhonesField from './Phones'
 
 const onSubmit = (e, fields = []) => {
   e.preventDefault()
@@ -26,106 +31,66 @@ const Form = () => {
   const [name, setName] = useState('')
   const [birthday, setBirthday] = useState('')
   const [driveLicense, setDriveLicense] = useState('')
-  const [driveLicenseIssue, setDriveLicenseIssue] = useState('')
   const [state, setState] = useState('')
   const [city, setCity] = useState('')
-  const [parentName, setParentName] = useState('')
-  const [parentPhone, setParentPhone] = useState('')
 
   return (
-    <form ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
+    <RegisterContainer ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
       <div>
         <Typography.SubHeading>Cliente</Typography.SubHeading>
-        <div>
-          <Input
-            validation={validations.requiredField}
-            field="name"
-            label="Nome"
-            defaultValue={name}
-            onChange={setName}
-            required
-          />
-          <Input
-            validation={validations.requiredField}
-            field="birthday"
-            label="Data de nascimento"
-            type="date"
-            max={maxToday()}
-            defaultValue={birthday}
-            onChange={setBirthday}
-            required
-          />
-          {!isUnderAge(birthday) && (
-            <div>
-              <Typography.Span>Carteira de motorista</Typography.Span>
-              <Input
-                validation={validations.requiredField}
-                field="driver_license"
-                defaultValue={driveLicense}
-                onChange={setDriveLicense}
-                pattern="^[0-9]*"
-                required
-              />
-              <Input
-                validation={validations.requiredField}
-                field="driver_license_issue"
-                type="date"
-                max={maxToday()}
-                defaultValue={driveLicenseIssue}
-                onChange={setDriveLicenseIssue}
-                required
-              />
-            </div>
-          )}
-          <Input
-            validation={validations.requiredField}
-            field="state"
-            label="Estado"
-            defaultValue={state}
-            onChange={setState}
-            pattern="[A-Za-z]{2}"
-            maxLength="2"
-            required
-          />
-          {showCity(state, driveLicense) && (
+        <div className="border-sizing">
+          <div className="grid user-details ">
             <Input
               validation={validations.requiredField}
-              field="city"
-              label="Cidade"
-              defaultValue={city}
-              onChange={setCity}
-              pattern="^[A-Za-z]*"
-              minLength="3"
-              required
-            />
-          )}
-        </div>
-      </div>
-      {isUnderAge(birthday) && (
-        <div>
-          <Typography.SubHeading>Responsável</Typography.SubHeading>
-          <div>
-            <Input
-              validation={validations.requiredField}
-              field="parent-name"
+              field="name"
               label="Nome"
-              defaultValue={parentName}
-              onChange={setParentName}
+              defaultValue={name}
+              onChange={setName}
               required
             />
             <Input
               validation={validations.requiredField}
-              field="parent-phone"
-              label="Telefone"
-              defaultValue={parentPhone}
-              onChange={setParentPhone}
+              field="birthday"
+              label="Data de nascimento"
+              type="date"
+              max={maxToday()}
+              defaultValue={birthday}
+              onChange={setBirthday}
               required
             />
           </div>
+          {!isUnderAge(birthday) && <DriverLicense onSetDriverLicense={setDriveLicense} />}
+          <div className="grid user-address">
+            <Input
+              validation={validations.requiredField}
+              field="state"
+              label="Estado"
+              defaultValue={state}
+              onChange={setState}
+              pattern="[A-Za-z]{2}"
+              maxLength="2"
+              required
+            />
+            {showCity(state, driveLicense) && (
+              <Input
+                validation={validations.requiredField}
+                field="city"
+                label="Cidade"
+                defaultValue={city}
+                onChange={setCity}
+                pattern="^[A-Za-z]*"
+                minLength="3"
+                required
+              />
+            )}
+          </div>
         </div>
-      )}
+      </div>
+      <PhonesField />
+      <EmailsField />
+      {isUnderAge(birthday) && <ParentFields />}
       <Button type="submit">Register</Button>
-    </form>
+    </RegisterContainer>
   )
 }
 

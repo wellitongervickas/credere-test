@@ -2,6 +2,7 @@
 
 exports[`Register Component should render register component 1`] = `
 <form
+  className="sc-dnqmqq cAqIQV"
   noValidate={true}
   onSubmit={[Function]}
 >
@@ -11,111 +12,204 @@ exports[`Register Component should render register component 1`] = `
     >
       Cliente
     </h3>
-    <div>
+    <div
+      className="border-sizing"
+    >
       <div
-        className="sc-EHOje hcPLoZ"
+        className="grid user-details "
       >
-        <label
-          className="sc-bZQynM fGYiaS"
-          htmlFor="name"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          >
-            Nome
-          </span>
-           *
-        </label>
-        <input
-          className="sc-gzVnrw cjhEFk"
-          id="name"
-          name="name"
-          onChange={[Function]}
-          required={true}
-        />
         <div
-          className="sc-htoDjs imbtxc"
+          className="sc-EHOje hcPLoZ"
         >
-          <span
-            className="sc-bxivhb bUZGRr"
+          <label
+            className="sc-bZQynM fGYiaS"
+            htmlFor="name"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            >
+              Nome
+            </span>
+             *
+          </label>
+          <input
+            className="sc-gzVnrw ebJnLg"
+            defaultValue=""
+            id="name"
+            name="name"
+            onChange={[Function]}
+            required={true}
           />
+          <div
+            className="sc-htoDjs imbtxc"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            />
+          </div>
+        </div>
+        <div
+          className="sc-EHOje hcPLoZ"
+        >
+          <label
+            className="sc-bZQynM fGYiaS"
+            htmlFor="birthday"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            >
+              Data de nascimento
+            </span>
+             *
+          </label>
+          <input
+            className="sc-gzVnrw ebJnLg"
+            defaultValue=""
+            id="birthday"
+            max="2019-07-18"
+            name="birthday"
+            onChange={[Function]}
+            required={true}
+            type="date"
+          />
+          <div
+            className="sc-htoDjs imbtxc"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            />
+          </div>
         </div>
       </div>
       <div
-        className="sc-EHOje hcPLoZ"
+        className="sc-iwsKbI ejcOGE"
       >
-        <label
-          className="sc-bZQynM fGYiaS"
-          htmlFor="birthday"
+        <span
+          className="sc-bxivhb bUZGRr"
         >
-          <span
-            className="sc-bxivhb bUZGRr"
-          >
-            Data de nascimento
-          </span>
-           *
-        </label>
-        <input
-          className="sc-gzVnrw cjhEFk"
-          id="birthday"
-          name="birthday"
-          onChange={[Function]}
-          required={true}
-        />
+          Carteira de motorista
+        </span>
         <div
-          className="sc-htoDjs imbtxc"
+          className="grid drive-license-fields border-sizing"
         >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
+          <div
+            className="sc-EHOje hcPLoZ"
+          >
+            <input
+              className="sc-gzVnrw ebJnLg"
+              defaultValue=""
+              id="driver_license"
+              name="driver_license"
+              onChange={[Function]}
+              pattern="^[0-9]*"
+              required={true}
+            />
+            <div
+              className="sc-htoDjs imbtxc"
+            >
+              <span
+                className="sc-bxivhb bUZGRr"
+              />
+            </div>
+          </div>
+          <div
+            className="sc-EHOje hcPLoZ"
+          >
+            <input
+              className="sc-gzVnrw ebJnLg"
+              defaultValue=""
+              id="driver_license_issue"
+              max="2019-07-18"
+              name="driver_license_issue"
+              onChange={[Function]}
+              required={true}
+              type="date"
+            />
+            <div
+              className="sc-htoDjs imbtxc"
+            >
+              <span
+                className="sc-bxivhb bUZGRr"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div
-        className="sc-EHOje hcPLoZ"
+        className="grid user-address"
       >
-        <label
-          className="sc-bZQynM fGYiaS"
-          htmlFor="driver_license"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          >
-            Carteira de motorista
-          </span>
-           *
-        </label>
-        <input
-          className="sc-gzVnrw cjhEFk"
-          id="driver_license"
-          name="driver_license"
-          onChange={[Function]}
-          required={true}
-        />
         <div
-          className="sc-htoDjs imbtxc"
+          className="sc-EHOje hcPLoZ"
         >
-          <span
-            className="sc-bxivhb bUZGRr"
+          <label
+            className="sc-bZQynM fGYiaS"
+            htmlFor="state"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            >
+              Estado
+            </span>
+             *
+          </label>
+          <input
+            className="sc-gzVnrw ebJnLg"
+            defaultValue=""
+            id="state"
+            maxLength="2"
+            name="state"
+            onChange={[Function]}
+            pattern="[A-Za-z]{2}"
+            required={true}
           />
+          <div
+            className="sc-htoDjs imbtxc"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            />
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div
+    className="sc-gZMcBi ebuktN"
+  >
+    <h3
+      className="emails-title sc-bwzfXH jmxchW"
+    >
+      E-mails
+    </h3>
+    <div
+      className="emails-list"
+    >
+      <div
+        className="grid emails-list-item"
+      >
+        <div>
+          well@well.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="grid emails-form"
+    >
+      <button
+        className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
+        onClick={[Function]}
+        type="button"
+      >
+        Adicionar mais
+      </button>
+    </div>
+  </div>
   <button
-    className="transition-all sc-ifAKCX ewQORS"
+    className="button-lg button-normal-default transition-all sc-ifAKCX flbtib"
     onClick={[Function]}
     type="submit"
   >
-    <span
-      className="sc-bxivhb bUZGRr"
-      style={
-        Object {
-          "color": "#FFFFFF",
-        }
-      }
-    >
-      Register
-    </span>
+    Register
   </button>
 </form>
 `;

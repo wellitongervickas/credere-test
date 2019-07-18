@@ -11,6 +11,7 @@ Array [
       Form
     </h2>
     <form
+      className="sc-kpOJdX hIwvHz"
       noValidate={true}
       onSubmit={[Function]}
     >
@@ -20,111 +21,204 @@ Array [
         >
           Cliente
         </h3>
-        <div>
+        <div
+          className="border-sizing"
+        >
           <div
-            className="sc-kAzzGY izUUKG"
+            className="grid user-details "
           >
-            <label
-              className="sc-chPdSV boxXeJ"
-              htmlFor="name"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              >
-                Nome
-              </span>
-               *
-            </label>
-            <input
-              className="sc-kgoBCf gTsLIl"
-              id="name"
-              name="name"
-              onChange={[Function]}
-              required={true}
-            />
             <div
-              className="sc-kGXeez dNDVLu"
+              className="sc-kAzzGY izUUKG"
             >
-              <span
-                className="sc-gZMcBi giNnHm"
+              <label
+                className="sc-chPdSV boxXeJ"
+                htmlFor="name"
+              >
+                <span
+                  className="sc-gZMcBi giNnHm"
+                >
+                  Nome
+                </span>
+                 *
+              </label>
+              <input
+                className="sc-kgoBCf iSFPjC"
+                defaultValue=""
+                id="name"
+                name="name"
+                onChange={[Function]}
+                required={true}
               />
+              <div
+                className="sc-kGXeez dNDVLu"
+              >
+                <span
+                  className="sc-gZMcBi giNnHm"
+                />
+              </div>
+            </div>
+            <div
+              className="sc-kAzzGY izUUKG"
+            >
+              <label
+                className="sc-chPdSV boxXeJ"
+                htmlFor="birthday"
+              >
+                <span
+                  className="sc-gZMcBi giNnHm"
+                >
+                  Data de nascimento
+                </span>
+                 *
+              </label>
+              <input
+                className="sc-kgoBCf iSFPjC"
+                defaultValue=""
+                id="birthday"
+                max="2019-07-18"
+                name="birthday"
+                onChange={[Function]}
+                required={true}
+                type="date"
+              />
+              <div
+                className="sc-kGXeez dNDVLu"
+              >
+                <span
+                  className="sc-gZMcBi giNnHm"
+                />
+              </div>
             </div>
           </div>
           <div
-            className="sc-kAzzGY izUUKG"
+            className="sc-dxgOiQ kzbFLm"
           >
-            <label
-              className="sc-chPdSV boxXeJ"
-              htmlFor="birthday"
+            <span
+              className="sc-gZMcBi giNnHm"
             >
-              <span
-                className="sc-gZMcBi giNnHm"
-              >
-                Data de nascimento
-              </span>
-               *
-            </label>
-            <input
-              className="sc-kgoBCf gTsLIl"
-              id="birthday"
-              name="birthday"
-              onChange={[Function]}
-              required={true}
-            />
+              Carteira de motorista
+            </span>
             <div
-              className="sc-kGXeez dNDVLu"
+              className="grid drive-license-fields border-sizing"
             >
-              <span
-                className="sc-gZMcBi giNnHm"
-              />
+              <div
+                className="sc-kAzzGY izUUKG"
+              >
+                <input
+                  className="sc-kgoBCf iSFPjC"
+                  defaultValue=""
+                  id="driver_license"
+                  name="driver_license"
+                  onChange={[Function]}
+                  pattern="^[0-9]*"
+                  required={true}
+                />
+                <div
+                  className="sc-kGXeez dNDVLu"
+                >
+                  <span
+                    className="sc-gZMcBi giNnHm"
+                  />
+                </div>
+              </div>
+              <div
+                className="sc-kAzzGY izUUKG"
+              >
+                <input
+                  className="sc-kgoBCf iSFPjC"
+                  defaultValue=""
+                  id="driver_license_issue"
+                  max="2019-07-18"
+                  name="driver_license_issue"
+                  onChange={[Function]}
+                  required={true}
+                  type="date"
+                />
+                <div
+                  className="sc-kGXeez dNDVLu"
+                >
+                  <span
+                    className="sc-gZMcBi giNnHm"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div
-            className="sc-kAzzGY izUUKG"
+            className="grid user-address"
           >
-            <label
-              className="sc-chPdSV boxXeJ"
-              htmlFor="driver_license"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              >
-                Carteira de motorista
-              </span>
-               *
-            </label>
-            <input
-              className="sc-kgoBCf gTsLIl"
-              id="driver_license"
-              name="driver_license"
-              onChange={[Function]}
-              required={true}
-            />
             <div
-              className="sc-kGXeez dNDVLu"
+              className="sc-kAzzGY izUUKG"
             >
-              <span
-                className="sc-gZMcBi giNnHm"
+              <label
+                className="sc-chPdSV boxXeJ"
+                htmlFor="state"
+              >
+                <span
+                  className="sc-gZMcBi giNnHm"
+                >
+                  Estado
+                </span>
+                 *
+              </label>
+              <input
+                className="sc-kgoBCf iSFPjC"
+                defaultValue=""
+                id="state"
+                maxLength="2"
+                name="state"
+                onChange={[Function]}
+                pattern="[A-Za-z]{2}"
+                required={true}
               />
+              <div
+                className="sc-kGXeez dNDVLu"
+              >
+                <span
+                  className="sc-gZMcBi giNnHm"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div
+        className="sc-ckVGcZ yIpIc"
+      >
+        <h3
+          className="emails-title sc-dnqmqq bJaIPW"
+        >
+          E-mails
+        </h3>
+        <div
+          className="emails-list"
+        >
+          <div
+            className="grid emails-list-item"
+          >
+            <div>
+              well@well.com
+            </div>
+          </div>
+        </div>
+        <div
+          className="grid emails-form"
+        >
+          <button
+            className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+            onClick={[Function]}
+            type="button"
+          >
+            Adicionar mais
+          </button>
+        </div>
+      </div>
       <button
-        className="transition-all sc-cSHVUG bRWBVW"
+        className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
         onClick={[Function]}
         type="submit"
       >
-        <span
-          className="sc-gZMcBi giNnHm"
-          style={
-            Object {
-              "color": "#FFFFFF",
-            }
-          }
-        >
-          Register
-        </span>
+        Register
       </button>
     </form>
   </div>,
@@ -362,20 +456,11 @@ Array [
         data-max={0}
       >
         <button
-          className="transition-all sc-cSHVUG bRWBVW"
+          className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
           onClick={[Function]}
           type="button"
         >
-          <span
-            className="sc-gZMcBi giNnHm"
-            style={
-              Object {
-                "color": "#FFFFFF",
-              }
-            }
-          >
-            Próximo
-          </span>
+          Próximo
         </button>
       </div>
     </div>
@@ -614,20 +699,11 @@ Array [
         data-max={0}
       >
         <button
-          className="transition-all sc-cSHVUG bRWBVW"
+          className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
           onClick={[Function]}
           type="button"
         >
-          <span
-            className="sc-gZMcBi giNnHm"
-            style={
-              Object {
-                "color": "#FFFFFF",
-              }
-            }
-          >
-            Próximo
-          </span>
+          Próximo
         </button>
       </div>
     </div>

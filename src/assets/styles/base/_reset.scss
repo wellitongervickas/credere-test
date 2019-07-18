@@ -9,3 +9,8 @@ input, button {
 h2, h3, p {
   margin: 0;
 }
+
+.border-sizing {
+  box-sizing: border-box;
+  overflow: hidden;
+}

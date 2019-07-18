@@ -5,40 +5,40 @@ import {
 } from './styles'
 
 const Typography = ({
-  tag, children, color, emphasys,
+  tag, children, color, emphasys, ...rest
 }) => {
   switch (tag) {
     case 'span':
       return (
-        <Span style={{ color }} emphasys={emphasys}>
+        <Span style={{ color }} emphasys={emphasys} {...rest}>
           {children}
         </Span>
       )
 
     case 'heading':
       return (
-        <Heading style={{ color }} emphasys={emphasys}>
+        <Heading style={{ color }} emphasys={emphasys} {...rest}>
           {children}
         </Heading>
       )
 
     case 'sub-heading':
       return (
-        <SubHeading style={{ color }} emphasys={emphasys}>
+        <SubHeading style={{ color }} emphasys={emphasys} {...rest}>
           {children}
         </SubHeading>
       )
 
     case 'paragraph':
       return (
-        <Paragraph style={{ color }} emphasys={emphasys}>
+        <Paragraph style={{ color }} emphasys={emphasys} {...rest}>
           {children}
         </Paragraph>
       )
 
     default:
       return (
-        <Span style={{ color }} emphasys={emphasys}>
+        <Span style={{ color }} emphasys={emphasys} {...rest}>
           {children}
         </Span>
       )
