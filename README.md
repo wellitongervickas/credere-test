@@ -112,7 +112,7 @@ console.log(fieldWithValue) // empty
 
 
 #### Slider item
-| Properties | Type | Default | Description |
+| Properties | Type | Options | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | image | string | is required | Image of Slider  |
 | title | string | is required | Title of slider  |
@@ -152,6 +152,31 @@ export default App
 ```
 
 ![template_2](https://raw.githubusercontent.com/meucredere/frontend-test/master/images/news/layout-2.jpg)
+
+### Typography
+
+| Properties | Type | Options | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| tag | string | heading, sub-heading, paragraph, span | Set typography time |
+| color | string | all | set typography color |
+| emphasys | boolean | true/false | set typography empashys |
+| children | node | Component/String | set typography children |
+
+```
+import React from 'react'
+import Typography from './components/Typography'
+
+const Header = ({ ...props }) => (
+  <>
+    <Typography tag="span" {...props}>I'm a span</Typography>
+    <Typography.Span {...props}>I'm a span to</Typography.Span>
+  </>
+)
+
+export default Header
+
+```
+
 
 ### Test
 
