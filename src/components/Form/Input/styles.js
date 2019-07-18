@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { defaultRadius, defaultSpace } from '../../../globalStyles'
 
 export const InputContainer = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: ${defaultSpace};
 `
 
 export const InputLabel = styled.label`
@@ -10,11 +11,12 @@ export const InputLabel = styled.label`
 export const InputField = styled.input`
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: ${defaultRadius};
   box-shadow: 0 3px 5px rgba(0,0,0,0.1);
   height: 40px;
   padding: 0 12px;
   color: #666;
+  width: 97%;
 `
 export const InputError = styled.div`
   display: block;
