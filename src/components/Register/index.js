@@ -11,6 +11,7 @@ import ParentFields from './ParentFields'
 import DriverLicense from './DriverLicense'
 import EmailsField from './Emails'
 import { RegisterContainer } from './styles'
+import PhonesField from './Phones'
 
 const onSubmit = (e, fields = []) => {
   e.preventDefault()
@@ -85,6 +86,7 @@ const Form = () => {
           </div>
         </div>
       </div>
+      <PhonesField />
       <EmailsField />
       {isUnderAge(birthday) && <ParentFields />}
       <Button type="submit">Register</Button>

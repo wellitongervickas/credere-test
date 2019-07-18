@@ -15,6 +15,8 @@ export const DriverLicenseContainer = styled.div`
   }
 `
 
+export const PhonesContainer = styled.div``
+
 export const EmailsContainer = styled.div`
   margin-bottom: ${defaultSpace};
 
@@ -33,6 +35,7 @@ export const EmailsContainer = styled.div`
       grid-template-columns: 1fr 100px;
       grid-gap: ${defaultSpace};
       background-color: #eee;
+      align-items: center;
 
       &:nth-child(even) {
         background-color: #fff;

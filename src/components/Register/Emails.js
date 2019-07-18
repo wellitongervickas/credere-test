@@ -5,32 +5,28 @@ import Button from '../Form/Button'
 import { EmailsContainer } from './styles'
 
 const EmailsField = () => {
-  const [emails, setEmails] = useState([{ id: 1, address: 'well@well.com' }])
+  const [emails, setEmails] = useState([])
   const [field, setField] = useState('')
   const [showField, toggleField] = useState(false)
 
   const handleUpdateEmails = useCallback(() => {
-    setEmails(list => [...list, { id: Date.now(), address: field }])
-    setField('')
-    toggleField(false)
+    if (field.length) {
+      setEmails(list => [...list, { id: Date.now(), address: field }])
+      toggleField(false)
+      setField('')
+    }
   }, [toggleField, setField, setEmails, field])
 
   const handleRemoveEmails = useCallback((id) => {
     toggleField(false)
-    setEmails((list) => {
-      if (list.length > 1) {
-        return list.filter(item => item.id !== id)
-      }
-
-      return list
-    })
+    setEmails(list => (list.length > 1 ? list.filter(item => item.id !== id) : list))
   }, [setEmails, toggleField])
 
   return (
     <EmailsContainer>
       <Typography.SubHeading className="emails-title">E-mails</Typography.SubHeading>
-      <div className="emails-list">
-        {emails.map(item => (
+      <div className="grid emails-list">
+        {emails.length ? emails.map(item => (
           <div key={item.id} className="grid emails-list-item">
             <div>{item.address}</div>
             {emails.length > 1 && (
@@ -45,16 +41,19 @@ const EmailsField = () => {
               </div>
             )}
           </div>
-        ))}
+        )) : (
+          <Typography.Span>Não há e-mails cadastrados!</Typography.Span>
+        )}
       </div>
       <div className="grid emails-form">
         {showField && (
-          <div className="grid emails-list">
+          <div className="grid">
             <Input
               field="new-email"
               value={field}
               onChange={setField}
               type="email"
+              placeholder="Insira seu e-mail"
             />
             <Button
               theme="success"
@@ -67,12 +66,12 @@ const EmailsField = () => {
           </div>
         )}
         <Button
-          theme="success"
+          theme={!showField ? 'success' : 'default'}
           size="md"
           modifier="outline"
           onClick={() => toggleField(!showField)}
         >
-          Adicionar mais
+          {!showField ? 'Adicionar mais' : 'Cancelar' }
         </Button>
       </div>
     </EmailsContainer>
