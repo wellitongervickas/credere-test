@@ -8,6 +8,100 @@
 * yarn start
 * yarn build
 
+### Utils
+
+#### Array
+
+##### existsOnList
+
+This function will return a value from list
+
+```
+const item = { key: 'name', value: 'im here'}
+const list = [{ key: 'name', value: 'im here'}]
+const property = 'key'
+const exist = existsOnList(item, property, list)
+
+console.log(exist) // { key: 'name', value: 'im here'}
+```
+
+###### Props
+
+* item { object }
+* property { string } 
+* list { array } 
+
+
+#### Font
+
+##### setFontSizing
+
+This function will return a object with font size and font-height (size + 10)
+
+```
+const fontSizes = setFontSizing(12)
+const fontSizesBig = setFontSizing(24)
+
+console.log(fontSizes) // {'font-size': '12px','line-height': '22px'}
+console.log(fontSizesBig) // {'font-size': '24px','line-height': '34px'}
+```
+
+###### Props
+
+* font { number }
+
+##### isEmphasys
+
+This function will return a string value to use in css
+
+```
+const emphasys = isEmphasys(true) 
+const notEmphasys = isEmphasys(false) 
+
+console.log(emphasys) // font-weight: 800
+console.log(notEmphasys) // empty
+```
+
+###### Props
+* emphasys { boolean } 
+
+#### String
+
+##### cropText
+
+This function will return a full text or a trim text with 3 dots when text will cross max chars value
+
+```
+const text = cropText('my name is luke cage')
+const trimText = cropText('my name is luke cage', 5)
+
+console.log(text) // my name is luke cage
+console.log(trimText) // my na...
+```
+
+###### Props
+
+* text { string }
+* max { number } default 80
+
+#### Validation
+
+##### requiredField
+
+This function will return a string value with "Campo obrigatório" or empty value when have a length
+
+```
+const field = requiredField('')
+const fieldWithValue = requiredField('hello friend')
+
+console.log(field) // Campo obrigatório
+console.log(fieldWithValue) // empty 
+```
+
+###### Props
+
+* value { string }
+
 ### Slider
 
 #### Slider
