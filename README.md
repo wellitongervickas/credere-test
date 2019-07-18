@@ -8,6 +8,100 @@
 * yarn start
 * yarn build
 
+### Utils
+
+#### Array
+
+##### existsOnList
+
+This function will return a value from list
+
+```
+const item = { key: 'name', value: 'im here'}
+const list = [{ key: 'name', value: 'im here'}]
+const property = 'key'
+const exist = existsOnList(item, property, list)
+
+console.log(exist) // { key: 'name', value: 'im here'}
+```
+
+###### Props
+
+* item { object }
+* property { string } 
+* list { array } 
+
+
+#### Font
+
+##### setFontSizing
+
+This function will return a object with font size and font-height (size + 10)
+
+```
+const fontSizes = setFontSizing(12)
+const fontSizesBig = setFontSizing(24)
+
+console.log(fontSizes) // {'font-size': '12px','line-height': '22px'}
+console.log(fontSizesBig) // {'font-size': '24px','line-height': '34px'}
+```
+
+###### Props
+
+* font { number }
+
+##### isEmphasys
+
+This function will return a string value to use in css
+
+```
+const emphasys = isEmphasys(true) 
+const notEmphasys = isEmphasys(false) 
+
+console.log(emphasys) // font-weight: 800
+console.log(notEmphasys) // empty
+```
+
+###### Props
+* emphasys { boolean } 
+
+#### String
+
+##### cropText
+
+This function will return a full text or a trim text with 3 dots when text will cross max chars value
+
+```
+const text = cropText('my name is luke cage')
+const trimText = cropText('my name is luke cage', 5)
+
+console.log(text) // my name is luke cage
+console.log(trimText) // my na...
+```
+
+###### Props
+
+* text { string }
+* max { number } default 80
+
+#### Validation
+
+##### requiredField
+
+This function will return a string value with "Campo obrigatório" or empty value when have a length
+
+```
+const field = requiredField('')
+const fieldWithValue = requiredField('hello friend')
+
+console.log(field) // Campo obrigatório
+console.log(fieldWithValue) // empty 
+```
+
+###### Props
+
+* value { string }
+
 ### Slider
 
 #### Slider
@@ -18,7 +112,7 @@
 
 
 #### Slider item
-| Properties | Type | Default | Description |
+| Properties | Type | Options | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | image | string | is required | Image of Slider  |
 | title | string | is required | Title of slider  |
@@ -58,6 +152,99 @@ export default App
 ```
 
 ![template_2](https://raw.githubusercontent.com/meucredere/frontend-test/master/images/news/layout-2.jpg)
+
+### Typography
+
+| Properties | Type | Options | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| tag | string | heading, sub-heading, paragraph, span | Set typography type |
+| color | string | all regex, rgb and etc... | set typography color |
+| emphasys | boolean | true/false | set typography empashys |
+| children | node | Component/String | set typography children |
+
+```
+import React from 'react'
+import Typography from './components/Typography'
+
+const Header = ({ ...props }) => (
+  <>
+    <Typography tag="span" {...props}>I'm a span</Typography>
+    <Typography.Span {...props}>I'm a span to</Typography.Span>
+  </>
+)
+
+export default Header
+
+```
+
+### Button
+
+| Properties | Type | Options | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| size | string | lg, md, sm | Set Button size |
+| modifier | string | normal, outline | Change button appearance |
+| theme | string | default, success | Change button color |
+| type | string | button, submit | Change button type |
+| onClick | function | optional | Set button action when click |
+| children | node | Component/String | set button children |
+
+
+```
+import React from 'react'
+import Button from './components/Form/Button'
+
+const MyForm = () => (
+  <>
+    <Button>Im Button LOL with default props</Button>
+    <Button
+      size="sm"
+      modifier="outline"
+      type="submit"
+      theme="success"
+      onClick={() => console.log('my action')}
+    >
+      Im Button LOL with custom props
+    </Button>
+
+  </>
+)
+
+export default MyForm
+
+```
+
+### Input
+
+| Properties | Type | Default | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| field | string | required | Set field id and name |
+| label | string | optional | Set field label |
+| className | string | optional | Set field custom class |
+| validation | function | optional | Set field validation |
+| onChange | function | optional | Get field value or do a action when user typing |
+| required | boolean | false | Set field is required or not |
+
+
+```
+import React from 'react'
+import Input from './components/Form/Input'
+
+const MyForm = () => (
+  <>
+    <Input 
+      field="name"
+      label="Type your full name"
+      className="my-custom-class"
+      validation={() => 'Required field'}
+      onChange={(e) => console.log(e)}
+      required
+    />
+  </>
+)
+
+export default MyForm
+
+```
 
 ### Test
 
