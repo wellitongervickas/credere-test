@@ -2,7 +2,7 @@
 
 exports[`Register Component should render register component 1`] = `
 <form
-  className="sc-dnqmqq cAqIQV"
+  className="sc-dnqmqq gzRzpY"
   noValidate={true}
   onSubmit={[Function]}
 >
@@ -34,7 +34,6 @@ exports[`Register Component should render register component 1`] = `
           </label>
           <input
             className="sc-gzVnrw ebJnLg"
-            defaultValue=""
             id="name"
             name="name"
             onChange={[Function]}
@@ -64,7 +63,6 @@ exports[`Register Component should render register component 1`] = `
           </label>
           <input
             className="sc-gzVnrw ebJnLg"
-            defaultValue=""
             id="birthday"
             max="2019-07-18"
             name="birthday"
@@ -82,7 +80,7 @@ exports[`Register Component should render register component 1`] = `
         </div>
       </div>
       <div
-        className="sc-iwsKbI ejcOGE"
+        className="sc-iwsKbI EvjqC"
       >
         <span
           className="sc-bxivhb bUZGRr"
@@ -97,7 +95,6 @@ exports[`Register Component should render register component 1`] = `
           >
             <input
               className="sc-gzVnrw ebJnLg"
-              defaultValue=""
               id="driver_license"
               name="driver_license"
               onChange={[Function]}
@@ -117,7 +114,6 @@ exports[`Register Component should render register component 1`] = `
           >
             <input
               className="sc-gzVnrw ebJnLg"
-              defaultValue=""
               id="driver_license_issue"
               max="2019-07-18"
               name="driver_license_issue"
@@ -154,7 +150,6 @@ exports[`Register Component should render register component 1`] = `
           </label>
           <input
             className="sc-gzVnrw ebJnLg"
-            defaultValue=""
             id="state"
             maxLength="2"
             name="state"
@@ -174,7 +169,16 @@ exports[`Register Component should render register component 1`] = `
     </div>
   </div>
   <div
-    className="sc-gZMcBi ebuktN"
+    className="sc-gZMcBi giNnHm"
+  >
+    <h3
+      className="sc-bwzfXH jmxchW"
+    >
+      Telefones
+    </h3>
+  </div>
+  <div
+    className="sc-gqjmRU eulilz"
   >
     <h3
       className="emails-title sc-bwzfXH jmxchW"
@@ -182,15 +186,13 @@ exports[`Register Component should render register component 1`] = `
       E-mails
     </h3>
     <div
-      className="emails-list"
+      className="grid emails-list"
     >
-      <div
-        className="grid emails-list-item"
+      <span
+        className="sc-bxivhb bUZGRr"
       >
-        <div>
-          well@well.com
-        </div>
-      </div>
+        Não há e-mails cadastrados!
+      </span>
     </div>
     <div
       className="grid emails-form"
