@@ -21,14 +21,12 @@ Array [
         >
           Cliente
         </h3>
-        <div
-          className="border-sizing"
-        >
+        <div>
           <div
             className="grid user-details "
           >
             <div
-              className="sc-kAzzGY izUUKG"
+              className="border-sizing sc-kAzzGY izUUKG"
             >
               <label
                 className="sc-chPdSV boxXeJ"
@@ -57,7 +55,7 @@ Array [
               </div>
             </div>
             <div
-              className="sc-kAzzGY izUUKG"
+              className="border-sizing sc-kAzzGY izUUKG"
             >
               <label
                 className="sc-chPdSV boxXeJ"
@@ -97,10 +95,10 @@ Array [
               Carteira de motorista
             </span>
             <div
-              className="grid drive-license-fields border-sizing"
+              className="grid drive-license-fields"
             >
               <div
-                className="sc-kAzzGY izUUKG"
+                className="border-sizing sc-kAzzGY izUUKG"
               >
                 <input
                   className="sc-kgoBCf iSFPjC"
@@ -119,7 +117,7 @@ Array [
                 </div>
               </div>
               <div
-                className="sc-kAzzGY izUUKG"
+                className="border-sizing sc-kAzzGY izUUKG"
               >
                 <input
                   className="sc-kgoBCf iSFPjC"
@@ -144,7 +142,7 @@ Array [
             className="grid user-address"
           >
             <div
-              className="sc-kAzzGY izUUKG"
+              className="border-sizing sc-kAzzGY izUUKG"
             >
               <label
                 className="sc-chPdSV boxXeJ"

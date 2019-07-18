@@ -34,10 +34,14 @@ const Form = () => {
   }), [fields])
 
   return (
-    <RegisterContainer ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
+    <RegisterContainer
+      ref={ref}
+      onSubmit={e => onSubmit(e, fields)}
+      noValidate
+    >
       <div>
         <Typography.SubHeading>Cliente</Typography.SubHeading>
-        <div className="border-sizing">
+        <div>
           <div className="grid user-details ">
             <Input
               validation={validations.requiredField}
@@ -81,9 +85,14 @@ const Form = () => {
           </div>
         </div>
       </div>
+
       <PhonesField />
       <EmailsField />
-      {isUnderAge(birthday) && <ParentFields />}
+
+      {isUnderAge(birthday) && (
+        <ParentFields />
+      )}
+
       <Button type="submit">Register</Button>
     </RegisterContainer>
   )

@@ -12,14 +12,12 @@ exports[`Register Component should render register component 1`] = `
     >
       Cliente
     </h3>
-    <div
-      className="border-sizing"
-    >
+    <div>
       <div
         className="grid user-details "
       >
         <div
-          className="sc-EHOje hcPLoZ"
+          className="border-sizing sc-EHOje hcPLoZ"
         >
           <label
             className="sc-bZQynM fGYiaS"
@@ -48,7 +46,7 @@ exports[`Register Component should render register component 1`] = `
           </div>
         </div>
         <div
-          className="sc-EHOje hcPLoZ"
+          className="border-sizing sc-EHOje hcPLoZ"
         >
           <label
             className="sc-bZQynM fGYiaS"
@@ -88,10 +86,10 @@ exports[`Register Component should render register component 1`] = `
           Carteira de motorista
         </span>
         <div
-          className="grid drive-license-fields border-sizing"
+          className="grid drive-license-fields"
         >
           <div
-            className="sc-EHOje hcPLoZ"
+            className="border-sizing sc-EHOje hcPLoZ"
           >
             <input
               className="sc-gzVnrw ebJnLg"
@@ -110,7 +108,7 @@ exports[`Register Component should render register component 1`] = `
             </div>
           </div>
           <div
-            className="sc-EHOje hcPLoZ"
+            className="border-sizing sc-EHOje hcPLoZ"
           >
             <input
               className="sc-gzVnrw ebJnLg"
@@ -135,7 +133,7 @@ exports[`Register Component should render register component 1`] = `
         className="grid user-address"
       >
         <div
-          className="sc-EHOje hcPLoZ"
+          className="border-sizing sc-EHOje hcPLoZ"
         >
           <label
             className="sc-bZQynM fGYiaS"

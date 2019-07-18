@@ -2,6 +2,7 @@ import React, {
   useRef, useCallback, useContext, useEffect,
 } from 'react'
 import PropTypes from 'prop-types'
+import classnames from 'classnames'
 import Typography from '../../Typography'
 import { validator, getFieldError } from './helpers'
 import formContext from '../context'
@@ -31,9 +32,9 @@ const Input = ({
   }, [validation, ref, field, updateFields, onChange])
 
   return (
-    <InputContainer>
+    <InputContainer className={classnames(className, 'border-sizing')}>
       {label && (
-        <InputLabel htmlFor={field} className={className}>
+        <InputLabel htmlFor={field}>
           <Typography.Span>{label}</Typography.Span>
           {props.required ? ' *' : ''}
         </InputLabel>
