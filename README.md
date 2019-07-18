@@ -157,7 +157,7 @@ export default App
 
 | Properties | Type | Options | Description |
 | ------------- |:-------------| :-------------|:-------------|
-| tag | string | heading, sub-heading, paragraph, span | Set typography time |
+| tag | string | heading, sub-heading, paragraph, span | Set typography type |
 | color | string | all | set typography color |
 | emphasys | boolean | true/false | set typography empashys |
 | children | node | Component/String | set typography children |
@@ -177,6 +177,41 @@ export default Header
 
 ```
 
+### Button
+
+| Properties | Type | Options | Description |
+| ------------- |:-------------| :-------------|:-------------|
+| size | string | lg, md, sm | Set Button size |
+| modifier | string | normal, outline | Change button appearance |
+| theme | string | default, success | Change button color |
+| type | string | button, submit | Change button type |
+| onClick | function | optional | Set button action when click |
+| children | node | Component/String | set button children |
+
+
+```
+import React from 'react'
+import Button from './components/Form/Button'
+
+const MyForm = () => (
+  <>
+    <Button>Im Button LOL with default props</Button>
+    <Button
+      size="sm"
+      modifier="outline"
+      type="submit"
+      theme="success"
+      onClick={() => console.log('my action')}
+    >
+      Im Button LOL with custom props
+    </Button>
+
+  </>
+)
+
+export default MyForm
+
+```
 
 ### Test
 
