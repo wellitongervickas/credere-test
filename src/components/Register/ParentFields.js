@@ -6,7 +6,7 @@ import { ParentField } from './styles'
 
 const ParentFields = () => (
   <ParentField>
-    <Typography.SubHeading>Responsável</Typography.SubHeading>
+    <Typography.SubHeading className="parent-title">Responsável</Typography.SubHeading>
     <div className="grid parent-details">
       <Input
         validation={validations.requiredField}

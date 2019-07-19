@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { setFontSizing, isEmphasys } from '../../utils/font'
-import { mobileSm } from '../../globalStyles'
+import { mobileSm, successColor } from '../../globalStyles'
 
 export const Heading = styled.h2`
+  color: ${successColor};
   ${props => isEmphasys(props.emphasys)};
   text-transform: uppercase;
   ${setFontSizing(32)}

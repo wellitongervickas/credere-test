@@ -1,20 +1,12 @@
 import styled from 'styled-components'
 import { defaultSpace, defaultRadius, mobileLg } from '../../globalStyles'
 
-export const ParentField = styled.div`
-  .parent-details {
-    grid-gap: ${defaultSpace};
-    grid-template-columns: 1fr 1fr;
-
-    @media screen and (max-width: ${mobileLg}) {
-      grid-template-columns: 1fr;
-      grid-auto-flow: row;
-    }
-  }
-`
-
 export const RegisterContainer = styled.form`
-  .user-details, .user-address {
+  .user-title, .parent-title, .phones-title, .emails-title {
+    margin-bottom: ${defaultSpace};
+  }
+
+  .user-details, .user-address, .parent-details, .drive-license-fields {
     grid-gap: ${defaultSpace};
     grid-template-columns: 1fr 1fr;
 
@@ -23,36 +15,8 @@ export const RegisterContainer = styled.form`
       grid-auto-flow: row;
     }
   }
-`
 
-export const DriverLicenseContainer = styled.div`
-  .drive-license-fields {
-    grid-gap: ${defaultSpace};
-    grid-template-columns: 1fr 1fr;
-
-    @media screen and (max-width: ${mobileLg}) {
-      grid-template-columns: 1fr;
-      grid-auto-flow: row;
-    }
-  }
-`
-
-export const PhonesContainer = styled.div`
-  margin-bottom: ${defaultSpace};
-
-  .phones-title {
-    margin-bottom: ${defaultSpace};
-  }
-`
-
-export const EmailsContainer = styled.div`
-  margin-bottom: ${defaultSpace};
-
-  .emails-title {
-    margin-bottom: ${defaultSpace};
-  }
-
-  .emails-list {
+  .phones-list, .emails-list {
     grid-gap: ${defaultSpace};
     margin-bottom: ${defaultSpace};
 
@@ -76,7 +40,21 @@ export const EmailsContainer = styled.div`
     }
   }
 
-  .emails-form {
+  .emails-form, .phones-form {
     grid-gap: ${defaultSpace};
   }
+`
+
+export const ParentField = styled.div`
+  margin-bottom: ${defaultSpace};
+`
+
+export const DriverLicenseContainer = styled.div``
+
+export const PhonesContainer = styled.div`
+  margin-bottom: ${defaultSpace};
+`
+
+export const EmailsContainer = styled.div`
+  margin-bottom: ${defaultSpace};
 `

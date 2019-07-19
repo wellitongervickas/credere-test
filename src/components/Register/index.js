@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <RegisterContainer ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
       <div>
-        <Typography.SubHeading>Cliente</Typography.SubHeading>
+        <Typography.SubHeading className="user-title">Cliente</Typography.SubHeading>
         <DetailsField />
         {!isUnderAge(birthday) && (<DriverLicense />)}
         <AddressField />
@@ -39,7 +39,7 @@ const Form = () => {
       <PhonesField />
       <EmailsField />
       {isUnderAge(birthday) && (<ParentFields />)}
-      <Button type="submit">Register</Button>
+      <Button type="submit">Salvar Cliente</Button>
     </RegisterContainer>
   )
 }
