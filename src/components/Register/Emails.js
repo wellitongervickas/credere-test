@@ -1,26 +1,37 @@
-import React, { useState, useCallback } from 'react'
+import React, {
+  useState, useCallback, useContext, useEffect,
+} from 'react'
+import uuid from 'uuid/v1'
 import Input from '../Form/Input'
+import formContext from '../Form/context'
 import Typography from '../Typography'
 import Button from '../Form/Button'
 import { EmailsContainer } from './styles'
+import { getFieldValue } from '../Form/helpers'
 
 const EmailsField = () => {
-  const [emails, setEmails] = useState([])
+  const { fields, updateFields } = useContext(formContext)
+  const emails = useCallback(getFieldValue(fields, 'emails'), [fields])
   const [field, setField] = useState('')
   const [showField, toggleField] = useState(false)
 
-  const handleUpdateEmails = useCallback(() => {
-    if (field.length) {
-      setEmails(list => [...list, { id: Date.now(), address: field }])
-      toggleField(false)
-      setField('')
-    }
-  }, [toggleField, setField, setEmails, field])
+  useEffect(() => {
+    updateFields({ key: 'emails', value: [], error: '' })
+  }, [updateFields])
 
-  const handleRemoveEmails = useCallback((id) => {
+  const handleUpdateEmail = useCallback(() => {
+    const item = { id: uuid(), address: field }
+    updateFields({ key: 'emails', value: [...emails, item], error: '' })
     toggleField(false)
-    setEmails(list => (list.length > 1 ? list.filter(item => item.id !== id) : list))
-  }, [setEmails, toggleField])
+    setField('')
+  }, [updateFields, toggleField, setField, emails, field])
+
+  const handleRemoveEmail = useCallback((id) => {
+    if (emails.length > 1) {
+      const newEmailsList = emails.filter(item => item.id !== id)
+      updateFields({ key: 'emails', value: newEmailsList, error: '' })
+    }
+  }, [updateFields, emails])
 
   return (
     <EmailsContainer>
@@ -34,7 +45,7 @@ const EmailsField = () => {
                 <Button
                   size="md"
                   modifier="outline"
-                  onClick={() => handleRemoveEmails(item.id)}
+                  onClick={() => handleRemoveEmail(item.id)}
                 >
                   Remover
                 </Button>
@@ -63,7 +74,7 @@ const EmailsField = () => {
               theme="success"
               size="md"
               modifier="outline"
-              onClick={handleUpdateEmails}
+              onClick={handleUpdateEmail}
             >
               Cadastrar
             </Button>

@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react'
+import uuid from 'uuid/v1'
 import Typography from '../Typography'
 import Button from '../Form/Button'
 import Input from '../Form/Input'
@@ -12,7 +13,7 @@ const PhonesField = () => {
 
   const handleUpdatePhones = useCallback(() => {
     if (code.length && number.length) {
-      setPhones(list => [...list, { id: Date.now(), code, number }])
+      setPhones(list => [...list, { id: uuid(), code, number }])
       toggleField(false)
       setCode('')
       setNumber('')

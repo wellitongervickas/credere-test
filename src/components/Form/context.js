@@ -7,10 +7,15 @@ import { findItemFromKey } from '../../utils/array'
 const FormContext = createContext({
   fields: [],
   updateFields: () => {},
+  removeField: () => {},
 })
 
 const FormContextProvider = ({ children }) => {
   const [fields, setFields] = useState([])
+
+  const removeField = useCallback((id) => {
+    setFields(list => list.filter(item => item.key === id))
+  }, [setFields])
 
   const updateFields = useCallback((item) => {
     setFields((list) => {
@@ -38,6 +43,7 @@ const FormContextProvider = ({ children }) => {
     <FormContext.Provider value={{
       fields,
       updateFields,
+      removeField,
     }}
     >
       {children}
