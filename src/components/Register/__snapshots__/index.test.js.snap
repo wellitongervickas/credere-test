@@ -4,13 +4,13 @@ exports[`Register Component should render partially components of Register 1`] =
 
 exports[`Register Component should render register component 1`] = `
 <form
-  className="sc-iwsKbI QeLGO"
+  className="sc-dnqmqq inbDEO"
   noValidate={true}
   onSubmit={[Function]}
 >
   <div>
     <h3
-      className="sc-bwzfXH jmxchW"
+      className="user-title sc-bwzfXH jmxchW"
     >
       Cliente
     </h3>
@@ -63,7 +63,7 @@ exports[`Register Component should render register component 1`] = `
         <input
           className="sc-gzVnrw kHZNCE"
           id="birthday"
-          max="2019-07-18"
+          max="2019-07-19"
           name="birthday"
           onChange={[Function]}
           required={true}
@@ -115,10 +115,10 @@ exports[`Register Component should render register component 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU hnZXkc"
+    className="sc-gqjmRU hbUlzP"
   >
     <h3
-      className="sc-bwzfXH jmxchW"
+      className="phones-title sc-bwzfXH jmxchW"
     >
       Telefones
     </h3>
@@ -131,9 +131,24 @@ exports[`Register Component should render register component 1`] = `
         Não há telefones cadastrados!
       </span>
     </div>
+    <div
+      className="grid phones-form"
+    >
+      <div
+        className="flex"
+      >
+        <button
+          className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
+          onClick={[Function]}
+          type="button"
+        >
+          Adicionar mais
+        </button>
+      </div>
+    </div>
   </div>
   <div
-    className="sc-VigVT ilBBl"
+    className="sc-VigVT buWxgK"
   >
     <h3
       className="emails-title sc-bwzfXH jmxchW"
@@ -152,20 +167,24 @@ exports[`Register Component should render register component 1`] = `
     <div
       className="grid emails-form"
     >
-      <button
-        className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
-        onClick={[Function]}
-        type="button"
+      <div
+        className="flex"
       >
-        Adicionar mais
-      </button>
+        <button
+          className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
+          onClick={[Function]}
+          type="button"
+        >
+          Adicionar mais
+        </button>
+      </div>
     </div>
   </div>
   <div
-    className="sc-dnqmqq kQZAcq"
+    className="sc-iwsKbI leChZW"
   >
     <h3
-      className="sc-bwzfXH jmxchW"
+      className="parent-title sc-bwzfXH jmxchW"
     >
       Responsável
     </h3>
@@ -237,7 +256,7 @@ exports[`Register Component should render register component 1`] = `
     onClick={[Function]}
     type="submit"
   >
-    Register
+    Salvar Cliente
   </button>
 </form>
 `;

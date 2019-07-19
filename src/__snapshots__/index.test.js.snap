@@ -6,18 +6,18 @@ Array [
     className="container"
   >
     <h2
-      className="sc-htoDjs gsDwee"
+      className="sc-htoDjs htMDXy"
     >
       Form
     </h2>
     <form
-      className="sc-dxgOiQ cTLYkJ"
+      className="sc-kpOJdX MfoDI"
       noValidate={true}
       onSubmit={[Function]}
     >
       <div>
         <h3
-          className="sc-dnqmqq bJaIPW"
+          className="user-title sc-dnqmqq bJaIPW"
         >
           Cliente
         </h3>
@@ -70,7 +70,7 @@ Array [
             <input
               className="sc-kgoBCf koTPDs"
               id="birthday"
-              max="2019-07-18"
+              max="2019-07-19"
               name="birthday"
               onChange={[Function]}
               required={true}
@@ -122,10 +122,10 @@ Array [
         </div>
       </div>
       <div
-        className="sc-jKJlTe loXQau"
+        className="sc-jKJlTe dhUQkj"
       >
         <h3
-          className="sc-dnqmqq bJaIPW"
+          className="phones-title sc-dnqmqq bJaIPW"
         >
           Telefones
         </h3>
@@ -138,9 +138,24 @@ Array [
             Não há telefones cadastrados!
           </span>
         </div>
+        <div
+          className="grid phones-form"
+        >
+          <div
+            className="flex"
+          >
+            <button
+              className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+              onClick={[Function]}
+              type="button"
+            >
+              Adicionar mais
+            </button>
+          </div>
+        </div>
       </div>
       <div
-        className="sc-eNQAEJ dmCkjv"
+        className="sc-eNQAEJ kiHEJz"
       >
         <h3
           className="emails-title sc-dnqmqq bJaIPW"
@@ -159,20 +174,24 @@ Array [
         <div
           className="grid emails-form"
         >
-          <button
-            className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
-            onClick={[Function]}
-            type="button"
+          <div
+            className="flex"
           >
-            Adicionar mais
-          </button>
+            <button
+              className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+              onClick={[Function]}
+              type="button"
+            >
+              Adicionar mais
+            </button>
+          </div>
         </div>
       </div>
       <div
-        className="sc-kpOJdX gBKAVg"
+        className="sc-dxgOiQ jNALYQ"
       >
         <h3
-          className="sc-dnqmqq bJaIPW"
+          className="parent-title sc-dnqmqq bJaIPW"
         >
           Responsável
         </h3>
@@ -244,7 +263,7 @@ Array [
         onClick={[Function]}
         type="submit"
       >
-        Register
+        Salvar Cliente
       </button>
     </form>
   </div>,
@@ -252,7 +271,7 @@ Array [
     className="container"
   >
     <h2
-      className="sc-htoDjs gsDwee"
+      className="sc-htoDjs htMDXy"
     >
       Slider Default
     </h2>
@@ -285,7 +304,7 @@ Array [
                 className="relative sc-bZQynM sMRAj"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -347,7 +366,7 @@ Array [
                 className="sc-fjdhpX dJvaXu"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#333333",
@@ -407,7 +426,7 @@ Array [
                 className="relative sc-bZQynM sMRAj"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -453,7 +472,7 @@ Array [
                 className="relative sc-bZQynM sMRAj"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -495,7 +514,7 @@ Array [
     className="container"
   >
     <h2
-      className="sc-htoDjs gsDwee"
+      className="sc-htoDjs htMDXy"
     >
       Slider Auto Play (5s)
     </h2>
@@ -528,7 +547,7 @@ Array [
                 className="relative sc-bZQynM sMRAj"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -590,7 +609,7 @@ Array [
                 className="sc-fjdhpX dJvaXu"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#333333",
@@ -650,7 +669,7 @@ Array [
                 className="relative sc-bZQynM sMRAj"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -696,7 +715,7 @@ Array [
                 className="relative sc-bZQynM sMRAj"
               >
                 <h2
-                  className="sc-htoDjs kexmgL"
+                  className="sc-htoDjs BuxPg"
                   style={
                     Object {
                       "color": "#FFFFFF",

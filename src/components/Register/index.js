@@ -3,8 +3,6 @@ import Typography from '../Typography'
 import formContext from '../Form/context'
 import Button from '../Form/Button'
 import FormComponent from '../Form'
-import { isUnderAge } from './helpers'
-import { getFieldValue } from '../Form/Input/helpers'
 import ParentFields from './ParentFields'
 import DriverLicense from './DriverLicense'
 import EmailsField from './Emails'
@@ -12,6 +10,8 @@ import PhonesField from './Phones'
 import DetailsField from './Details'
 import AddressField from './Address'
 import { RegisterContainer } from './styles'
+import { isUnderAge } from './helpers'
+import { getFieldValue } from '../Form/Input/helpers'
 
 const onSubmit = (e, fields = []) => {
   e.preventDefault()
@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <RegisterContainer ref={ref} onSubmit={e => onSubmit(e, fields)} noValidate>
       <div>
-        <Typography.SubHeading>Cliente</Typography.SubHeading>
+        <Typography.SubHeading className="user-title">Cliente</Typography.SubHeading>
         <DetailsField />
         {!isUnderAge(birthday) && (<DriverLicense />)}
         <AddressField />
@@ -39,7 +39,7 @@ const Form = () => {
       <PhonesField />
       <EmailsField />
       {isUnderAge(birthday) && (<ParentFields />)}
-      <Button type="submit">Register</Button>
+      <Button type="submit">Salvar Cliente</Button>
     </RegisterContainer>
   )
 }

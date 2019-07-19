@@ -2,7 +2,7 @@
 
 exports[`Typography Component should render Typography Heading with props 1`] = `
 <h2
-  className="sc-bdVaJa fpQCmI"
+  className="sc-bdVaJa kidokh"
   style={
     Object {
       "color": "#333",
@@ -70,7 +70,7 @@ Array [
     SubHeading
   </h3>,
   <h2
-    className="sc-bdVaJa bqTftu"
+    className="sc-bdVaJa cedwbW"
   >
     Heading
   </h2>,

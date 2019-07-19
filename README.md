@@ -178,6 +178,7 @@ export default Header
 
 | Properties | Type | Options | Description |
 | ------------- |:-------------| :-------------|:-------------|
+| className | string | optional | Add custom class on button |
 | size | string | lg, md, sm | Set Button size |
 | modifier | string | normal, outline | Change button appearance |
 | theme | string | default, success | Change button color |
