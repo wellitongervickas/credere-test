@@ -4,12 +4,13 @@ import PropTypes from 'prop-types'
 import { ButtonElement } from './styles'
 
 const Button = ({
-  children, onClick,
+  className, children, onClick,
   size, modifier, theme,
   ...props
 }) => (
   <ButtonElement
     className={classnames(
+      className,
       `button-${size}`,
       `button-${modifier}-${theme}`,
       'transition-all',
@@ -22,6 +23,7 @@ const Button = ({
 )
 
 Button.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
   type: PropTypes.string,
@@ -31,6 +33,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
+  className: null,
   size: 'lg',
   modifier: 'normal',
   type: 'button',

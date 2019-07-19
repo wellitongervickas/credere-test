@@ -42,6 +42,12 @@ export const RegisterContainer = styled.form`
 
   .emails-form, .phones-form {
     grid-gap: ${defaultSpace};
+
+    button {
+      &:first-of-type {
+        margin-right: ${defaultSpace};
+      }
+    }
   }
 `
 
@@ -53,6 +59,11 @@ export const DriverLicenseContainer = styled.div``
 
 export const PhonesContainer = styled.div`
   margin-bottom: ${defaultSpace};
+
+  .phones-form-fields {
+    grid-gap: ${defaultSpace};
+    grid-template-columns: 150px 1fr;
+  }
 `
 
 export const EmailsContainer = styled.div`

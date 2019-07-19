@@ -4,7 +4,7 @@ exports[`Register Component should render partially components of Register 1`] =
 
 exports[`Register Component should render register component 1`] = `
 <form
-  className="sc-dnqmqq hdthdn"
+  className="sc-dnqmqq inbDEO"
   noValidate={true}
   onSubmit={[Function]}
 >
@@ -115,7 +115,7 @@ exports[`Register Component should render register component 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU loubtk"
+    className="sc-gqjmRU hbUlzP"
   >
     <h3
       className="phones-title sc-bwzfXH jmxchW"
@@ -134,13 +134,17 @@ exports[`Register Component should render register component 1`] = `
     <div
       className="grid phones-form"
     >
-      <button
-        className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
-        onClick={[Function]}
-        type="button"
+      <div
+        className="flex"
       >
-        Adicionar mais
-      </button>
+        <button
+          className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
+          onClick={[Function]}
+          type="button"
+        >
+          Adicionar mais
+        </button>
+      </div>
     </div>
   </div>
   <div
@@ -163,13 +167,17 @@ exports[`Register Component should render register component 1`] = `
     <div
       className="grid emails-form"
     >
-      <button
-        className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
-        onClick={[Function]}
-        type="button"
+      <div
+        className="flex"
       >
-        Adicionar mais
-      </button>
+        <button
+          className="button-md button-outline-success transition-all sc-ifAKCX flbtib"
+          onClick={[Function]}
+          type="button"
+        >
+          Adicionar mais
+        </button>
+      </div>
     </div>
   </div>
   <div

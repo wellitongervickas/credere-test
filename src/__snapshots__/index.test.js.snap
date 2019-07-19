@@ -11,7 +11,7 @@ Array [
       Form
     </h2>
     <form
-      className="sc-kpOJdX jhWjkh"
+      className="sc-kpOJdX MfoDI"
       noValidate={true}
       onSubmit={[Function]}
     >
@@ -122,7 +122,7 @@ Array [
         </div>
       </div>
       <div
-        className="sc-jKJlTe iMjYip"
+        className="sc-jKJlTe dhUQkj"
       >
         <h3
           className="phones-title sc-dnqmqq bJaIPW"
@@ -141,13 +141,17 @@ Array [
         <div
           className="grid phones-form"
         >
-          <button
-            className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
-            onClick={[Function]}
-            type="button"
+          <div
+            className="flex"
           >
-            Adicionar mais
-          </button>
+            <button
+              className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+              onClick={[Function]}
+              type="button"
+            >
+              Adicionar mais
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -170,13 +174,17 @@ Array [
         <div
           className="grid emails-form"
         >
-          <button
-            className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
-            onClick={[Function]}
-            type="button"
+          <div
+            className="flex"
           >
-            Adicionar mais
-          </button>
+            <button
+              className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+              onClick={[Function]}
+              type="button"
+            >
+              Adicionar mais
+            </button>
+          </div>
         </div>
       </div>
       <div

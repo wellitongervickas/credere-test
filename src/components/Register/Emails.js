@@ -55,6 +55,10 @@ const EmailsField = () => {
               type="email"
               placeholder="Insira seu e-mail"
             />
+          </div>
+        )}
+        <div className="flex">
+          {showField && (
             <Button
               theme="success"
               size="md"
@@ -63,16 +67,16 @@ const EmailsField = () => {
             >
               Cadastrar
             </Button>
-          </div>
-        )}
-        <Button
-          theme={!showField ? 'success' : 'default'}
-          size="md"
-          modifier="outline"
-          onClick={() => toggleField(!showField)}
-        >
-          {!showField ? 'Adicionar mais' : 'Cancelar' }
-        </Button>
+          )}
+          <Button
+            theme={!showField ? 'success' : 'default'}
+            size="md"
+            modifier="outline"
+            onClick={() => toggleField(!showField)}
+          >
+            {!showField ? 'Adicionar mais' : 'Cancelar' }
+          </Button>
+        </div>
       </div>
     </EmailsContainer>
   )
