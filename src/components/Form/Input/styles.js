@@ -1,5 +1,7 @@
 import styled from 'styled-components'
-import { defaultRadius, defaultSpace } from '../../../globalStyles'
+import {
+  defaultRadius, defaultSpace, mobileSm, desktopSm, mobileLg,
+} from '../../../globalStyles'
 
 export const InputContainer = styled.div`
   margin-bottom: ${defaultSpace};
@@ -17,6 +19,18 @@ export const InputField = styled.input`
   padding: 0 12px;
   color: #666;
   width: 95%;
+
+  @media (min-width: ${mobileSm}) and (max-width: ${desktopSm}) {
+    width: 94%;
+  }
+
+  @media screen and (max-width: ${mobileLg}) {
+    width: 93%;
+  }
+
+  @media screen and (max-width: ${mobileSm}) {
+    width: 90%;
+  }
 `
 export const InputError = styled.div`
   display: block;

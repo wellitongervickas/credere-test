@@ -6,18 +6,18 @@ Array [
     className="container"
   >
     <h2
-      className="sc-htoDjs htMDXy"
+      className="sc-bwzfXH eTarrl"
     >
       Form
     </h2>
     <form
-      className="sc-kpOJdX MfoDI"
+      className="sc-dnqmqq dkkdNN"
       noValidate={true}
       onSubmit={[Function]}
     >
       <div>
         <h3
-          className="user-title sc-dnqmqq bJaIPW"
+          className="user-title sc-htpNat kSTdGb"
         >
           Cliente
         </h3>
@@ -25,21 +25,21 @@ Array [
           className="grid user-details "
         >
           <div
-            className="border-sizing sc-kAzzGY izUUKG"
+            className="border-sizing sc-EHOje hcPLoZ"
           >
             <label
-              className="sc-chPdSV boxXeJ"
+              className="sc-bZQynM fGYiaS"
               htmlFor="name"
             >
               <span
-                className="sc-gZMcBi giNnHm"
+                className="sc-ifAKCX cFlEyZ"
               >
                 Nome
               </span>
                *
             </label>
             <input
-              className="sc-kgoBCf koTPDs"
+              className="sc-gzVnrw lmiusb"
               id="name"
               name="name"
               onChange={[Function]}
@@ -48,21 +48,21 @@ Array [
             
           </div>
           <div
-            className="border-sizing sc-kAzzGY izUUKG"
+            className="border-sizing sc-EHOje hcPLoZ"
           >
             <label
-              className="sc-chPdSV boxXeJ"
+              className="sc-bZQynM fGYiaS"
               htmlFor="birthday"
             >
               <span
-                className="sc-gZMcBi giNnHm"
+                className="sc-ifAKCX cFlEyZ"
               >
                 Data de nascimento
               </span>
                *
             </label>
             <input
-              className="sc-kgoBCf koTPDs"
+              className="sc-gzVnrw lmiusb"
               id="birthday"
               max="2019-07-19"
               name="birthday"
@@ -77,21 +77,21 @@ Array [
           className="grid user-address"
         >
           <div
-            className="border-sizing sc-kAzzGY izUUKG"
+            className="border-sizing sc-EHOje hcPLoZ"
           >
             <label
-              className="sc-chPdSV boxXeJ"
+              className="sc-bZQynM fGYiaS"
               htmlFor="state"
             >
               <span
-                className="sc-gZMcBi giNnHm"
+                className="sc-ifAKCX cFlEyZ"
               >
                 Estado
               </span>
                *
             </label>
             <input
-              className="sc-kgoBCf koTPDs"
+              className="sc-gzVnrw lmiusb"
               id="state"
               maxLength="2"
               name="state"
@@ -104,10 +104,10 @@ Array [
         </div>
       </div>
       <div
-        className="sc-jKJlTe dhUQkj"
+        className="sc-gqjmRU loubtk"
       >
         <h3
-          className="phones-title sc-dnqmqq bJaIPW"
+          className="phones-title sc-htpNat kSTdGb"
         >
           Telefones
         </h3>
@@ -115,7 +115,7 @@ Array [
           className="grid phones-list"
         >
           <span
-            className="sc-gZMcBi giNnHm"
+            className="sc-ifAKCX cFlEyZ"
           >
             Não há telefones cadastrados!
           </span>
@@ -127,7 +127,7 @@ Array [
             className="flex"
           >
             <button
-              className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+              className="button-md button-outline-success transition-all sc-bdVaJa dyiLYP"
               onClick={[Function]}
               type="button"
             >
@@ -137,10 +137,10 @@ Array [
         </div>
       </div>
       <div
-        className="sc-eNQAEJ kiHEJz"
+        className="sc-VigVT buWxgK"
       >
         <h3
-          className="emails-title sc-dnqmqq bJaIPW"
+          className="emails-title sc-htpNat kSTdGb"
         >
           E-mails
         </h3>
@@ -148,7 +148,7 @@ Array [
           className="grid emails-list"
         >
           <span
-            className="sc-gZMcBi giNnHm"
+            className="sc-ifAKCX cFlEyZ"
           >
             Não há e-mails cadastrados!
           </span>
@@ -160,7 +160,7 @@ Array [
             className="flex"
           >
             <button
-              className="button-md button-outline-success transition-all sc-cSHVUG ljIwnR"
+              className="button-md button-outline-success transition-all sc-bdVaJa dyiLYP"
               onClick={[Function]}
               type="button"
             >
@@ -170,10 +170,10 @@ Array [
         </div>
       </div>
       <div
-        className="sc-dxgOiQ jNALYQ"
+        className="sc-iwsKbI leChZW"
       >
         <h3
-          className="parent-title sc-dnqmqq bJaIPW"
+          className="parent-title sc-htpNat kSTdGb"
         >
           Responsável
         </h3>
@@ -181,21 +181,21 @@ Array [
           className="grid parent-details"
         >
           <div
-            className="border-sizing sc-kAzzGY izUUKG"
+            className="border-sizing sc-EHOje hcPLoZ"
           >
             <label
-              className="sc-chPdSV boxXeJ"
+              className="sc-bZQynM fGYiaS"
               htmlFor="parent-name"
             >
               <span
-                className="sc-gZMcBi giNnHm"
+                className="sc-ifAKCX cFlEyZ"
               >
                 Nome
               </span>
                *
             </label>
             <input
-              className="sc-kgoBCf koTPDs"
+              className="sc-gzVnrw lmiusb"
               id="parent-name"
               name="parent-name"
               onChange={[Function]}
@@ -204,32 +204,66 @@ Array [
             
           </div>
           <div
-            className="border-sizing sc-kAzzGY izUUKG"
+            className="grid phones-form-fields"
           >
-            <label
-              className="sc-chPdSV boxXeJ"
-              htmlFor="parent-phone"
+            <div
+              className="border-sizing sc-EHOje hcPLoZ"
             >
-              <span
-                className="sc-gZMcBi giNnHm"
+              <label
+                className="sc-bZQynM fGYiaS"
+                htmlFor="parent-phone-code"
               >
-                Telefone
-              </span>
-               *
-            </label>
-            <input
-              className="sc-kgoBCf koTPDs"
-              id="parent-phone"
-              name="parent-phone"
-              onChange={[Function]}
-              required={true}
-            />
-            
+                <span
+                  className="sc-ifAKCX cFlEyZ"
+                >
+                  DDD
+                </span>
+                 *
+              </label>
+              <input
+                className="sc-gzVnrw lmiusb"
+                id="parent-phone-code"
+                maxLength="2"
+                minLength="2"
+                name="parent-phone-code"
+                onChange={[Function]}
+                pattern="[0-9]*"
+                placeholder="DDD"
+                required={true}
+              />
+              
+            </div>
+            <div
+              className="border-sizing sc-EHOje hcPLoZ"
+            >
+              <label
+                className="sc-bZQynM fGYiaS"
+                htmlFor="parent-phone-number"
+              >
+                <span
+                  className="sc-ifAKCX cFlEyZ"
+                >
+                  Telefone
+                </span>
+                 *
+              </label>
+              <input
+                className="sc-gzVnrw lmiusb"
+                id="parent-phone-number"
+                maxLength="9"
+                minLength="8"
+                name="parent-phone-number"
+                onChange={[Function]}
+                pattern="[0-9]*"
+                required={true}
+              />
+              
+            </div>
           </div>
         </div>
       </div>
       <button
-        className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
+        className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
         onClick={[Function]}
         type="submit"
       >
@@ -241,23 +275,23 @@ Array [
     className="container"
   >
     <h2
-      className="sc-htoDjs htMDXy"
+      className="sc-bwzfXH eTarrl"
     >
       Slider Default
     </h2>
     <div
-      className="relative sc-bdVaJa julkYB"
+      className="relative sc-jTzLTM iDTJtK"
     >
       <div
-        className="full-content relative sc-bwzfXH uTxCW"
+        className="full-content relative sc-fjdhpX nsimD"
       >
         <div
-          className="visible transition-all absolute sc-htpNat jcukNm"
+          className="visible transition-all absolute sc-jzJRlG KIrPt"
           data-index={0}
           data-template="default"
         >
           <div
-            className="grid full-content sc-gqjmRU kIqdMS"
+            className="grid full-content sc-kpOJdX idZYIE"
           >
             <div
               className="flex-column-center relative"
@@ -268,13 +302,13 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
               <div
-                className="relative sc-bZQynM sMRAj"
+                className="relative sc-kgoBCf dJXIDt"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -284,7 +318,7 @@ Array [
                   Lorem ipsum dolor sit amet
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -296,10 +330,10 @@ Array [
               </div>
             </div>
             <div
-              className="flex-column-center sc-gzVnrw dkdosU"
+              className="flex-column-center sc-kGXeez dGzauG"
             >
               <p
-                className="sc-iwsKbI ibDZNz"
+                className="sc-bxivhb fysKgG"
                 style={
                   Object {
                     "color": "#333333",
@@ -312,12 +346,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat jcukNm"
+          className="hidden transition-all absolute sc-jzJRlG KIrPt"
           data-index={1}
           data-template="template_1"
         >
           <div
-            className="full-content grid sc-jTzLTM hfhqii"
+            className="full-content grid sc-ckVGcZ lkEghq"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -328,15 +362,15 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
             </div>
             <div>
               <div
-                className="sc-fjdhpX dJvaXu"
+                className="sc-jKJlTe juaUJg"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#333333",
@@ -346,7 +380,7 @@ Array [
                   Lorem ipsum dolor
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#999999",
@@ -357,10 +391,10 @@ Array [
                 </h3>
               </div>
               <div
-                className="flex-column-center sc-gzVnrw dkdosU"
+                className="flex-column-center sc-kGXeez dGzauG"
               >
                 <p
-                  className="sc-iwsKbI ibDZNz"
+                  className="sc-bxivhb fysKgG"
                   style={
                     Object {
                       "color": "#333333",
@@ -374,12 +408,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat jcukNm"
+          className="hidden transition-all absolute sc-jzJRlG KIrPt"
           data-index={2}
           data-template="template_2"
         >
           <div
-            className="full-content sc-jzJRlG bhbMmg"
+            className="full-content sc-eNQAEJ bsVJav"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -390,13 +424,13 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
               <div
-                className="relative sc-bZQynM sMRAj"
+                className="relative sc-kgoBCf dJXIDt"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -406,7 +440,7 @@ Array [
                   Lorem ipsum dolor sit amet
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -420,12 +454,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat jcukNm"
+          className="hidden transition-all absolute sc-jzJRlG KIrPt"
           data-index={3}
           data-template="template_3"
         >
           <div
-            className="full-content sc-VigVT gNgpkb"
+            className="full-content sc-dxgOiQ wnQgq"
           >
             <div
               className="flex-column-center full-content relative"
@@ -436,13 +470,13 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
               <div
-                className="relative sc-bZQynM sMRAj"
+                className="relative sc-kgoBCf dJXIDt"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -452,7 +486,7 @@ Array [
                   Lorem ipsum dolor sit amet
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -467,11 +501,11 @@ Array [
         </div>
       </div>
       <div
-        className="absolute sc-bxivhb dEKikf"
+        className="absolute sc-cSHVUG eyxjEC"
         data-max={0}
       >
         <button
-          className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
+          className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
           onClick={[Function]}
           type="button"
         >
@@ -484,23 +518,23 @@ Array [
     className="container"
   >
     <h2
-      className="sc-htoDjs htMDXy"
+      className="sc-bwzfXH eTarrl"
     >
       Slider Auto Play (5s)
     </h2>
     <div
-      className="relative sc-bdVaJa julkYB"
+      className="relative sc-jTzLTM iDTJtK"
     >
       <div
-        className="full-content relative sc-bwzfXH uTxCW"
+        className="full-content relative sc-fjdhpX nsimD"
       >
         <div
-          className="visible transition-all absolute sc-htpNat jcukNm"
+          className="visible transition-all absolute sc-jzJRlG KIrPt"
           data-index={0}
           data-template="default"
         >
           <div
-            className="grid full-content sc-gqjmRU kIqdMS"
+            className="grid full-content sc-kpOJdX idZYIE"
           >
             <div
               className="flex-column-center relative"
@@ -511,13 +545,13 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
               <div
-                className="relative sc-bZQynM sMRAj"
+                className="relative sc-kgoBCf dJXIDt"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -527,7 +561,7 @@ Array [
                   Lorem ipsum dolor sit amet
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -539,10 +573,10 @@ Array [
               </div>
             </div>
             <div
-              className="flex-column-center sc-gzVnrw dkdosU"
+              className="flex-column-center sc-kGXeez dGzauG"
             >
               <p
-                className="sc-iwsKbI ibDZNz"
+                className="sc-bxivhb fysKgG"
                 style={
                   Object {
                     "color": "#333333",
@@ -555,12 +589,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat jcukNm"
+          className="hidden transition-all absolute sc-jzJRlG KIrPt"
           data-index={1}
           data-template="template_1"
         >
           <div
-            className="full-content grid sc-jTzLTM hfhqii"
+            className="full-content grid sc-ckVGcZ lkEghq"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -571,15 +605,15 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
             </div>
             <div>
               <div
-                className="sc-fjdhpX dJvaXu"
+                className="sc-jKJlTe juaUJg"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#333333",
@@ -589,7 +623,7 @@ Array [
                   Lorem ipsum dolor
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#999999",
@@ -600,10 +634,10 @@ Array [
                 </h3>
               </div>
               <div
-                className="flex-column-center sc-gzVnrw dkdosU"
+                className="flex-column-center sc-kGXeez dGzauG"
               >
                 <p
-                  className="sc-iwsKbI ibDZNz"
+                  className="sc-bxivhb fysKgG"
                   style={
                     Object {
                       "color": "#333333",
@@ -617,12 +651,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat jcukNm"
+          className="hidden transition-all absolute sc-jzJRlG KIrPt"
           data-index={2}
           data-template="template_2"
         >
           <div
-            className="full-content sc-jzJRlG bhbMmg"
+            className="full-content sc-eNQAEJ bsVJav"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -633,13 +667,13 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
               <div
-                className="relative sc-bZQynM sMRAj"
+                className="relative sc-kgoBCf dJXIDt"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -649,7 +683,7 @@ Array [
                   Lorem ipsum dolor sit amet
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -663,12 +697,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat jcukNm"
+          className="hidden transition-all absolute sc-jzJRlG KIrPt"
           data-index={3}
           data-template="template_3"
         >
           <div
-            className="full-content sc-VigVT gNgpkb"
+            className="full-content sc-dxgOiQ wnQgq"
           >
             <div
               className="flex-column-center full-content relative"
@@ -679,13 +713,13 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-EHOje fZgOQP"
+                className="full-content absolute sc-chPdSV jmHRTn"
               />
               <div
-                className="relative sc-bZQynM sMRAj"
+                className="relative sc-kgoBCf dJXIDt"
               >
                 <h2
-                  className="sc-htoDjs BuxPg"
+                  className="sc-bwzfXH bXhZGo"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -695,7 +729,7 @@ Array [
                   Lorem ipsum dolor sit amet
                 </h2>
                 <h3
-                  className="sc-dnqmqq bJaIPW"
+                  className="sc-htpNat kSTdGb"
                   style={
                     Object {
                       "color": "#FFFFFF",
@@ -710,11 +744,11 @@ Array [
         </div>
       </div>
       <div
-        className="absolute sc-bxivhb dEKikf"
+        className="absolute sc-cSHVUG eyxjEC"
         data-max={0}
       >
         <button
-          className="button-lg button-normal-default transition-all sc-cSHVUG ljIwnR"
+          className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
           onClick={[Function]}
           type="button"
         >

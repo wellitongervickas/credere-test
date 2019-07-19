@@ -1,5 +1,7 @@
 import styled from 'styled-components'
-import { defaultSpace, defaultRadius, mobileLg } from '../../globalStyles'
+import {
+  defaultSpace, defaultRadius, mobileLg, mobileSm,
+} from '../../globalStyles'
 
 export const RegisterContainer = styled.form`
   .user-title, .parent-title, .phones-title, .emails-title {
@@ -49,6 +51,19 @@ export const RegisterContainer = styled.form`
       }
     }
   }
+
+  .phones-form-fields {
+    grid-gap: ${defaultSpace};
+    grid-template-columns: 150px 1fr;
+
+    @media screen and (max-width: ${mobileSm}) {
+      grid-template-columns: 50px 1fr;
+
+      input {
+        max-width: 80%;
+      }
+    }
+  }
 `
 
 export const ParentField = styled.div`
@@ -59,11 +74,6 @@ export const DriverLicenseContainer = styled.div``
 
 export const PhonesContainer = styled.div`
   margin-bottom: ${defaultSpace};
-
-  .phones-form-fields {
-    grid-gap: ${defaultSpace};
-    grid-template-columns: 150px 1fr;
-  }
 `
 
 export const EmailsContainer = styled.div`

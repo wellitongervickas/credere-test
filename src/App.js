@@ -1,8 +1,6 @@
 import React from 'react'
-import Slider from './components/Slider'
 import sliderMock from './__mocks__/slider.json'
-import Typography from './components/Typography'
-import Register from './components/Register'
+import { Slider, Typography, Register } from './components'
 
 const App = () => {
   const { slides } = sliderMock

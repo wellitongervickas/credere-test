@@ -1,4 +1,4 @@
-import { setFontSizing, isEmphasys } from './font'
+import { setFontSizing, isEmphasys } from '.'
 
 describe('Font Utils', () => {
   it('should function to be defined', () => {

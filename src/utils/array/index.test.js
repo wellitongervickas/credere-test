@@ -1,4 +1,4 @@
-import { findItemFromKey } from './array'
+import { findItemFromKey } from '.'
 
 describe('Array Utils', () => {
   it('should function getFieldValue to be defined', () => {

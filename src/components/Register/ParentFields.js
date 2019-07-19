@@ -14,12 +14,27 @@ const ParentFields = () => (
         label="Nome"
         required
       />
-      <Input
-        validation={validations.requiredField}
-        field="parent-phone"
-        label="Telefone"
-        required
-      />
+      <div className="grid phones-form-fields">
+        <Input
+          validation={validations.requiredField}
+          field="parent-phone-code"
+          label="DDD"
+          placeholder="DDD"
+          maxLength="2"
+          minLength="2"
+          pattern="[0-9]*"
+          required
+        />
+        <Input
+          validation={validations.requiredField}
+          field="parent-phone-number"
+          label="Telefone"
+          pattern="[0-9]*"
+          maxLength="9"
+          minLength="8"
+          required
+        />
+      </div>
     </div>
   </ParentField>
 )

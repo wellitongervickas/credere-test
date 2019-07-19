@@ -1,29 +1,39 @@
-import React, { useState, useCallback } from 'react'
+import React, {
+  useState, useCallback, useContext, useEffect,
+} from 'react'
 import uuid from 'uuid/v1'
 import Typography from '../Typography'
+import formContext from '../Form/context'
 import Button from '../Form/Button'
 import Input from '../Form/Input'
 import { PhonesContainer } from './styles'
+import { getFieldValue } from '../Form/helpers'
 
 const PhonesField = () => {
-  const [phones, setPhones] = useState([])
+  const { fields, updateFields } = useContext(formContext)
+  const phones = useCallback(getFieldValue(fields, 'phones'), [fields])
   const [showField, toggleField] = useState(false)
   const [code, setCode] = useState('')
   const [number, setNumber] = useState('')
 
+  useEffect(() => {
+    updateFields({ key: 'phones', value: [], error: '' })
+  }, [updateFields])
+
   const handleUpdatePhones = useCallback(() => {
-    if (code.length && number.length) {
-      setPhones(list => [...list, { id: uuid(), code, number }])
-      toggleField(false)
-      setCode('')
-      setNumber('')
-    }
-  }, [setPhones, toggleField, setCode, setNumber, code, number])
+    const item = { id: uuid(), code, number }
+    updateFields({ key: 'phones', value: [...phones, item], error: '' })
+    toggleField(false)
+    setCode('')
+    setNumber('')
+  }, [updateFields, toggleField, code, number, phones])
 
   const handleRemovePhones = useCallback((id) => {
-    toggleField(false)
-    setPhones(list => (list.length > 1 ? list.filter(item => item.id !== id) : list))
-  }, [setPhones, toggleField])
+    if (phones.length > 1) {
+      const newPhonesList = phones.filter(item => item.id !== id)
+      updateFields({ key: 'phones', value: newPhonesList, error: '' })
+    }
+  }, [updateFields, phones])
 
   return (
     <PhonesContainer>
