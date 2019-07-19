@@ -2,7 +2,8 @@ import React, { useContext, useMemo } from 'react'
 import Input from '../Form/Input'
 import formContext from '../Form/context'
 import * as validations from '../../utils/validations'
-import { showCity, getFieldValue } from './helpers'
+import { showCity } from './helpers'
+import { getFieldValue } from '../Form/Input/helpers'
 
 const AddressField = () => {
   const { fields } = useContext(formContext)

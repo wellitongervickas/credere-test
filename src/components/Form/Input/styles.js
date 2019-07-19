@@ -16,7 +16,7 @@ export const InputField = styled.input`
   height: 40px;
   padding: 0 12px;
   color: #666;
-  width: 97%;
+  width: 95%;
 `
 export const InputError = styled.div`
   display: block;

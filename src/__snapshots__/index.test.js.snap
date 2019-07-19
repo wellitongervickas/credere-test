@@ -11,7 +11,7 @@ Array [
       Form
     </h2>
     <form
-      className="sc-kpOJdX fLqRtU"
+      className="sc-dxgOiQ cTLYkJ"
       noValidate={true}
       onSubmit={[Function]}
     >
@@ -39,7 +39,7 @@ Array [
                *
             </label>
             <input
-              className="sc-kgoBCf iSFPjC"
+              className="sc-kgoBCf koTPDs"
               id="name"
               name="name"
               onChange={[Function]}
@@ -68,7 +68,7 @@ Array [
                *
             </label>
             <input
-              className="sc-kgoBCf iSFPjC"
+              className="sc-kgoBCf koTPDs"
               id="birthday"
               max="2019-07-18"
               name="birthday"
@@ -103,7 +103,7 @@ Array [
                *
             </label>
             <input
-              className="sc-kgoBCf iSFPjC"
+              className="sc-kgoBCf koTPDs"
               id="state"
               maxLength="2"
               name="state"
@@ -122,16 +122,25 @@ Array [
         </div>
       </div>
       <div
-        className="sc-ckVGcZ foYhJp"
+        className="sc-jKJlTe loXQau"
       >
         <h3
           className="sc-dnqmqq bJaIPW"
         >
           Telefones
         </h3>
+        <div
+          className="grid phones-list"
+        >
+          <span
+            className="sc-gZMcBi giNnHm"
+          >
+            Não há telefones cadastrados!
+          </span>
+        </div>
       </div>
       <div
-        className="sc-jKJlTe jxfROG"
+        className="sc-eNQAEJ dmCkjv"
       >
         <h3
           className="emails-title sc-dnqmqq bJaIPW"
@@ -159,13 +168,17 @@ Array [
           </button>
         </div>
       </div>
-      <div>
+      <div
+        className="sc-kpOJdX gBKAVg"
+      >
         <h3
           className="sc-dnqmqq bJaIPW"
         >
           Responsável
         </h3>
-        <div>
+        <div
+          className="grid parent-details"
+        >
           <div
             className="border-sizing sc-kAzzGY izUUKG"
           >
@@ -181,7 +194,7 @@ Array [
                *
             </label>
             <input
-              className="sc-kgoBCf iSFPjC"
+              className="sc-kgoBCf koTPDs"
               id="parent-name"
               name="parent-name"
               onChange={[Function]}
@@ -210,7 +223,7 @@ Array [
                *
             </label>
             <input
-              className="sc-kgoBCf iSFPjC"
+              className="sc-kgoBCf koTPDs"
               id="parent-phone"
               name="parent-phone"
               onChange={[Function]}
@@ -244,13 +257,13 @@ Array [
       Slider Default
     </h2>
     <div
-      className="relative sc-bdVaJa bJmnKC"
+      className="relative sc-bdVaJa julkYB"
     >
       <div
         className="full-content relative sc-bwzfXH uTxCW"
       >
         <div
-          className="visible transition-all absolute sc-htpNat dxOMxF"
+          className="visible transition-all absolute sc-htpNat jcukNm"
           data-index={0}
           data-template="default"
         >
@@ -310,7 +323,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat dxOMxF"
+          className="hidden transition-all absolute sc-htpNat jcukNm"
           data-index={1}
           data-template="template_1"
         >
@@ -372,7 +385,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat dxOMxF"
+          className="hidden transition-all absolute sc-htpNat jcukNm"
           data-index={2}
           data-template="template_2"
         >
@@ -418,7 +431,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat dxOMxF"
+          className="hidden transition-all absolute sc-htpNat jcukNm"
           data-index={3}
           data-template="template_3"
         >
@@ -487,13 +500,13 @@ Array [
       Slider Auto Play (5s)
     </h2>
     <div
-      className="relative sc-bdVaJa bJmnKC"
+      className="relative sc-bdVaJa julkYB"
     >
       <div
         className="full-content relative sc-bwzfXH uTxCW"
       >
         <div
-          className="visible transition-all absolute sc-htpNat dxOMxF"
+          className="visible transition-all absolute sc-htpNat jcukNm"
           data-index={0}
           data-template="default"
         >
@@ -553,7 +566,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat dxOMxF"
+          className="hidden transition-all absolute sc-htpNat jcukNm"
           data-index={1}
           data-template="template_1"
         >
@@ -615,7 +628,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat dxOMxF"
+          className="hidden transition-all absolute sc-htpNat jcukNm"
           data-index={2}
           data-template="template_2"
         >
@@ -661,7 +674,7 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-htpNat dxOMxF"
+          className="hidden transition-all absolute sc-htpNat jcukNm"
           data-index={3}
           data-template="template_3"
         >

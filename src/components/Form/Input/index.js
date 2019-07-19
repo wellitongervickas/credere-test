@@ -20,7 +20,7 @@ const Input = ({
   useEffect(() => {
     if (!ref.current.checkValidity()) {
       const { value } = ref.current
-      updateFields({ key: field, value, error: null })
+      updateFields({ key: field, value, error: '' })
     }
   }, [ref, field, updateFields])
 

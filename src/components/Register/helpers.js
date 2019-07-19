@@ -21,8 +21,3 @@ export const showCity = (state, driveLicense) => {
 
   return false
 }
-
-export const getFieldValue = (fields = [], field) => {
-  const el = fields.find(item => item.key === field)
-  return el ? el.value : ''
-}

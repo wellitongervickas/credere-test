@@ -4,7 +4,7 @@ exports[`Register Component should render partially components of Register 1`] =
 
 exports[`Register Component should render register component 1`] = `
 <form
-  className="sc-dnqmqq gzRzpY"
+  className="sc-iwsKbI QeLGO"
   noValidate={true}
   onSubmit={[Function]}
 >
@@ -32,7 +32,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw ebJnLg"
+          className="sc-gzVnrw kHZNCE"
           id="name"
           name="name"
           onChange={[Function]}
@@ -61,7 +61,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw ebJnLg"
+          className="sc-gzVnrw kHZNCE"
           id="birthday"
           max="2019-07-18"
           name="birthday"
@@ -96,7 +96,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw ebJnLg"
+          className="sc-gzVnrw kHZNCE"
           id="state"
           maxLength="2"
           name="state"
@@ -115,16 +115,25 @@ exports[`Register Component should render register component 1`] = `
     </div>
   </div>
   <div
-    className="sc-gZMcBi giNnHm"
+    className="sc-gqjmRU hnZXkc"
   >
     <h3
       className="sc-bwzfXH jmxchW"
     >
       Telefones
     </h3>
+    <div
+      className="grid phones-list"
+    >
+      <span
+        className="sc-bxivhb bUZGRr"
+      >
+        Não há telefones cadastrados!
+      </span>
+    </div>
   </div>
   <div
-    className="sc-gqjmRU eulilz"
+    className="sc-VigVT ilBBl"
   >
     <h3
       className="emails-title sc-bwzfXH jmxchW"
@@ -152,13 +161,17 @@ exports[`Register Component should render register component 1`] = `
       </button>
     </div>
   </div>
-  <div>
+  <div
+    className="sc-dnqmqq kQZAcq"
+  >
     <h3
       className="sc-bwzfXH jmxchW"
     >
       Responsável
     </h3>
-    <div>
+    <div
+      className="grid parent-details"
+    >
       <div
         className="border-sizing sc-EHOje hcPLoZ"
       >
@@ -174,7 +187,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw ebJnLg"
+          className="sc-gzVnrw kHZNCE"
           id="parent-name"
           name="parent-name"
           onChange={[Function]}
@@ -203,7 +216,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw ebJnLg"
+          className="sc-gzVnrw kHZNCE"
           id="parent-phone"
           name="parent-phone"
           onChange={[Function]}
