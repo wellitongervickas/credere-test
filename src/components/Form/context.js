@@ -2,7 +2,7 @@ import React, {
   createContext, useState, useCallback,
 } from 'react'
 import PropTypes from 'prop-types'
-import { existsOnList } from '../../utils/array'
+import { findItemFromKey } from '../../utils/array'
 
 const FormContext = createContext({
   fields: [],
@@ -14,7 +14,7 @@ const FormContextProvider = ({ children }) => {
 
   const updateFields = useCallback((item) => {
     setFields((list) => {
-      const exist = existsOnList(item, 'key', list)
+      const exist = findItemFromKey(list, 'key', item.key)
 
       if (!exist) {
         return [...list, item]

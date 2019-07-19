@@ -94,13 +94,13 @@ exports[`Slider Component Snapshots should render common title 1`] = `
 
 exports[`Slider Component Snapshots should render slider component 1`] = `
 <div
-  className="relative sc-bdVaJa bJmnKC"
+  className="relative sc-bdVaJa julkYB"
 >
   <div
     className="full-content relative sc-bwzfXH uTxCW"
   >
     <div
-      className="hidden transition-all absolute sc-htpNat dxOMxF"
+      className="hidden transition-all absolute sc-htpNat jcukNm"
       data-index={1}
       data-template="default"
     >
@@ -160,7 +160,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
       </div>
     </div>
     <div
-      className="hidden transition-all absolute sc-htpNat dxOMxF"
+      className="hidden transition-all absolute sc-htpNat jcukNm"
       data-index={2}
       data-template="template_1"
     >
@@ -222,7 +222,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
       </div>
     </div>
     <div
-      className="hidden transition-all absolute sc-htpNat dxOMxF"
+      className="hidden transition-all absolute sc-htpNat jcukNm"
       data-index={3}
       data-template="template_2"
     >
@@ -268,7 +268,7 @@ exports[`Slider Component Snapshots should render slider component 1`] = `
       </div>
     </div>
     <div
-      className="hidden transition-all absolute sc-htpNat dxOMxF"
+      className="hidden transition-all absolute sc-htpNat jcukNm"
       data-index={4}
       data-template="template_3"
     >
@@ -333,7 +333,7 @@ exports[`Slider Component Snapshots should render slider component without child
 
 exports[`Slider Component Snapshots should render slider item 1`] = `
 <div
-  className="hidden transition-all absolute sc-htpNat dxOMxF"
+  className="hidden transition-all absolute sc-htpNat jcukNm"
   data-index={1}
   data-template="default"
 >

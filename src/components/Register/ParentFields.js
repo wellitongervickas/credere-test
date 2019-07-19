@@ -2,11 +2,12 @@ import React from 'react'
 import * as validations from '../../utils/validations'
 import Input from '../Form/Input'
 import Typography from '../Typography'
+import { ParentField } from './styles'
 
 const ParentFields = () => (
-  <div>
+  <ParentField>
     <Typography.SubHeading>Responsável</Typography.SubHeading>
-    <div>
+    <div className="grid parent-details">
       <Input
         validation={validations.requiredField}
         field="parent-name"
@@ -20,7 +21,7 @@ const ParentFields = () => (
         required
       />
     </div>
-  </div>
+  </ParentField>
 )
 
 export default ParentFields

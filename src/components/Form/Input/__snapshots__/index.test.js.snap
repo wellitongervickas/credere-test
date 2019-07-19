@@ -6,7 +6,7 @@ Array [
     className="border-sizing sc-ifAKCX jmfedv"
   >
     <input
-      className="sc-bZQynM glljff"
+      className="sc-bZQynM NAAHf"
       id="input"
       name="input"
       onChange={[Function]}
@@ -35,7 +35,7 @@ Array [
       
     </label>
     <input
-      className="sc-bZQynM glljff"
+      className="sc-bZQynM NAAHf"
       id="input"
       name="input"
       onChange={[Function]}
@@ -64,7 +64,7 @@ Array [
        *
     </label>
     <input
-      className="sc-bZQynM glljff"
+      className="sc-bZQynM NAAHf"
       id="input"
       name="input"
       onChange={[Function]}
@@ -93,7 +93,7 @@ Array [
        *
     </label>
     <input
-      className="sc-bZQynM glljff"
+      className="sc-bZQynM NAAHf"
       id="input"
       name="input"
       onChange={[Function]}

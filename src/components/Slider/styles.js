@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { mobileLg, defaultSpace } from '../../globalStyles'
 
 const sliderDesktopDimensions = {
-  width: '800px',
+  width: '100%',
   height: '400px',
 }
 

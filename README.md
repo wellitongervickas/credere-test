@@ -10,31 +10,29 @@
 
 ### Utils
 
-#### Array
+#### - Array
 
-##### existsOnList
+##### findItemFromKey
 
-This function will return a value from list
+This function will return a item from list
 
 ```
-const item = { key: 'name', value: 'im here'}
 const list = [{ key: 'name', value: 'im here'}]
 const property = 'key'
-const exist = existsOnList(item, property, list)
+const item = { key: 'name', value: 'im here'}
+const exist = findItemFromKey(list, item, property)
 
 console.log(exist) // { key: 'name', value: 'im here'}
 ```
 
 ###### Props
-
-* item { object }
-* property { string } 
 * list { array } 
-
+* key { string } 
+* item { object }
 
 #### Font
 
-##### setFontSizing
+##### - setFontSizing
 
 This function will return a object with font size and font-height (size + 10)
 
@@ -50,7 +48,7 @@ console.log(fontSizesBig) // {'font-size': '24px','line-height': '34px'}
 
 * font { number }
 
-##### isEmphasys
+##### - isEmphasys
 
 This function will return a string value to use in css
 
@@ -67,7 +65,7 @@ console.log(notEmphasys) // empty
 
 #### String
 
-##### cropText
+##### - cropText
 
 This function will return a full text or a trim text with 3 dots when text will cross max chars value
 
@@ -86,7 +84,7 @@ console.log(trimText) // my na...
 
 #### Validation
 
-##### requiredField
+##### - requiredField
 
 This function will return a string value with "Campo obrigatório" or empty value when have a length
 
@@ -104,14 +102,13 @@ console.log(fieldWithValue) // empty
 
 ### Slider
 
-#### Slider
+#### - Slider
 | Properties | Type | Default | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | autoPlay | bool | false | Auto change next slider |
 | duration | number | 5000 | Time to next slider when use autoPlay  |
 
-
-#### Slider item
+#### - Slider item
 | Properties | Type | Options | Description |
 | ------------- |:-------------| :-------------|:-------------|
 | image | string | is required | Image of Slider  |
@@ -246,14 +243,13 @@ export default MyForm
 
 ```
 
-### Test
+### Script Test
 
 * yarn test
 * yarn test:watch 
 * yarn test:coverage
 
-
-### Utils
+### Script Utils
 
 * yarn lint
 * yarn lint:fix
