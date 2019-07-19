@@ -45,13 +45,7 @@ Array [
               onChange={[Function]}
               required={true}
             />
-            <div
-              className="sc-kGXeez dNDVLu"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              />
-            </div>
+            
           </div>
           <div
             className="border-sizing sc-kAzzGY izUUKG"
@@ -76,13 +70,7 @@ Array [
               required={true}
               type="date"
             />
-            <div
-              className="sc-kGXeez dNDVLu"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              />
-            </div>
+            
           </div>
         </div>
         <div
@@ -111,13 +99,7 @@ Array [
               pattern="[A-Za-z]{2}"
               required={true}
             />
-            <div
-              className="sc-kGXeez dNDVLu"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              />
-            </div>
+            
           </div>
         </div>
       </div>
@@ -219,13 +201,7 @@ Array [
               onChange={[Function]}
               required={true}
             />
-            <div
-              className="sc-kGXeez dNDVLu"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              />
-            </div>
+            
           </div>
           <div
             className="border-sizing sc-kAzzGY izUUKG"
@@ -248,13 +224,7 @@ Array [
               onChange={[Function]}
               required={true}
             />
-            <div
-              className="sc-kGXeez dNDVLu"
-            >
-              <span
-                className="sc-gZMcBi giNnHm"
-              />
-            </div>
+            
           </div>
         </div>
       </div>

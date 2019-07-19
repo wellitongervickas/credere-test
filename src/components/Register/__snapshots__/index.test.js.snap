@@ -38,13 +38,7 @@ exports[`Register Component should render register component 1`] = `
           onChange={[Function]}
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
       <div
         className="border-sizing sc-EHOje hcPLoZ"
@@ -69,13 +63,7 @@ exports[`Register Component should render register component 1`] = `
           required={true}
           type="date"
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
     </div>
     <div
@@ -104,13 +92,7 @@ exports[`Register Component should render register component 1`] = `
           pattern="[A-Za-z]{2}"
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
     </div>
   </div>
@@ -212,13 +194,7 @@ exports[`Register Component should render register component 1`] = `
           onChange={[Function]}
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
       <div
         className="border-sizing sc-EHOje hcPLoZ"
@@ -241,13 +217,7 @@ exports[`Register Component should render register component 1`] = `
           onChange={[Function]}
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
     </div>
   </div>

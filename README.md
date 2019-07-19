@@ -10,9 +10,9 @@
 
 ### Utils
 
-#### - Array
+#### Array
 
-##### findItemFromKey
+##### - findItemFromKey
 
 This function will return a item from list
 

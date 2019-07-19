@@ -4,15 +4,15 @@ import React, {
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Typography from '../../Typography'
-import { validator, getFieldError } from './helpers'
+import { validator } from './helpers'
+import { getFieldError } from '../helpers'
 import formContext from '../context'
 import {
   InputContainer, InputLabel, InputField, InputError,
 } from './styles'
 
 const Input = ({
-  validation, field, label,
-  className, onChange, ...props
+  validation, field, label, className, onChange, ...props
 }) => {
   const ref = useRef(null)
   const { fields, updateFields } = useContext(formContext)
@@ -20,6 +20,7 @@ const Input = ({
   useEffect(() => {
     if (!ref.current.checkValidity()) {
       const { value } = ref.current
+
       updateFields({ key: field, value, error: '' })
     }
   }, [ref, field, updateFields])
@@ -27,9 +28,12 @@ const Input = ({
   const handleChange = useCallback(() => {
     ref.current = validator(validation, ref.current)
     const { validationMessage, value } = ref.current
+
     updateFields({ key: field, value, error: validationMessage })
     onChange(value)
   }, [validation, ref, field, updateFields, onChange])
+
+  const fieldError = useCallback(getFieldError(fields, field), [field, fields])
 
   return (
     <InputContainer className={classnames(className, 'border-sizing')}>
@@ -46,9 +50,11 @@ const Input = ({
         onChange={handleChange}
         {...props}
       />
-      <InputError>
-        <Typography.Span>{getFieldError(fields, field)}</Typography.Span>
-      </InputError>
+      {fieldError && fieldError.length > 0 && (
+        <InputError>
+          <Typography.Span>{fieldError}</Typography.Span>
+        </InputError>
+      )}
     </InputContainer>
   )
 }

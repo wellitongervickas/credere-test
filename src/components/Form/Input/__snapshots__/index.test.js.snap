@@ -12,13 +12,7 @@ Array [
       onChange={[Function]}
       required={false}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
   <div
     className="border-sizing sc-ifAKCX jmfedv"
@@ -41,13 +35,7 @@ Array [
       onChange={[Function]}
       required={false}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
   <div
     className="border-sizing sc-ifAKCX jmfedv"
@@ -70,13 +58,7 @@ Array [
       onChange={[Function]}
       required={true}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
   <div
     className="my-class border-sizing sc-ifAKCX jmfedv"
@@ -99,13 +81,7 @@ Array [
       onChange={[Function]}
       required={true}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
 ]
 `;

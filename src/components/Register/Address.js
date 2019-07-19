@@ -3,7 +3,7 @@ import Input from '../Form/Input'
 import formContext from '../Form/context'
 import * as validations from '../../utils/validations'
 import { showCity } from './helpers'
-import { getFieldValue } from '../Form/Input/helpers'
+import { getFieldValue } from '../Form/helpers'
 
 const AddressField = () => {
   const { fields } = useContext(formContext)

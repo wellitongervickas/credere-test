@@ -11,7 +11,7 @@ import DetailsField from './Details'
 import AddressField from './Address'
 import { RegisterContainer } from './styles'
 import { isUnderAge } from './helpers'
-import { getFieldValue } from '../Form/Input/helpers'
+import { getFieldValue } from '../Form/helpers'
 
 const onSubmit = (e, fields = []) => {
   e.preventDefault()
