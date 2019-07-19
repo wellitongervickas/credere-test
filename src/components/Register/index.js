@@ -10,16 +10,14 @@ import PhonesField from './Phones'
 import DetailsField from './Details'
 import AddressField from './Address'
 import { RegisterContainer } from './styles'
-import { isUnderAge } from './helpers'
-import { getFieldValue } from '../Form/Input/helpers'
+import { isUnderAge, parseFormOutput } from './helpers'
+import { getFieldValue } from '../Form/helpers'
 
 const onSubmit = (e, fields = []) => {
   e.preventDefault()
   if (e.target.checkValidity()) {
     // eslint-disable-next-line no-console
-    console.log('submit with:', fields)
-    // eslint-disable-next-line no-alert
-    alert('submited')
+    console.log('Submited', parseFormOutput(fields))
   }
 }
 

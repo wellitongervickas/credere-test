@@ -1,4 +1,4 @@
-import { cropText } from './string'
+import { cropText } from '.'
 
 describe('String Utils', () => {
   it('should function to be defined', () => {

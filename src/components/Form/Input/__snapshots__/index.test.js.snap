@@ -6,19 +6,13 @@ Array [
     className="border-sizing sc-ifAKCX jmfedv"
   >
     <input
-      className="sc-bZQynM NAAHf"
+      className="sc-bZQynM etNqCl"
       id="input"
       name="input"
       onChange={[Function]}
       required={false}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
   <div
     className="border-sizing sc-ifAKCX jmfedv"
@@ -35,19 +29,13 @@ Array [
       
     </label>
     <input
-      className="sc-bZQynM NAAHf"
+      className="sc-bZQynM etNqCl"
       id="input"
       name="input"
       onChange={[Function]}
       required={false}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
   <div
     className="border-sizing sc-ifAKCX jmfedv"
@@ -64,19 +52,13 @@ Array [
        *
     </label>
     <input
-      className="sc-bZQynM NAAHf"
+      className="sc-bZQynM etNqCl"
       id="input"
       name="input"
       onChange={[Function]}
       required={true}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
   <div
     className="my-class border-sizing sc-ifAKCX jmfedv"
@@ -93,19 +75,13 @@ Array [
        *
     </label>
     <input
-      className="sc-bZQynM NAAHf"
+      className="sc-bZQynM etNqCl"
       id="input"
       name="input"
       onChange={[Function]}
       required={true}
     />
-    <div
-      className="sc-gzVnrw bfjzjW"
-    >
-      <span
-        className="sc-bxivhb bUZGRr"
-      />
-    </div>
+    
   </div>,
 ]
 `;

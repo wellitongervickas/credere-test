@@ -1,4 +1,4 @@
-import { requiredField } from './validations'
+import { requiredField } from '.'
 
 describe('Validation Utils', () => {
   it('should be validation requiredField is defined', () => {

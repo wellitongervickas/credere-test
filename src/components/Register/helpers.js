@@ -1,3 +1,6 @@
+import uuid from 'uuid/v1'
+import { getFieldValue } from '../Form/helpers'
+
 export const isUnderAge = (date) => {
   if (date) {
     const currentYear = new Date().getFullYear()
@@ -20,4 +23,28 @@ export const showCity = (state, driveLicense) => {
   }
 
   return false
+}
+
+export const parseFormOutput = (fields) => {
+  const payload = {
+    id: uuid(),
+    name: getFieldValue(fields, 'name'),
+    birthday: getFieldValue(fields, 'birthday'),
+    driver_license: getFieldValue(fields, 'driver_license'),
+    state: getFieldValue(fields, 'state'),
+    city: getFieldValue(fields, 'city'),
+    phones: getFieldValue(fields, 'phones'),
+    emails: getFieldValue(fields, 'emails'),
+    parent: {
+      id: uuid(),
+      name: getFieldValue(fields, 'parent-name'),
+      phone: {
+        id: uuid(),
+        code: getFieldValue(fields, 'parent-phone-code'),
+        number: getFieldValue(fields, 'parent-phone-number'),
+      },
+    },
+  }
+
+  return payload
 }

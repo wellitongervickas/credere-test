@@ -4,7 +4,7 @@ exports[`Register Component should render partially components of Register 1`] =
 
 exports[`Register Component should render register component 1`] = `
 <form
-  className="sc-dnqmqq inbDEO"
+  className="sc-dnqmqq dkkdNN"
   noValidate={true}
   onSubmit={[Function]}
 >
@@ -32,19 +32,13 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw kHZNCE"
+          className="sc-gzVnrw lmiusb"
           id="name"
           name="name"
           onChange={[Function]}
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
       <div
         className="border-sizing sc-EHOje hcPLoZ"
@@ -61,7 +55,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw kHZNCE"
+          className="sc-gzVnrw lmiusb"
           id="birthday"
           max="2019-07-19"
           name="birthday"
@@ -69,13 +63,7 @@ exports[`Register Component should render register component 1`] = `
           required={true}
           type="date"
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
     </div>
     <div
@@ -96,7 +84,7 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw kHZNCE"
+          className="sc-gzVnrw lmiusb"
           id="state"
           maxLength="2"
           name="state"
@@ -104,18 +92,12 @@ exports[`Register Component should render register component 1`] = `
           pattern="[A-Za-z]{2}"
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
     </div>
   </div>
   <div
-    className="sc-gqjmRU hbUlzP"
+    className="sc-gqjmRU loubtk"
   >
     <h3
       className="phones-title sc-bwzfXH jmxchW"
@@ -206,47 +188,69 @@ exports[`Register Component should render register component 1`] = `
            *
         </label>
         <input
-          className="sc-gzVnrw kHZNCE"
+          className="sc-gzVnrw lmiusb"
           id="parent-name"
           name="parent-name"
           onChange={[Function]}
           required={true}
         />
-        <div
-          className="sc-htoDjs imbtxc"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          />
-        </div>
+        
       </div>
       <div
-        className="border-sizing sc-EHOje hcPLoZ"
+        className="grid phones-form-fields"
       >
-        <label
-          className="sc-bZQynM fGYiaS"
-          htmlFor="parent-phone"
-        >
-          <span
-            className="sc-bxivhb bUZGRr"
-          >
-            Telefone
-          </span>
-           *
-        </label>
-        <input
-          className="sc-gzVnrw kHZNCE"
-          id="parent-phone"
-          name="parent-phone"
-          onChange={[Function]}
-          required={true}
-        />
         <div
-          className="sc-htoDjs imbtxc"
+          className="border-sizing sc-EHOje hcPLoZ"
         >
-          <span
-            className="sc-bxivhb bUZGRr"
+          <label
+            className="sc-bZQynM fGYiaS"
+            htmlFor="parent-phone-code"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            >
+              DDD
+            </span>
+             *
+          </label>
+          <input
+            className="sc-gzVnrw lmiusb"
+            id="parent-phone-code"
+            maxLength="2"
+            minLength="2"
+            name="parent-phone-code"
+            onChange={[Function]}
+            pattern="[0-9]*"
+            placeholder="DDD"
+            required={true}
           />
+          
+        </div>
+        <div
+          className="border-sizing sc-EHOje hcPLoZ"
+        >
+          <label
+            className="sc-bZQynM fGYiaS"
+            htmlFor="parent-phone-number"
+          >
+            <span
+              className="sc-bxivhb bUZGRr"
+            >
+              Telefone
+            </span>
+             *
+          </label>
+          <input
+            className="sc-gzVnrw lmiusb"
+            id="parent-phone-number"
+            maxLength="9"
+            minLength="8"
+            name="parent-phone-number"
+            onChange={[Function]}
+            pattern="[0-9]*"
+            required={true}
+          />
+          
         </div>
       </div>
     </div>
