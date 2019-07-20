@@ -15,7 +15,7 @@ after_success:
 deploy:
   provider: heroku
   api_key:
-    secure: "d9263ec2-43c1-499b-a412-43fcd25f2101"
+    secure: "d7c89526-d511-4cc2-86cf-b0fe27d12e74"
   app: credere-test
   on:
     repo: wellitongervickas/credere-test
