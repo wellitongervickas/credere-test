@@ -182,6 +182,7 @@ This function will return a new list without a item
 ```
 const list = [{ id: 1 }]
 const newlist = removeFromList(list, 'id', 0)
+console.log(newlist) // [{ id: 1 }]
 
 const list2 = [{ id: 1 }]
 const newlist2 = removeFromList(list, 'id', 1)
