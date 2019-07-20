@@ -64,7 +64,7 @@ Array [
             <input
               className="sc-gzVnrw lmiusb"
               id="birthday"
-              max="2019-07-19"
+              max="2019-07-20"
               name="birthday"
               onChange={[Function]}
               required={true}
@@ -104,7 +104,7 @@ Array [
         </div>
       </div>
       <div
-        className="sc-gqjmRU loubtk"
+        className="sc-gZMcBi geStiv"
       >
         <h3
           className="phones-title sc-htpNat kSTdGb"
@@ -137,7 +137,7 @@ Array [
         </div>
       </div>
       <div
-        className="sc-VigVT buWxgK"
+        className="sc-gqjmRU loubtk"
       >
         <h3
           className="emails-title sc-htpNat kSTdGb"
@@ -280,18 +280,18 @@ Array [
       Slider Default
     </h2>
     <div
-      className="relative sc-jTzLTM iDTJtK"
+      className="relative sc-VigVT bxaSuL"
     >
       <div
-        className="full-content relative sc-fjdhpX nsimD"
+        className="full-content relative sc-jTzLTM eCMmlJ"
       >
         <div
-          className="visible transition-all absolute sc-jzJRlG KIrPt"
+          className="visible transition-all absolute sc-fjdhpX EvsuF"
           data-index={0}
           data-template="default"
         >
           <div
-            className="grid full-content sc-kpOJdX idZYIE"
+            className="grid full-content sc-kGXeez irgGSN"
           >
             <div
               className="flex-column-center relative"
@@ -302,10 +302,10 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
               <div
-                className="relative sc-kgoBCf dJXIDt"
+                className="relative sc-chPdSV dmFdMx"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -330,7 +330,7 @@ Array [
               </div>
             </div>
             <div
-              className="flex-column-center sc-kGXeez dGzauG"
+              className="flex-column-center sc-kgoBCf eCeXRY"
             >
               <p
                 className="sc-bxivhb fysKgG"
@@ -346,12 +346,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-jzJRlG KIrPt"
+          className="hidden transition-all absolute sc-fjdhpX EvsuF"
           data-index={1}
           data-template="template_1"
         >
           <div
-            className="full-content grid sc-ckVGcZ lkEghq"
+            className="full-content grid sc-dxgOiQ eCPVFJ"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -362,12 +362,12 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
             </div>
             <div>
               <div
-                className="sc-jKJlTe juaUJg"
+                className="sc-ckVGcZ cGlCSD"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -391,7 +391,7 @@ Array [
                 </h3>
               </div>
               <div
-                className="flex-column-center sc-kGXeez dGzauG"
+                className="flex-column-center sc-kgoBCf eCeXRY"
               >
                 <p
                   className="sc-bxivhb fysKgG"
@@ -408,12 +408,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-jzJRlG KIrPt"
+          className="hidden transition-all absolute sc-fjdhpX EvsuF"
           data-index={2}
           data-template="template_2"
         >
           <div
-            className="full-content sc-eNQAEJ bsVJav"
+            className="full-content sc-jKJlTe fTNQEP"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -424,10 +424,10 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
               <div
-                className="relative sc-kgoBCf dJXIDt"
+                className="relative sc-chPdSV dmFdMx"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -454,12 +454,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-jzJRlG KIrPt"
+          className="hidden transition-all absolute sc-fjdhpX EvsuF"
           data-index={3}
           data-template="template_3"
         >
           <div
-            className="full-content sc-dxgOiQ wnQgq"
+            className="full-content sc-kpOJdX fprTlO"
           >
             <div
               className="flex-column-center full-content relative"
@@ -470,10 +470,10 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
               <div
-                className="relative sc-kgoBCf dJXIDt"
+                className="relative sc-chPdSV dmFdMx"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -501,7 +501,7 @@ Array [
         </div>
       </div>
       <div
-        className="absolute sc-cSHVUG eyxjEC"
+        className="absolute sc-jzJRlG jSDmKE"
         data-max={0}
       >
         <button
@@ -523,18 +523,18 @@ Array [
       Slider Auto Play (5s)
     </h2>
     <div
-      className="relative sc-jTzLTM iDTJtK"
+      className="relative sc-VigVT bxaSuL"
     >
       <div
-        className="full-content relative sc-fjdhpX nsimD"
+        className="full-content relative sc-jTzLTM eCMmlJ"
       >
         <div
-          className="visible transition-all absolute sc-jzJRlG KIrPt"
+          className="visible transition-all absolute sc-fjdhpX EvsuF"
           data-index={0}
           data-template="default"
         >
           <div
-            className="grid full-content sc-kpOJdX idZYIE"
+            className="grid full-content sc-kGXeez irgGSN"
           >
             <div
               className="flex-column-center relative"
@@ -545,10 +545,10 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
               <div
-                className="relative sc-kgoBCf dJXIDt"
+                className="relative sc-chPdSV dmFdMx"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -573,7 +573,7 @@ Array [
               </div>
             </div>
             <div
-              className="flex-column-center sc-kGXeez dGzauG"
+              className="flex-column-center sc-kgoBCf eCeXRY"
             >
               <p
                 className="sc-bxivhb fysKgG"
@@ -589,12 +589,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-jzJRlG KIrPt"
+          className="hidden transition-all absolute sc-fjdhpX EvsuF"
           data-index={1}
           data-template="template_1"
         >
           <div
-            className="full-content grid sc-ckVGcZ lkEghq"
+            className="full-content grid sc-dxgOiQ eCPVFJ"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -605,12 +605,12 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
             </div>
             <div>
               <div
-                className="sc-jKJlTe juaUJg"
+                className="sc-ckVGcZ cGlCSD"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -634,7 +634,7 @@ Array [
                 </h3>
               </div>
               <div
-                className="flex-column-center sc-kGXeez dGzauG"
+                className="flex-column-center sc-kgoBCf eCeXRY"
               >
                 <p
                   className="sc-bxivhb fysKgG"
@@ -651,12 +651,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-jzJRlG KIrPt"
+          className="hidden transition-all absolute sc-fjdhpX EvsuF"
           data-index={2}
           data-template="template_2"
         >
           <div
-            className="full-content sc-eNQAEJ bsVJav"
+            className="full-content sc-jKJlTe fTNQEP"
           >
             <div
               className="flex-algin-end full-content relative"
@@ -667,10 +667,10 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
               <div
-                className="relative sc-kgoBCf dJXIDt"
+                className="relative sc-chPdSV dmFdMx"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -697,12 +697,12 @@ Array [
           </div>
         </div>
         <div
-          className="hidden transition-all absolute sc-jzJRlG KIrPt"
+          className="hidden transition-all absolute sc-fjdhpX EvsuF"
           data-index={3}
           data-template="template_3"
         >
           <div
-            className="full-content sc-dxgOiQ wnQgq"
+            className="full-content sc-kpOJdX fprTlO"
           >
             <div
               className="flex-column-center full-content relative"
@@ -713,10 +713,10 @@ Array [
               }
             >
               <div
-                className="full-content absolute sc-chPdSV jmHRTn"
+                className="full-content absolute sc-kAzzGY huVELo"
               />
               <div
-                className="relative sc-kgoBCf dJXIDt"
+                className="relative sc-chPdSV dmFdMx"
               >
                 <h2
                   className="sc-bwzfXH bXhZGo"
@@ -744,7 +744,7 @@ Array [
         </div>
       </div>
       <div
-        className="absolute sc-cSHVUG eyxjEC"
+        className="absolute sc-jzJRlG jSDmKE"
         data-max={0}
       >
         <button

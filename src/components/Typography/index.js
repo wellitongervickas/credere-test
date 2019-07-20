@@ -5,7 +5,8 @@ import {
 } from './styles'
 
 const Typography = ({
-  tag, children, color, emphasys, ...rest
+  tag, children, color,
+  emphasys, ...rest
 }) => {
   switch (tag) {
     case 'span':

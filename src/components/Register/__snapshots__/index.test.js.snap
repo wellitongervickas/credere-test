@@ -57,7 +57,7 @@ exports[`Register Component should render register component 1`] = `
         <input
           className="sc-gzVnrw lmiusb"
           id="birthday"
-          max="2019-07-19"
+          max="2019-07-20"
           name="birthday"
           onChange={[Function]}
           required={true}
@@ -97,7 +97,7 @@ exports[`Register Component should render register component 1`] = `
     </div>
   </div>
   <div
-    className="sc-gqjmRU loubtk"
+    className="sc-gZMcBi geStiv"
   >
     <h3
       className="phones-title sc-bwzfXH jmxchW"
@@ -130,7 +130,7 @@ exports[`Register Component should render register component 1`] = `
     </div>
   </div>
   <div
-    className="sc-VigVT buWxgK"
+    className="sc-gqjmRU loubtk"
   >
     <h3
       className="emails-title sc-bwzfXH jmxchW"
