@@ -1,6 +1,6 @@
-## Credere Front-end Test
+## Credere Test
 
-### Quick Start
+### Start guide
 
 * git clone git@bitbucket.org:gervickas/credere-frontend-test.git
 * cd credere-frontend-test
