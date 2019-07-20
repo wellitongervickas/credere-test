@@ -37,6 +37,11 @@ $device-mobile-xs: 576px;
   justify-content: center;
 }
 
+.flex-content-evenly {
+  @extend .flex;
+  justify-content: space-evenly;
+}
+
 .flex-algin-end {
   @extend .flex;
   align-items: flex-end;

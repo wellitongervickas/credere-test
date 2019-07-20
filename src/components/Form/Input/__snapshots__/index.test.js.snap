@@ -6,11 +6,12 @@ Array [
     className="border-sizing sc-ifAKCX jmfedv"
   >
     <input
-      className="sc-bZQynM etNqCl"
+      className="sc-bZQynM kXjSvG"
       id="input"
       name="input"
       onChange={[Function]}
       required={false}
+      type="text"
     />
     
   </div>,
@@ -29,11 +30,12 @@ Array [
       
     </label>
     <input
-      className="sc-bZQynM etNqCl"
+      className="sc-bZQynM kXjSvG"
       id="input"
       name="input"
       onChange={[Function]}
       required={false}
+      type="text"
     />
     
   </div>,
@@ -52,11 +54,12 @@ Array [
        *
     </label>
     <input
-      className="sc-bZQynM etNqCl"
+      className="sc-bZQynM kXjSvG"
       id="input"
       name="input"
       onChange={[Function]}
       required={true}
+      type="text"
     />
     
   </div>,
@@ -75,11 +78,12 @@ Array [
        *
     </label>
     <input
-      className="sc-bZQynM etNqCl"
+      className="sc-bZQynM kXjSvG"
       id="input"
       name="input"
       onChange={[Function]}
       required={true}
+      type="text"
     />
     
   </div>,
