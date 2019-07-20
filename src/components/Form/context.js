@@ -2,7 +2,7 @@ import React, {
   createContext, useState, useCallback,
 } from 'react'
 import PropTypes from 'prop-types'
-import { findItemFromKey } from '../../utils/array'
+import { findItemFromKey, removeFromList } from '../../utils/array'
 
 const FormContext = createContext({
   fields: [],
@@ -14,7 +14,7 @@ const FormContextProvider = ({ children }) => {
   const [fields, setFields] = useState([])
 
   const removeField = useCallback((id) => {
-    setFields(list => list.filter(item => item.key === id))
+    setFields(list => removeFromList(list, 'key', id))
   }, [setFields])
 
   const updateFields = useCallback((item) => {

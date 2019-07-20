@@ -42,6 +42,11 @@ $device-mobile-xs: 576px;
   align-items: flex-end;
 }
 
+.flex-content-evenly {
+  @extend .flex;
+  justify-content: space-evenly;
+}
+
 .relative {
   position: relative;
 }
