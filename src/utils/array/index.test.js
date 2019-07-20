@@ -1,4 +1,4 @@
-import { findItemFromKey, removeFromList } from '.'
+import { findItemFromKey } from '.'
 
 describe('Array Utils', () => {
   it('should function getFieldValue to be defined', () => {
@@ -24,28 +24,5 @@ describe('Array Utils', () => {
     const field = 'name'
     const expected = findItemFromKey(fields, 'key', field)
     expect(expected).toEqual({ key: 'name', value: 'test' })
-  })
-
-  it('should function removeFromList to be defined', () => {
-    expect(removeFromList).toBeDefined()
-  })
-
-  it('should return a list with initial value', () => {
-    const list = []
-    const expected = removeFromList(list, 'id', 0)
-    expect(expected).toEqual([])
-  })
-
-  it('should return a original list values', () => {
-    const list = [{ id: 1 }]
-    const expected = removeFromList(list, 'id', 0)
-    expect(expected).toEqual(list)
-  })
-
-  it('should remove item from list with id passed in props', () => {
-    const list = [{ id: 0 }, { id: 1 }]
-    const expected = removeFromList(list, 'id', 0)
-    expect(expected).not.toEqual(list)
-    expect(expected).toEqual([{ id: 1 }])
   })
 })

@@ -17,7 +17,6 @@ import { updateMainPhone } from './helpers'
 const PhonesField = () => {
   const { fields, updateFields, removeField } = useContext(formContext)
   const phones = useCallback(getFieldValue(fields, 'phones'), [fields])
-
   const [showField, toggleField] = useState(false)
   const [code, setCode] = useState('')
   const [number, setNumber] = useState('')
@@ -33,9 +32,11 @@ const PhonesField = () => {
       }
 
       updateFields({ key: 'phones', value: [...phones, item], error: '' })
+
       toggleField(false)
       setCode('')
       setNumber('')
+
       removeField('new-phone-code')
       removeField('new-phone-number')
       removeField(`phone-main-${item.id}`)
@@ -62,7 +63,11 @@ const PhonesField = () => {
             {phones.length > 1 && (
               <div>
                 <div>
-                  <Button size="md" modifier="outline" onClick={() => handleRemovePhones(item.id)}>
+                  <Button
+                    size="md"
+                    modifier="outline"
+                    onClick={() => handleRemovePhones(item.id)}
+                  >
                     Remover
                   </Button>
                 </div>

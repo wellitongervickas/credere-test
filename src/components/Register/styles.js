@@ -70,8 +70,6 @@ export const ParentField = styled.div`
   margin-bottom: ${defaultSpace};
 `
 
-export const DriverLicenseContainer = styled.div``
-
 export const PhonesContainer = styled.div`
   margin-bottom: ${defaultSpace};
 `

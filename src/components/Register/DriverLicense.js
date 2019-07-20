@@ -3,10 +3,9 @@ import * as validations from '../../utils/validations'
 import Input from '../Form/Input'
 import Typography from '../Typography'
 import { maxToday } from '../Form/Input/helpers'
-import { DriverLicenseContainer } from './styles'
 
 const DriverLicense = () => (
-  <DriverLicenseContainer>
+  <div>
     <Typography.Span>Carteira de motorista</Typography.Span>
     <div className="grid drive-license-fields">
       <Input
@@ -23,7 +22,7 @@ const DriverLicense = () => (
         required
       />
     </div>
-  </DriverLicenseContainer>
+  </div>
 )
 
 
