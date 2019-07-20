@@ -9,9 +9,6 @@ cache:
 before_script:
 - yarn build
 
-after_success:
-- yarn test:coverage
-
 deploy:
   provider: heroku
   api_key:
