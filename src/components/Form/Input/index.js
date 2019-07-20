@@ -1,5 +1,5 @@
 import React, {
-  useRef, useCallback, useContext, useEffect,
+  useRef, useCallback, useContext, useEffect, useMemo,
 } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
@@ -35,6 +35,11 @@ const Input = ({
 
   const fieldError = useCallback(getFieldError(fields, field), [field, fields])
 
+  const newProps = useMemo(() => ({
+    ...props,
+    name: props.name || field,
+  }), [props, field])
+
   return (
     <InputContainer className={classnames(className, 'border-sizing')}>
       {label && (
@@ -44,11 +49,11 @@ const Input = ({
         </InputLabel>
       )}
       <InputField
+        isRadio={props.type === 'radio'}
         ref={ref}
-        name={field}
         id={field}
         onChange={handleChange}
-        {...props}
+        {...newProps}
       />
       {fieldError && fieldError.length > 0 && (
         <InputError>
@@ -66,6 +71,8 @@ Input.propTypes = {
   className: PropTypes.string,
   validation: PropTypes.func,
   onChange: PropTypes.func,
+  name: PropTypes.string,
+  type: PropTypes.oneOf(['radio', 'text', 'number', 'date', 'email']),
 }
 
 Input.defaultProps = {
@@ -74,6 +81,8 @@ Input.defaultProps = {
   required: false,
   label: null,
   className: null,
+  name: null,
+  type: 'text',
 }
 
 export default Input

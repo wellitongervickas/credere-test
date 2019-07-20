@@ -39,11 +39,12 @@ Array [
                *
             </label>
             <input
-              className="sc-gzVnrw lmiusb"
+              className="sc-gzVnrw cfAsvE"
               id="name"
               name="name"
               onChange={[Function]}
               required={true}
+              type="text"
             />
             
           </div>
@@ -62,9 +63,9 @@ Array [
                *
             </label>
             <input
-              className="sc-gzVnrw lmiusb"
+              className="sc-gzVnrw cfAsvE"
               id="birthday"
-              max="2019-07-19"
+              max="2019-07-20"
               name="birthday"
               onChange={[Function]}
               required={true}
@@ -91,13 +92,14 @@ Array [
                *
             </label>
             <input
-              className="sc-gzVnrw lmiusb"
+              className="sc-gzVnrw cfAsvE"
               id="state"
               maxLength="2"
               name="state"
               onChange={[Function]}
               pattern="[A-Za-z]{2}"
               required={true}
+              type="text"
             />
             
           </div>
@@ -195,11 +197,12 @@ Array [
                *
             </label>
             <input
-              className="sc-gzVnrw lmiusb"
+              className="sc-gzVnrw cfAsvE"
               id="parent-name"
               name="parent-name"
               onChange={[Function]}
               required={true}
+              type="text"
             />
             
           </div>
@@ -221,7 +224,7 @@ Array [
                  *
               </label>
               <input
-                className="sc-gzVnrw lmiusb"
+                className="sc-gzVnrw cfAsvE"
                 id="parent-phone-code"
                 maxLength="2"
                 minLength="2"
@@ -230,6 +233,7 @@ Array [
                 pattern="[0-9]*"
                 placeholder="DDD"
                 required={true}
+                type="text"
               />
               
             </div>
@@ -248,7 +252,7 @@ Array [
                  *
               </label>
               <input
-                className="sc-gzVnrw lmiusb"
+                className="sc-gzVnrw cfAsvE"
                 id="parent-phone-number"
                 maxLength="9"
                 minLength="8"
@@ -256,6 +260,7 @@ Array [
                 onChange={[Function]}
                 pattern="[0-9]*"
                 required={true}
+                type="text"
               />
               
             </div>
