@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import uuid from 'uuid/v1'
 import { getFieldValue } from '../Form/helpers'
 
@@ -26,39 +25,26 @@ export const showCity = (state, driveLicense) => {
   return false
 }
 
-export const updateMainPhone = (list = [], id) => {
-  if (list.length === 1) {
-    list[0].main = true
-    return list
+export const parseFormOutput = (fields) => {
+  const payload = {
+    id: uuid(),
+    name: getFieldValue(fields, 'name'),
+    birthday: getFieldValue(fields, 'birthday'),
+    driver_license: getFieldValue(fields, 'driver_license'),
+    state: getFieldValue(fields, 'state'),
+    city: getFieldValue(fields, 'city'),
+    phones: getFieldValue(fields, 'phones'),
+    emails: getFieldValue(fields, 'emails'),
+    parent: {
+      id: uuid(),
+      name: getFieldValue(fields, 'parent-name'),
+      phone: {
+        id: uuid(),
+        code: getFieldValue(fields, 'parent-phone-code'),
+        number: getFieldValue(fields, 'parent-phone-number'),
+      },
+    },
   }
 
-  return list.filter((item) => {
-    if (item.id === id) {
-      item.main = true
-    } else {
-      item.main = false
-    }
-
-    return item
-  })
+  return payload
 }
-
-export const parseFormOutput = fields => ({
-  id: uuid(),
-  name: getFieldValue(fields, 'name'),
-  birthday: getFieldValue(fields, 'birthday'),
-  driver_license: getFieldValue(fields, 'driver_license'),
-  state: getFieldValue(fields, 'state'),
-  city: getFieldValue(fields, 'city'),
-  phones: getFieldValue(fields, 'phones'),
-  emails: getFieldValue(fields, 'emails'),
-  parent: {
-    id: uuid(),
-    name: getFieldValue(fields, 'parent-name'),
-    phone: {
-      id: uuid(),
-      code: getFieldValue(fields, 'parent-phone-code'),
-      number: getFieldValue(fields, 'parent-phone-number'),
-    },
-  },
-})

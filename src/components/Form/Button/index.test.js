@@ -5,22 +5,8 @@ import Button from '.'
 
 describe('Button Component', () => {
   it('should render button component', () => {
-    const tree = renderer.create((
-      <>
-        <Button>button</Button>
-        <Button modifier="normal">normal Button</Button>
-        <Button modifier="outline">outline Button</Button>
-        <Button size="lg">lg Button</Button>
-        <Button size="md">md Button</Button>
-        <Button size="sm">sm Button</Button>
-        <Button theme="default">default Button</Button>
-        <Button modifier="outline" theme="default">outline default Button</Button>
-        <Button theme="success">success Button</Button>
-        <Button modifier="outline" theme="success">outline success Button</Button>
-      </>
-    )).toJSON()
-
-    expect(tree).toMatchSnapshot()
+    const element = renderer.create(<Button>Default Button</Button>).toJSON()
+    expect(element).toMatchSnapshot()
   })
 
   it('should match component type', () => {

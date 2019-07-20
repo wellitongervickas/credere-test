@@ -1,7 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import Input from '.'
-import { maxToday } from './helpers'
 
 describe('Input Component', () => {
   it('should render input component', () => {
@@ -14,20 +13,5 @@ describe('Input Component', () => {
       </>,
     ).toJSON()
     expect(element).toMatchSnapshot()
-  })
-})
-
-describe('Input Helpers', () => {
-  it('should be today', () => {
-    const today = new Date().toISOString().split('T')[0]
-    expect(maxToday()).toBe(today)
-  })
-
-  it('should not be tomorrow', () => {
-    let tomorrow = new Date()
-    tomorrow.setDate(tomorrow.getDate() + 1)
-    tomorrow = tomorrow.toISOString().split('T')[0]
-
-    expect(maxToday()).not.toBe(tomorrow)
   })
 })
