@@ -1,76 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Component should render button component 1`] = `
-Array [
-  <button
-    className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    button
-  </button>,
-  <button
-    className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    normal Button
-  </button>,
-  <button
-    className="button-lg button-outline-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    outline Button
-  </button>,
-  <button
-    className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    lg Button
-  </button>,
-  <button
-    className="button-md button-normal-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    md Button
-  </button>,
-  <button
-    className="button-sm button-normal-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    sm Button
-  </button>,
-  <button
-    className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    default Button
-  </button>,
-  <button
-    className="button-lg button-outline-default transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    outline default Button
-  </button>,
-  <button
-    className="button-lg button-normal-success transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    success Button
-  </button>,
-  <button
-    className="button-lg button-outline-success transition-all sc-bdVaJa dyiLYP"
-    onClick={[Function]}
-    type="button"
-  >
-    outline success Button
-  </button>,
-]
+<button
+  className="button-lg button-normal-default transition-all sc-bdVaJa dyiLYP"
+  onClick={[Function]}
+  type="button"
+>
+  Default Button
+</button>
 `;

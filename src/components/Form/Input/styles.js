@@ -3,17 +3,6 @@ import {
   defaultRadius, defaultSpace, mobileSm, desktopSm, mobileLg,
 } from '../../../globalStyles'
 
-const InputStyle = `
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: ${defaultRadius};
-  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
-  height: 40px;
-  padding: 0 12px;
-  color: #666;
-  width: 95%;
-`
-
 export const InputContainer = styled.div`
   margin-bottom: ${defaultSpace};
 `
@@ -22,7 +11,14 @@ export const InputLabel = styled.label`
   display: block;
 `
 export const InputField = styled.input`
-  ${props => (props.isRadio ? '' : InputStyle)}
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: ${defaultRadius};
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  height: 40px;
+  padding: 0 12px;
+  color: #666;
+  width: 95%;
 
   @media (min-width: ${mobileSm}) and (max-width: ${desktopSm}) {
     width: 94%;
