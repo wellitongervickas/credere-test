@@ -11,3 +11,9 @@ before_script:
 
 after_success:
 - yarn test:coverage
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "d9263ec2-43c1-499b-a412-43fcd25f2101"
+  app: credere-test
