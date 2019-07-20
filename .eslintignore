@@ -1,13 +1,8 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
-**/node_modules/**
-
 # testing
 **/coverage/**
 
-# production
-**/build/**
+# dependencies
+**/node_modules/**
 
 # misc
 .DS_Store
@@ -15,6 +10,9 @@
 .env.development.local
 .env.test.local
 .env.production.local
+
+# production
+**/build/**
 
 # editor
 .vscode

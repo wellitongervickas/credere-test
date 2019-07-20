@@ -1,12 +1,13 @@
-## Credere Front-end Test
+## Credere Test
 
-### Quick Start
+### Start guide
 
-* git clone git@github.com:wellitongervickas/credere-test.git
+* git clone git@bitbucket.org:gervickas/credere-frontend-test.git
 * cd credere-frontend-test
 * yarn 
 * yarn start
 * yarn build
+
 
 ### Slider
 
