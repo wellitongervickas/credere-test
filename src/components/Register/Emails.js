@@ -8,10 +8,9 @@ import Typography from '../Typography'
 import Button from '../Form/Button'
 import { EmailsContainer } from './styles'
 import { getFieldValue } from '../Form/helpers'
-import { requiredField } from '../../utils/validations'
 
 const EmailsField = () => {
-  const { fields, updateFields, removeField } = useContext(formContext)
+  const { fields, updateFields } = useContext(formContext)
   const emails = useCallback(getFieldValue(fields, 'emails'), [fields])
   const [field, setField] = useState('')
   const [showField, toggleField] = useState(false)
@@ -21,16 +20,11 @@ const EmailsField = () => {
   }, [updateFields])
 
   const handleUpdateEmail = useCallback(() => {
-    if (field.length) {
-      const item = { id: uuid(), address: field }
-      updateFields({ key: 'emails', value: [...emails, item], error: '' })
-
-      toggleField(false)
-      setField('')
-
-      removeField('new-email')
-    }
-  }, [updateFields, toggleField, setField, emails, field, removeField])
+    const item = { id: uuid(), address: field }
+    updateFields({ key: 'emails', value: [...emails, item], error: '' })
+    toggleField(false)
+    setField('')
+  }, [updateFields, toggleField, setField, emails, field])
 
   const handleRemoveEmail = useCallback((id) => {
     if (emails.length > 1) {
@@ -48,7 +42,11 @@ const EmailsField = () => {
             <div>{item.address}</div>
             {emails.length > 1 && (
               <div>
-                <Button size="md" modifier="outline" onClick={() => handleRemoveEmail(item.id)}>
+                <Button
+                  size="md"
+                  modifier="outline"
+                  onClick={() => handleRemoveEmail(item.id)}
+                >
                   Remover
                 </Button>
               </div>
@@ -67,8 +65,6 @@ const EmailsField = () => {
               onChange={setField}
               type="email"
               placeholder="Insira seu e-mail"
-              validation={requiredField}
-              required
             />
           </div>
         )}

@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-
 import React, {
   useState, useCallback, useContext, useEffect,
 } from 'react'
@@ -10,14 +8,10 @@ import Button from '../Form/Button'
 import Input from '../Form/Input'
 import { PhonesContainer } from './styles'
 import { getFieldValue } from '../Form/helpers'
-import { requiredField } from '../../utils/validations'
-import { removeFromList } from '../../utils/array'
-import { updateMainPhone } from './helpers'
 
 const PhonesField = () => {
-  const { fields, updateFields, removeField } = useContext(formContext)
+  const { fields, updateFields } = useContext(formContext)
   const phones = useCallback(getFieldValue(fields, 'phones'), [fields])
-
   const [showField, toggleField] = useState(false)
   const [code, setCode] = useState('')
   const [number, setNumber] = useState('')
@@ -27,31 +21,18 @@ const PhonesField = () => {
   }, [updateFields])
 
   const handleUpdatePhones = useCallback(() => {
-    if (code.length && number.length) {
-      const item = {
-        id: uuid(), main: false, code, number,
-      }
-
-      updateFields({ key: 'phones', value: [...phones, item], error: '' })
-
-      toggleField(false)
-      setCode('')
-      setNumber('')
-
-      removeField('new-phone-code')
-      removeField('new-phone-number')
-      removeField(`phone-main-${item.id}`)
-    }
-  }, [updateFields, toggleField, code, number, phones, removeField])
+    const item = { id: uuid(), code, number }
+    updateFields({ key: 'phones', value: [...phones, item], error: '' })
+    toggleField(false)
+    setCode('')
+    setNumber('')
+  }, [updateFields, toggleField, code, number, phones])
 
   const handleRemovePhones = useCallback((id) => {
     if (phones.length > 1) {
-      updateFields({ key: 'phones', value: removeFromList(phones, 'id', id), error: '' })
+      const newPhonesList = phones.filter(item => item.id !== id)
+      updateFields({ key: 'phones', value: newPhonesList, error: '' })
     }
-  }, [updateFields, phones])
-
-  const handleUpdatMainPhone = useCallback((id) => {
-    updateFields({ key: 'phones', value: updateMainPhone(phones, id), error: '' })
   }, [updateFields, phones])
 
   return (
@@ -63,24 +44,13 @@ const PhonesField = () => {
             <div>{`(${item.code}) ${item.number}`}</div>
             {phones.length > 1 && (
               <div>
-                <div>
-                  <Button size="md" modifier="outline" onClick={() => handleRemovePhones(item.id)}>
-                    Remover
-                  </Button>
-                </div>
-                <div>
-                  <label className="flex-content-evenly" htmlFor={`phone-main-${item.id}`}>
-                    <Input
-                      field={`phone-main-${item.id}`}
-                      name="phone-main"
-                      type="radio"
-                      checked={item.main}
-                      onChange={() => handleUpdatMainPhone(item.id)}
-                      value={item.id}
-                    />
-                    Principal
-                  </label>
-                </div>
+                <Button
+                  size="md"
+                  modifier="outline"
+                  onClick={() => handleRemovePhones(item.id)}
+                >
+                  Remover
+                </Button>
               </div>
             )}
           </div>
@@ -100,8 +70,6 @@ const PhonesField = () => {
               maxLength="2"
               minLength="2"
               pattern="[0-9]*"
-              validation={requiredField}
-              required
             />
             <Input
               label="Numero"
@@ -112,8 +80,6 @@ const PhonesField = () => {
               pattern="[0-9]*"
               maxLength="9"
               minLength="8"
-              validation={requiredField}
-              required
             />
           </div>
         )}
