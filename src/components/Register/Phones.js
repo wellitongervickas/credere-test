@@ -33,11 +33,9 @@ const PhonesField = () => {
       }
 
       updateFields({ key: 'phones', value: [...phones, item], error: '' })
-
       toggleField(false)
       setCode('')
       setNumber('')
-
       removeField('new-phone-code')
       removeField('new-phone-number')
       removeField(`phone-main-${item.id}`)

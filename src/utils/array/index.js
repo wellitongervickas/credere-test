@@ -3,5 +3,7 @@ export const findItemFromKey = (
 ) => list.find(el => el[key] === identifier)
 
 export const removeFromList = (
-  list, property, value,
+  list,
+  property,
+  value,
 ) => list.filter(item => item[property] !== value)

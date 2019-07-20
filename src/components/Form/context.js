@@ -13,9 +13,7 @@ const FormContext = createContext({
 const FormContextProvider = ({ children }) => {
   const [fields, setFields] = useState([])
 
-  const removeField = useCallback((id) => {
-    setFields(list => removeFromList(list, 'key', id))
-  }, [setFields])
+  const removeField = useCallback((id) => { setFields(list => removeFromList(list, 'key', id)) }, [setFields])
 
   const updateFields = useCallback((item) => {
     setFields((list) => {

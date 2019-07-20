@@ -9,7 +9,6 @@ export const isUnderAge = (date) => {
 
     return currentYear - ageYear < 18
   }
-
   return true
 }
 
@@ -22,7 +21,6 @@ export const showCity = (state, driveLicense) => {
       return true
     }
   }
-
   return false
 }
 
@@ -38,7 +36,6 @@ export const updateMainPhone = (list = [], id) => {
     } else {
       item.main = false
     }
-
     return item
   })
 }

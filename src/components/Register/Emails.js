@@ -24,10 +24,8 @@ const EmailsField = () => {
     if (field.length) {
       const item = { id: uuid(), address: field }
       updateFields({ key: 'emails', value: [...emails, item], error: '' })
-
       toggleField(false)
       setField('')
-
       removeField('new-email')
     }
   }, [updateFields, toggleField, setField, emails, field, removeField])
