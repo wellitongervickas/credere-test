@@ -4,7 +4,7 @@
 
 ### Start guide
 
-* git clone git@bitbucket.org:gervickas/credere-frontend-test.git
+* git clone git@github.com:wellitongervickas/credere-test.git
 * cd credere-frontend-test
 * yarn 
 * yarn start
