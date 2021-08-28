@@ -19,7 +19,7 @@ describe('Font Utils', () => {
     expect(isEmphasys()).toBeDefined()
   })
 
-  it('should verify is emphasys', () => {
+  it('check if font-weight is 800 when is emphasys is true', () => {
     expect(isEmphasys(true)).toBe('font-weight: 800')
   })
 
